@@ -11674,7 +11674,11 @@ a.link-reversed__photo-bg {
 a.link-reversed:hover,
 a.link-reversed__grey-bg:hover,
 a.link-reversed__photo-bg:hover {
-    text-decoration-color: transparent !important
+    text-decoration-color: transparent !important;
+    font-size: larger;
+    font-weight: bold;
+    color: #702082;
+    background: #FFF3CB;
 }
 
 .dropdown,
