@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="73" viewBox="0 0 103 73">
+  <defs>
+    <clipPath id="clip-logo-sign">
+      <rect width="103" height="73"/>
+    </clipPath>
+  </defs>
+  <g id="logo-sign" clip-path="url(#clip-logo-sign)">
+    <path id="Path_648" data-name="Path 648" d="M51.1,60.728,30.169,32.122v20.81h8.324V73.478H0V52.932H7.806v-32H0V.39H30.24L51.1,29.209,71.961.39H102.2V20.936H94.395v32H102.2V73.478H63.708V52.932h8.324V32.122L51.1,60.728Z" transform="translate(0 -0.5)"/>
+  </g>
+</svg>
