@@ -11859,6 +11859,11 @@ html {
     }
 }
 
+.site-header a.search-icon, 
+.site-header a.search-icon:hover {
+    background-color: #4e7bb3;
+}
+
 .courses-wrapper .group-list-wrapper .load-more-wrapper .site-header .fontsize-wrapper a:hover,
 .courses-wrapper .group-list-wrapper .load-more-wrapper .site-header.menu-opened .fontsize-wrapper a:hover,
 .courses-wrapper .group-list-wrapper .load-more-wrapper .site-header.menu-white .fontsize-wrapper a:hover,
@@ -13301,7 +13306,8 @@ ul .site-header.menu-white .fontsize-wrapper a {
         overflow: hidden;
         width: 24px;
         height: 24px;
-        display: block
+        display: block;
+        background-color: #003b6c;;
     }
 }
 
@@ -14858,6 +14864,8 @@ span.total-posts-amount {
 .search-results-wrapper {
     background: var(--color-white-100)
 }
+
+
 
 .search-results-wrapper .search-wrapper {
     gap: 4px;
