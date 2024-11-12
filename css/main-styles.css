@@ -1094,7 +1094,7 @@ main.single-post__content-wrapper:not(.category-news):not(.publication):not(.cat
 
 .single-project .small-images-slider .swiper-wrapper .swiper-slide.swiper-slide-thumb-active,
 .single-student-work__content .small-images-slider-wrapper .small-images-slider .swiper-wrapper .swiper-slide.swiper-slide-thumb-active {
-    border: 1px solid var(--color-yellow-100)
+    border: 1px solid var(--color-custom-blue)
 }
 
 .single-student-work__content .small-images-slider-wrapper .small-images-slider .swiper-wrapper .swiper-slide img {
@@ -2749,7 +2749,7 @@ body.wp-admin {
 }
 
 .taubman-poster.yellow-100 {
-    background: var(--color-yellow-100)
+    background: var(--color-custom-blue)
 }
 
 .taubman-poster.blue-100 {
@@ -2873,7 +2873,7 @@ body.wp-admin {
 }
 
 .taubman-poster .title.title-yellow-100 {
-    color: var(--color-yellow-100) !important
+    color: var(--color-custom-blue) !important
 }
 
 .taubman-poster .title.title-blue-100 {
@@ -4408,7 +4408,7 @@ body.wp-admin {
 .taubman-wrapper__inner__content__inner .taubman-poster__inner .text-poster .body__inner .wp-block-heading.home-intro-text.text-poster__text.text-1 strong,
 .taubman-wrapper__inner__content__inner h2.wp-block-heading.home-intro-text strong {
     color: var(--color-black-100) !important;
-    background: var(--color-yellow-100) !important
+    background: var(--color-custom-blue) !important
 }
 
 .staff-wrapper .taubman-wrapper__inner__content__inner .wp-block-heading.staff-category-title,
@@ -4900,7 +4900,7 @@ table:not(.acf-table):not(.block-editor-list-view-tree) tbody tr:first-child td 
 }
 
 .single-project__content.yellow-100 .single-project__header {
-    background: var(--color-yellow-100)
+    background: var(--color-custom-blue)
 }
 
 .single-project__content.blue-100 .single-project__header {
@@ -4977,7 +4977,7 @@ table:not(.acf-table):not(.block-editor-list-view-tree) tbody tr:first-child td 
 }
 
 .single-project__content.title-yellow-100 .single-project__title {
-    color: var(--color-yellow-100)
+    color: var(--color-custom-blue)
 }
 
 .single-project__content.title-blue-100 .single-project__title {
@@ -8581,7 +8581,8 @@ html :where(.editor-styles-wrapper) {
     --color-grey-60: #DBDBDB;
     --color-grey-55: #E8E8E8;
     --color-grey-50: #F3F3F3;
-    --color-yellow-100: #FFC400;
+    /* --color-custom-blue: #FFC400; */
+    --color-custom-blue: #2F65A7;
     --color-yellow-80: #FED23C;
     --color-blue-100: #0773DF;
     --color-blue-80: #0E83F7;
@@ -13857,7 +13858,7 @@ ul .site-header.menu-white .fontsize-wrapper a {
 }
 
 .site-header__bottom .menu-items .custom-site-navigation__right__top .round-and-yellow a {
-    background: var(--color-yellow-100);
+    background: var(--color-custom-blue);
     border-radius: 100px;
     transform: scale(1);
     opacity: 1;
@@ -13865,7 +13866,7 @@ ul .site-header.menu-white .fontsize-wrapper a {
 }
 
 .site-header__bottom .menu-items .custom-site-navigation__right__top .round-and-yellow a:hover {
-    background: var(--color-yellow-100);
+    background: var(--color-custom-blue);
     opacity: 1;
     transform: scale(.9);
     box-shadow: none
@@ -14042,7 +14043,7 @@ ul .site-header.menu-white .fontsize-wrapper a {
 
 span.total-posts-amount {
     color: var(--color-black-100);
-    background: var(--color-yellow-100);
+    background: var(--color-custom-blue);
     border-radius: 100px;
     display: inline-flex;
     justify-content: center;
@@ -14250,18 +14251,18 @@ span.total-posts-amount {
 }
 
 .custom-site-footer__wrapper {
-    background: var(--color-yellow-100);
+    background: var(--color-custom-blue);
     width: 100%;
     position: relative
 }
 
 .custom-site-footer .taubman-footer__cateye>div {
-    background: var(--color-yellow-100)
+    background: var(--color-custom-blue)
 }
 
 .custom-site-footer__scroll-to-top {
     right: var(--d-grid-gutter);
-    background: var(--color-yellow-100);
+    background: var(--color-custom-blue);
     border-radius: 100%;
     display: flex;
     justify-content: center;
