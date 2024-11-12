@@ -1,0 +1,27 @@
+.no-js img.lazyload {
+    display: none;
+}
+
+figure.wp-block-image img.lazyloading {
+    min-width: 150px;
+}
+
+.lazyload {
+    opacity: 0;
+}
+
+.lazyloading {
+    border: 0 !important;
+    opacity: 1;
+    background: #cecece url('https://taubmancollege.umich.edu/wp-content/plugins/wp-smush-pro/app/assets/images/smush-placeholder.png') no-repeat center !important;
+    background-size: 16px auto !important;
+    min-width: 16px;
+}
+
+.lazyload,
+.lazyloading {
+    --smush-placeholder-width: 100px;
+    --smush-placeholder-aspect-ratio: 1/1;
+    width: var(--smush-placeholder-width) !important;
+    aspect-ratio: var(--smush-placeholder-aspect-ratio) !important;
+}
