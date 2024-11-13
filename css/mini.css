@@ -50,14 +50,19 @@ header {
     }
 }
 
+@media (min-width: 320px) {
+    .content-inner {
+        padding-top: 144vh;
+    }
+}
+
 .frontIMG {
     position: absolute;
-    top: 27vh;
+    top: 13vh;
     left: 75%;
     transform: translate(-50%, -50%);
     /* Center the foreground image */
     width: 100%;
-/*     height: 75%; */
     /* Adjust as needed */
     z-index: 2;
     /* Foreground image is on top */
@@ -65,19 +70,16 @@ header {
 
 .backIMG {
     position: absolute;
-/*     top: 0;
-    left: 0; */
     width: 127%;
     height: auto;
     object-fit: cover;
-/*     inline-size: fit-content; */
+    position: sticky;
     /* Make sure the background image covers the container */
-/*     z-index: 1; */
     /* Background image is under the foreground image */
 }
 
 .content-inner {
-    padding-top: 230vh;
+    padding-top: 2vh;
 }
 
 .h-inner {
