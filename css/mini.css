@@ -14,10 +14,37 @@ header {
     display: block;
 }
 
-.h-top {
-    background-color: #b1b37b;
-    height: 27vh;
-    justify-self: center;
+@media (min-width: 320px) {
+    .h-top {
+        background-color: #b1b37b;
+        height: 27vh;
+        justify-self: center;
+    }
+
+    img {
+        width: 175vw;
+        height: auto;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+}
+
+@media (min-width: 32px) {
+    .h-top {
+        background-color: #b1b37b;
+        height: 27vh;
+        justify-self: center;
+        overflow: scroll;
+        float: inline-end;
+    }
+
+    img {
+        margin-top: 150px;
+        width: 175vw;
+        height: auto;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
 }
 
 .h-inner {
@@ -87,13 +114,6 @@ a:hover {
     border-radius: 5vw;
     font-size: 24px;
     margin-bottom: 120px;
-}
-
-img {
-    width: 175vw;
-    height: auto;
-    overflow-clip-margin: content-box;
-    overflow: clip;
 }
 
 .icon{
