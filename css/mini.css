@@ -76,6 +76,10 @@ header {
     /* Background image is under the foreground image */
 }
 
+.content-inner {
+    padding-top: 230vh;
+}
+
 .h-inner {
     width: 175vw;
 }
@@ -183,6 +187,11 @@ a:hover {
     text-align: center;
     border: solid 3px;
     margin-left: 27px;
+}
+
+p.caption:hover {
+    background-color: #ffffad;
+    color: #6e6700;
 }
 
 /* Footer Styles */
