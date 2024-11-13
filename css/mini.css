@@ -1,0 +1,143 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+header {
+    background: transparent;
+    height: var(--s-header-height);
+    padding: 0;
+    position: absolute;
+    z-index: 9999;
+    overflow: hidden;
+    display: block;
+}
+
+.h-inner {
+    width: 175vw;
+}
+
+.h-inner-top {
+    padding: 8vh;
+    width: -moz-available;
+    /* Set width to available space in Firefox */
+    height: var(--s-header-height);
+    margin: 0 var(--d-grid-margin);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-black-100);
+}
+
+.h-title {
+    font-weight: bold;
+    font-size: x-large;
+    margin:4vh;
+}
+
+.h-bottom .navi {
+    backdrop-filter: blur(3px);
+    display: none;
+    /* Navigation is hidden by default */
+}
+
+.h-bottom.m-opened .navi {
+    padding: 10px 0 12px;
+    display: block;
+}
+
+/* Additional styles to ensure the layout works well */
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    color: #0065a4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.h-top .h-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper .search-icon,
+.menu-trigger .menu-link,
+.calendar-wrapper .calendar-icon {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    color: #ffffff;
+}
+
+.menu-trigger .menu-link {
+    background-color: #6e67a4;
+    color: #fff8ff;
+    border-radius: 5vw;
+    font-size: 24px;
+    margin-bottom: 120px;
+}
+
+img {
+    width: 175vw;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.icon{
+    width: 48px;
+    height: 48px;
+}
+
+/* Footer Styles */
+.footer {
+    background: #fff8ff;
+    color: #6e67a4;
+    padding: 2rem 0;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-upper,
+.footer-lower {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-contact h4 {
+    margin-bottom: 1rem;
+}
+
+footer address {
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-lower p {
+    margin: 0;
+}
