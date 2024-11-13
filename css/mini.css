@@ -67,7 +67,7 @@ header {
 .h-title {
     font-weight: bold;
     font-size: x-large;
-    margin:4vh;
+    margin: 4vh;
 }
 
 .h-bottom .navi {
@@ -108,6 +108,15 @@ a:hover {
     align-items: center;
 }
 
+.close-menu {
+    background-color: #ffffff;
+    color: #00389a;
+    font-size: x-large;
+    font-style: italic;
+    inline-size: min-content;
+    font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
 .search-wrapper .search-icon,
 .menu-trigger .menu-link,
 .calendar-wrapper .calendar-icon {
@@ -125,14 +134,15 @@ a:hover {
     margin-bottom: 120px;
 }
 
-.menu-trigger.active + .h-bottom nav {
+.menu-trigger.active+.h-bottom nav {
     display: block;
 }
+
 .h-bottom nav {
     display: none;
 }
 
-.icon{
+.icon {
     width: 48px;
     height: 48px;
 }
