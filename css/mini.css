@@ -78,6 +78,7 @@ header {
     font-size: medium;
     line-height: 1.8em;
     text-shadow: 2px 2px #ceffff;
+    margin-right: 27vw;
     /* Navigation is hidden by default */
 }
 
