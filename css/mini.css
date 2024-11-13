@@ -14,20 +14,7 @@ header {
     display: block;
 }
 
-@media (min-width: 320px) {
-    .h-top {
-        background-color: #b1b37b;
-        height: 27vh;
-        justify-self: center;
-    }
-
-    img {
-        width: 175vw;
-        height: auto;
-        overflow-clip-margin: content-box;
-        overflow: clip;
-    }
-}
+/* Remember to put the smaller min-width / wider limits in the front!*/
 
 @media (min-width: 32px) {
     .h-top {
@@ -40,6 +27,22 @@ header {
 
     img {
         margin-top: 150px;
+        width: 175vw;
+        height: auto;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+}
+
+@media (min-width: 320px) {
+    .h-top {
+        background-color: #b1b37b;
+        height: 27vh;
+        justify-self: center;
+        float: inline-start;
+    }
+
+    img {
         width: 175vw;
         height: auto;
         overflow-clip-margin: content-box;
@@ -68,8 +71,13 @@ header {
 }
 
 .h-bottom .navi {
-    backdrop-filter: blur(3px);
+    backdrop-filter: hue-rotate(12deg) blur(2px);
     display: none;
+    color: #0076e6;
+    font-weight: bolder;
+    font-size: medium;
+    line-height: 1.8em;
+    text-shadow: 2px 2px #ceffff;
     /* Navigation is hidden by default */
 }
 
@@ -114,6 +122,13 @@ a:hover {
     border-radius: 5vw;
     font-size: 24px;
     margin-bottom: 120px;
+}
+
+.menu-trigger.active + .h-bottom nav {
+    display: block;
+}
+.h-bottom nav {
+    display: none;
 }
 
 .icon{
