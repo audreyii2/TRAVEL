@@ -12,3 +12,7 @@ Page for short-term goals (to satisfy SI project requirements): https://audreyii
 * Cleaner, concise, one stylesheet.
 * Search and filter forms for in-site info.
 * Toggle theme selector.
+
+# Personal Tools Convenient for Remote Editing:
+
+Python online shell: https://pythonhow.com/python-shell
