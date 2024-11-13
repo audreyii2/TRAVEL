@@ -53,10 +53,9 @@ header {
 .frontIMG {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
     /* Center the foreground image */
-    width: auto;
     height: 50%;
     /* Adjust as needed */
     z-index: 2;
@@ -65,13 +64,13 @@ header {
 
 .backIMG {
     position: absolute;
-    top: 0;
+/*     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; */
     height: 100%;
     object-fit: cover;
     /* Make sure the background image covers the container */
-    z-index: 1;
+/*     z-index: 1; */
     /* Background image is under the foreground image */
 }
 
