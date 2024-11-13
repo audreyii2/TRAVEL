@@ -7,4 +7,5 @@ Page for short-term goal to satisfy SI project requirements with concise codes: 
 -------------------------------------------------------------------------------------
 Update Notes:
 
-Search menu.
+Search form for in-site info.
+Cleaner, concise, one stylesheet.
