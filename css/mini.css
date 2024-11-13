@@ -69,6 +69,7 @@ header {
     width: 100%; */
     height: 100%;
     object-fit: cover;
+    inline-size: fit-content;
     /* Make sure the background image covers the container */
 /*     z-index: 1; */
     /* Background image is under the foreground image */
