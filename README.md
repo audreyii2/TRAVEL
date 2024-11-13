@@ -7,5 +7,6 @@ Page for short-term goals (to satisfy SI project requirements): https://audreyii
 -------------------------------------------------------------------------------------
 Update Notes:
 
-Search form for in-site info.
-Cleaner, concise, one stylesheet.
+* Search and filter forms for in-site info.
+* Toggle theme selector.
+* Cleaner, concise, one stylesheet.
