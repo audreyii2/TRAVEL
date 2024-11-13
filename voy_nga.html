@@ -1,0 +1,3167 @@
+
+
+
+    <!DOCTYPE HTML>
+    <html lang="en" >
+    
+
+
+
+
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+        <meta name="description" content="Immerse yourself in the vibrant world of 19th-century Paris and witness the birth of modernist painting. Join us for an extraordinary journey as we delve into the captivating origins of Impressionism, a groundbreaking French art movement that forever transformed the art world.">
+        <meta http-equiv="X-UA-Compatible" content="IE=9,IE=10,IE=11" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        
+          <meta name="robots" content="index,follow" />
+        
+        
+
+
+
+
+    <link rel="stylesheet" href="/etc.clientlibs/clientlibs/granite/jquery-ui.min.css" type="text/css">
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery-ui.min.js"></script>
+
+    
+    
+
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/social/thirdparty/handlebars.min.js"></script>
+
+<script type="text/javascript" src="/etc/clientlibs/granite/lodash/modern.min.js"></script>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/etc.clientlibs/clientlibs/granite/coralui3.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/designs/ngaweb/clientlib/site.min.css" type="text/css">
+<script type="text/javascript" src="/etc/clientlibs/granite/handlebars.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/history.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/typekit.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/utils.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/jquery/granite.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/moment.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/clientlibs/granite/coralui3.min.js"></script>
+<script type="text/javascript" src="/etc/designs/ngaweb/clientlib/site.min.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	/*********************************************************************
+	*
+	* Initializing some of the nga namespace settings.
+	*
+	***********************************************************************/
+	nga.user = {getCurrentUserId: function () {return "anonymous";}};
+	nga.paths = (function () 
+	           		{
+		                var pathMap = {};
+		                
+		                    pathMap["PURL_EXTERNAL_ARTOBJECT"] = "/collection/artobject";
+		                
+		                    pathMap["PURL_EXTERNAL_CONSTITUENT"] = "/collection/constituent";
+		                
+		                    pathMap["PURL_EXTERNAL_CATALOGUE"] = "/collection/catalogue";
+		                
+		                    pathMap["PURL_EXTERNAL_ESSAY"] = "/research/essay";
+		                
+		                    pathMap["ESSAY_PATH_ON_PAGE"] = "parsys/essay";
+		                
+		                    pathMap["PURL_ARTOBJECT"] = "/content/ngaweb/purl/collection/artobject";
+		                
+		                    pathMap["PURL_CONSTITUENT"] = "/content/ngaweb/purl/collection/constituent";
+		                
+		                    pathMap["PURL_CATALOGUE"] = "/content/ngaweb/purl/collection/catalogue";
+		                
+		                    pathMap["PURL_ESSAY"] = "/content/ngaweb/purl/research/essay";
+		                
+		                    pathMap["PDF_VERSIONS_ARTOBJECT"] = "/content/dam/ngaweb/collection/artobject";
+		                
+		                    pathMap["PDF_VERSIONS_CONSTITUENT"] = "/content/dam/ngaweb/collection/constituent";
+		                
+		                    pathMap["PDF_VERSIONS_CATALOGUE"] = "/content/dam/ngaweb/collection/catalogue";
+		                
+		                    pathMap["HOME"] = "/content/ngaweb";
+		                
+		                    pathMap["USER"] = "/content/ngaweb/users";
+		                
+		                    pathMap["USER_REGISTER"] = "/content/ngaweb/user/";
+		                
+		                    pathMap["USER_FORGOT_PASSWORD"] = "/content/ngaweb/users/requestpasswordreset";
+		                
+		                    pathMap["USER_RESET_PASSWORD"] = "/content/ngaweb/users/passwordreset";
+		                
+		                    pathMap["USER_ACTIONS"] = "/content/ngaweb/users/landing";
+		                
+		                    pathMap["USER_FAVORITES"] = "/content/ngaweb/users/favorites";
+		                
+		                    pathMap["USER_FAVORITES_ACTION_LINKS"] = "/content/ngaweb/users/favactionlinks";
+		                
+		                    pathMap["USER_SIGNIN"] = "/content/ngaweb/users/sign-in";
+		                
+		                    pathMap["USER_SIGNOUT"] = "/content/ngaweb/users/signout";
+		                
+		                    pathMap["COLLECTION"] = "/content/ngaweb/collection";
+		                
+		                    pathMap["ARTOBJECT"] = "/content/ngaweb/collection/art-object-page";
+		                
+		                    pathMap["ART_LOCATIONVIEW"] = "/content/ngaweb/collection/locationview";
+		                
+		                    pathMap["ARTIST"] = "/content/ngaweb/collection/artist-info";
+		                
+		                    pathMap["ARTIST_SEARCH_RESULTS"] = "/content/ngaweb/artists-search-results";
+		                
+		                    pathMap["PROVENANCE"] = "/content/ngaweb/collection/provenance-info";
+		                
+		                    pathMap["CURRENT_DESIGN"] = "/etc/designs/ngaweb";
+		                
+		                    pathMap["COLLECTION_SEARCH"] = "/content/ngaweb/collection-search-result";
+		                
+		                    pathMap["ARTOBJECT_LOCATION_VIEW"] = "/content/ngaweb/collection/locationview";
+		                
+		                    pathMap["SERVICES"] = "/content/ngaweb/services";
+		                
+		                    pathMap["EXHIBITIONS"] = "/content/ngaweb/exhibitions";
+		                
+		                    pathMap["EXHIBITIONS_UPCOMING"] = "/content/ngaweb/exhibitions/upcoming";
+		                
+		                    pathMap["EXHIBITIONS_PAST"] = "/content/ngaweb/exhibitions/past";
+		                
+		                    pathMap["SOCIAL_EMAIL_SHARE"] = "/content/ngaweb/emailShare";
+		                
+		                    pathMap["LOCATION_VIEW"] = "/content/ngaweb/collection/locationview";
+		                
+		                    pathMap["ARTIST_SEARCH"] = "/content/ngaweb/collection/artists";
+		                
+		                    pathMap["VISUAL_BROWSER_SEARCH"] = "/content/ngaweb/collection/searchresults";
+		                
+		                    pathMap["ONLINE_EDITIONS"] = "/content/ngaweb/research/online-editions";
+		                
+		                    pathMap["ONLINE_EDITIONS_CONSTITUENTS"] = "/content/ngaweb/research/online-editions/artists";
+		                
+		                    pathMap["ONLINE_EDITIONS_AUTHORS"] = "/content/ngaweb/research/online-editions/authors";
+		                
+		                    pathMap["GLOBAL_SEARCH"] = "/content/ngaweb/global-site-search-page";
+		                
+		                    pathMap["AV_CONSOLE"] = "/apps/ngaweb/components/page/media/avconsole";
+		                
+		                    pathMap["ERRORS"] = "/content/ngaweb/error";
+		                
+		                    pathMap["AUTHNET_CALLBACK_ERROR"] = "/content/ngaweb/error/authnet-transaction-failed";
+		                
+		                    pathMap["ACCADEMIA_BASE"] = "/content/accademia";
+		                
+		                    pathMap["ACCADEMIA_HOME_ENGLISH"] = "/content/accademia/en";
+		                
+		                    pathMap["ACCADEMIA_HOME_ITALIAN"] = "/content/accademia/it";
+		                
+		                    pathMap["ACCADEMIA_SEARCH_ENGLISH"] = "/content/accademia/en/search";
+		                
+		                    pathMap["ACCADEMIA_SEARCH_RESULTS_ENGLISH"] = "/content/accademia/en/search/search-results";
+		                
+		                    pathMap["ACCADEMIA_FREE_TEXT_SEARCH_RESULTS_ENGLISH"] = "/content/accademia/en/search/free-text-search-results";
+		                
+		                    pathMap["ACCADEMIA_PERSONS_ENGLISH"] = "/content/accademia/en/persons";
+		                
+		                    pathMap["ACCADEMIA_PLACES_ENGLISH"] = "/content/accademia/en/places";
+		                
+		                    pathMap["ACCADEMIA_PLACES_ITALIAN"] = "/content/accademia/it/places";
+		                
+		                    pathMap["ACCADEMIA_DOCUMENTS_ENGLISH"] = "/content/accademia/en/documents";
+		                
+		                    pathMap["ACCADEMIA_MAPS_ENGLISH"] = "/content/accademia/en/maps";
+		                
+		                    pathMap["ACCADEMIA_MAPS_ITALIAN"] = "/content/accademia/it/maps";
+		                
+		                    pathMap["VISIT"] = "/content/ngaweb/visit";
+		                
+		                    pathMap["MAPS_AND_INFORMATION"] = "VISIT/maps-and-information";
+		                
+		                    pathMap["VISIT_GALLERY_EAST"] = "MAPS_AND_INFORMATION/east-building";
+		                
+		                    pathMap["VISIT_GALLERY_WEST"] = "MAPS_AND_INFORMATION/west-building";
+		                
+		                    pathMap["VISIT_GALLERY_SCULPTUREGARDEN"] = "MAPS_AND_INFORMATION/sculpture-garden";
+		                
+		                    pathMap["CONSERVATION"] = "/content/ngaweb/conservation";
+		                
+		                    pathMap["RESEARCH"] = "/content/ngaweb/research";
+		                
+		                    pathMap["CALENDAR"] = "/content/ngaweb/calendar";
+		                
+		                    pathMap["AUDIO"] = "/content/ngaweb/audio";
+		                
+		                    pathMap["ABOUT"] = "/content/ngaweb/about";
+		                
+		                    pathMap["SUPPORT"] = "/content/ngaweb/support";
+		                
+		                    pathMap["OPPORTUNITIES"] = "/content/ngaweb/opportunities";
+		                
+		                    pathMap["PRESS"] = "/content/ngaweb/press";
+		                
+		                    pathMap["NOTICES"] = "/content/ngaweb/notices";
+		                
+		                    pathMap["CONTACT"] = "/content/ngaweb/contact";
+		                
+		                    pathMap["FEATURES"] = "/content/ngaweb/features";
+		                
+		                    pathMap["HIGHLIGHTS"] = "/content/ngaweb/collection/highlights";
+		                
+		                    pathMap["LEARN"] = "/content/ngaweb/learn";
+		                
+		                    pathMap["TMS_STORAGE_BASE"] = "/content/nga/tms";
+		                
+		                    pathMap["TMS_CQENHANCE_STORAGE_BASE"] = "/content/nga/tms-storage";
+		                
+		                    pathMap["TMS_CQENHANCE_ARTOBJECT"] = "/content/nga/tms-storage/ArtObject";
+		                
+		                    pathMap["TMS_CQENHANCE_CONSTITUENT"] = "/content/nga/tms-storage/Constituent";
+		                
+		                    pathMap["STORAGE_BASE"] = "/content/nga";
+		                
+		                    pathMap["BLOG"] = "/content/ngaweb/blog";
+		                
+		                    pathMap["STORY"] = "/content/ngaweb/stories";
+		                
+		        
+		                this.getPathsMap = function () {return pathMap;};
+		                this.getPath = function (pathName) {return pathMap[pathName];};
+		                return this;
+	           		}).call({});
+	nga.config.avPagesUseLightboxPaths = ["/audio-video/video/","/audio-video/audio/","/audio-video/press/","/audio-video/docent/","/audio-video/music/","/audio-video/diamonstein-spielvogel/","/audio-video/wilmerding-symposium/","/audio-video/conversations-with-artists/","/audio-video/conversations-with-collectors/","/audio-video/mellon","/audio-video/wyeth/","/audio-video/safra/","/audio-video/truitt-symposium/","/audio-video/mann-symposium/"];
+	nga.tags = (function ()
+			{
+	            var tagMap = {};
+	            
+	                tagMap["ARTOBJECT"] = {"namespace" : "ngaweb:artobjects", "path": "/etc/tags/ngaweb/artobjects"};
+	            
+	                tagMap["CONSTITUENT"] = {"namespace" : "ngaweb:constituents", "path": "/etc/tags/ngaweb/constituents"};
+	            
+	                tagMap["AUTHORS"] = {"namespace" : "ngaweb:authors", "path": "/etc/tags/ngaweb/authors"};
+	            
+	                tagMap["EXHIBITIONS"] = {"namespace" : "ngaweb:exhibitions", "path": "/etc/tags/ngaweb/exhibitions"};
+	            
+	                tagMap["AUDIO_VIDEO"] = {"namespace" : "ngaweb:audio-video", "path": "/etc/tags/ngaweb/audio-video"};
+	            
+	                tagMap["GLOSSARY"] = {"namespace" : "ngaweb:glossary", "path": "/etc/tags/ngaweb/glossary"};
+	            
+	                tagMap["COLLECTIONS"] = {"namespace" : "ngaweb:collections", "path": "/etc/tags/ngaweb/collections"};
+	            
+	                tagMap["OSCI_CATALOGUE"] = {"namespace" : "ngaweb:collections/catalogues", "path": "/etc/tags/ngaweb/collections/catalogues"};
+	            
+	                tagMap["ICONCLASS"] = {"namespace" : "thesaurus:iconclass", "path": "/etc/tags/thesaurus/iconclass"};
+	            
+	                tagMap["SUPPLEMENTAL_SECTION_ARTOBJECT"] = {"namespace" : "ngaweb:cq-artobject-data/section-titles", "path": "/etc/tags/ngaweb/cq-artobject-data/section-titles"};
+	            
+	                tagMap["ACCADEMIA_PERSON"] = {"namespace" : "accademia:person", "path": "/etc/tags/accademia/person"};
+	            
+	                tagMap["ACCADEMIA_KEY_TERM"] = {"namespace" : "accademia:term", "path": "/etc/tags/accademia/term"};
+	            
+	                tagMap["ACCADEMIA_PLACE"] = {"namespace" : "accademia:place", "path": "/etc/tags/accademia/place"};
+	            
+	                tagMap["ACCADEMIA_DOCTYPE"] = {"namespace" : "accademia:doctype", "path": "/etc/tags/accademia/doctype"};
+	            
+	                tagMap["ACCADEMIA_NOTARY"] = {"namespace" : "accademia:person", "path": "/etc/tags/accademia/person"};
+	            
+	
+	            this.getTagMap = function () 
+	                {
+	            	    var constantsClone = {};
+	                    jQuery.extend(constantsClone, tagMap);
+	                    return constantsClone;
+	                };
+	
+	            return this;
+			}).call({});
+	nga.iiif = ( function ()
+					{
+						this.icon = "/etc/designs/ngaweb/images/icons/svg-source/icon-compare.svg";
+						this.iconClassName = "iiifCompareIcon";
+						this.maxComparables = 8;
+						return this;
+					}).call({});
+</script>
+
+
+<link rel="stylesheet" href="/etc/designs/ngaweb/clientlib/components/page.min.css" type="text/css">
+<script type="text/javascript" src="/etc/designs/ngaweb/clientlib/components/page.min.js"></script>
+
+<link rel="stylesheet" href="/etc/designs/ngaweb/clientlib/components/content.min.css" type="text/css">
+<link rel="stylesheet" href="/etc/clientlibs/foundation/jquery-ui/themes/default.min.css" type="text/css">
+<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/etc/designs/ngaweb/clientlib/components/content.min.js"></script>
+
+
+<!-- Brightcove script for the video player -->
+
+<script type="text/javascript" src="https://media.nga.gov/js/BrightcoveExperiences.js"></script>
+
+<!-- VWO Async SmartCode -->
+<link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+<script type='text/javascript' id='vwoCode'>
+window._vwo_code || (function() {
+var account_id=764450,
+version=2.0,
+settings_tolerance=2000,
+hide_element='body',
+hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+'_settings',cc={};try{var c=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=c&&typeof c==='object'?c:{}}catch(e){}var stT=cc.stT==='session'?w.sessionStorage:w.localStorage;code={use_existing_jquery:function(){return typeof use_existing_jquery!=='undefined'?use_existing_jquery:undefined},library_tolerance:function(){return typeof library_tolerance!=='undefined'?library_tolerance:undefined},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return typeof cc.hE==='string'?cc.hE:hide_element},getVersion:function(){return version},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=this.getSettings(),n=d.createElement('script'),i=this;if(t){n.textContent=t;d.getElementsByTagName('head')[0].appendChild(n);if(!w.VWO||VWO.caE){stT.removeItem(cK);i.load(e)}}else{n.fetchPriority='high';n.src=e;n.type='text/javascript';n.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(n)}},getSettings:function(){try{var e=stT.getItem(cK);if(!e){return}e=JSON.parse(e);if(Date.now()>e.e){stT.removeItem(cK);return}return e.s}catch(e){return}},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;var e=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish();stT.removeItem(cK)},e);var t=d.currentScript,n=d.createElement('style'),i=this.hide_element(),r=t&&!t.async&&i?i+this.hide_element_style():'',c=d.getElementsByTagName('head')[0];n.setAttribute('id','_vis_opt_path_hides');v&&n.setAttribute('nonce',v.nonce);n.setAttribute('type','text/css');if(n.styleSheet)n.styleSheet.cssText=r;else n.appendChild(d.createTextNode(r));c.appendChild(n);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&vn='+version)}};w._vwo_code=code;code.init();})();
+</script>
+
+<script>
+    if (typeof Handlebars !== "undefined" && typeof Handlebars.noConflict !== "undefined") {
+      Handlebars.noConflict();
+    }
+    jQuery(document).ready(function($) {
+        // Site-wide static plugins
+        $('.side-nav-toggle').sidenav();
+        $('.drawer').drawer();
+        $('.infobox').infobox();
+        $('.section-link').pageSections({"readHash": true, "updateHash": true});
+        $('.navigation').nav();
+        $('[textimagezoom]').textImageZoom();
+        $('.storieslist').storieslist();
+        $('.storiesslider').storiesslider();
+        releaseFixed('[data-js="fixed"]');
+        // All responsive plugins are ready.
+        // Trigger a breakpoint event.
+        view.init();
+    });
+</script>
+
+
+
+
+
+    	<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-W8XHQQD');</script>
+		<!-- End Google Tag Manager -->
+
+        <!-- site icons -->
+        <link rel="icon" href="/content/dam/ngaweb/icons/favicon.ico">
+        <link rel="icon" href="/content/dam/ngaweb/icons/icon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/content/dam/ngaweb/icons/apple-touch-icon.png">
+        
+
+        <title>Paris 1874: The Impressionist Moment</title>
+
+
+
+        
+
+    </head>
+
+    
+
+
+
+
+
+
+
+<body class="">
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8XHQQD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+      
+  <script type="text/javascript">
+
+    var switchTo5x=true;
+
+
+    /*********
+    * stLight does not appear to be available in all environments so we're adding a try
+    * around attempts to use it.
+    **********/
+    try
+    {
+        stLight.options({publisher: "4827d72c-9eca-4f37-8d68-7da2f2abfc16"});
+    }
+    catch(e) {}
+
+    /*********************************************************************
+    *
+    * Initializing some of the nga namespace settings.
+    *
+    ***********************************************************************/
+    nga.user = {getCurrentUserId: function () {return "anonymous";}};
+    nga.favorites = nga.favorites || {};
+    nga.favorites.getFavUser = function () {return nga.utils.getCookie('NGAFavorites')};
+    nga.paths = (function ()
+               {
+                    var pathMap = {};
+                    
+                        pathMap["PURL_EXTERNAL_ARTOBJECT"] = "/collection/artobject";
+                    
+                        pathMap["PURL_EXTERNAL_CONSTITUENT"] = "/collection/constituent";
+                    
+                        pathMap["PURL_EXTERNAL_CATALOGUE"] = "/collection/catalogue";
+                    
+                        pathMap["PURL_EXTERNAL_ESSAY"] = "/research/essay";
+                    
+                        pathMap["ESSAY_PATH_ON_PAGE"] = "parsys/essay";
+                    
+                        pathMap["PURL_ARTOBJECT"] = "/content/ngaweb/purl/collection/artobject";
+                    
+                        pathMap["PURL_CONSTITUENT"] = "/content/ngaweb/purl/collection/constituent";
+                    
+                        pathMap["PURL_CATALOGUE"] = "/content/ngaweb/purl/collection/catalogue";
+                    
+                        pathMap["PURL_ESSAY"] = "/content/ngaweb/purl/research/essay";
+                    
+                        pathMap["PDF_VERSIONS_ARTOBJECT"] = "/content/dam/ngaweb/collection/artobject";
+                    
+                        pathMap["PDF_VERSIONS_CONSTITUENT"] = "/content/dam/ngaweb/collection/constituent";
+                    
+                        pathMap["PDF_VERSIONS_CATALOGUE"] = "/content/dam/ngaweb/collection/catalogue";
+                    
+                        pathMap["HOME"] = "/content/ngaweb";
+                    
+                        pathMap["USER"] = "/content/ngaweb/users";
+                    
+                        pathMap["USER_REGISTER"] = "/content/ngaweb/user/";
+                    
+                        pathMap["USER_FORGOT_PASSWORD"] = "/content/ngaweb/users/requestpasswordreset";
+                    
+                        pathMap["USER_RESET_PASSWORD"] = "/content/ngaweb/users/passwordreset";
+                    
+                        pathMap["USER_ACTIONS"] = "/content/ngaweb/users/landing";
+                    
+                        pathMap["USER_FAVORITES"] = "/content/ngaweb/users/favorites";
+                    
+                        pathMap["USER_FAVORITES_ACTION_LINKS"] = "/content/ngaweb/users/favactionlinks";
+                    
+                        pathMap["USER_SIGNIN"] = "/content/ngaweb/users/sign-in";
+                    
+                        pathMap["USER_SIGNOUT"] = "/content/ngaweb/users/signout";
+                    
+                        pathMap["COLLECTION"] = "/content/ngaweb/collection";
+                    
+                        pathMap["ARTOBJECT"] = "/content/ngaweb/collection/art-object-page";
+                    
+                        pathMap["ART_LOCATIONVIEW"] = "/content/ngaweb/collection/locationview";
+                    
+                        pathMap["ARTIST"] = "/content/ngaweb/collection/artist-info";
+                    
+                        pathMap["ARTIST_SEARCH_RESULTS"] = "/content/ngaweb/artists-search-results";
+                    
+                        pathMap["PROVENANCE"] = "/content/ngaweb/collection/provenance-info";
+                    
+                        pathMap["CURRENT_DESIGN"] = "/etc/designs/ngaweb";
+                    
+                        pathMap["COLLECTION_SEARCH"] = "/content/ngaweb/collection-search-result";
+                    
+                        pathMap["ARTOBJECT_LOCATION_VIEW"] = "/content/ngaweb/collection/locationview";
+                    
+                        pathMap["SERVICES"] = "/content/ngaweb/services";
+                    
+                        pathMap["EXHIBITIONS"] = "/content/ngaweb/exhibitions";
+                    
+                        pathMap["EXHIBITIONS_UPCOMING"] = "/content/ngaweb/exhibitions/upcoming";
+                    
+                        pathMap["EXHIBITIONS_PAST"] = "/content/ngaweb/exhibitions/past";
+                    
+                        pathMap["SOCIAL_EMAIL_SHARE"] = "/content/ngaweb/emailShare";
+                    
+                        pathMap["LOCATION_VIEW"] = "/content/ngaweb/collection/locationview";
+                    
+                        pathMap["ARTIST_SEARCH"] = "/content/ngaweb/collection/artists";
+                    
+                        pathMap["VISUAL_BROWSER_SEARCH"] = "/content/ngaweb/collection/searchresults";
+                    
+                        pathMap["ONLINE_EDITIONS"] = "/content/ngaweb/research/online-editions";
+                    
+                        pathMap["ONLINE_EDITIONS_CONSTITUENTS"] = "/content/ngaweb/research/online-editions/artists";
+                    
+                        pathMap["ONLINE_EDITIONS_AUTHORS"] = "/content/ngaweb/research/online-editions/authors";
+                    
+                        pathMap["GLOBAL_SEARCH"] = "/content/ngaweb/global-site-search-page";
+                    
+                        pathMap["AV_CONSOLE"] = "/apps/ngaweb/components/page/media/avconsole";
+                    
+                        pathMap["ERRORS"] = "/content/ngaweb/error";
+                    
+                        pathMap["AUTHNET_CALLBACK_ERROR"] = "/content/ngaweb/error/authnet-transaction-failed";
+                    
+                        pathMap["ACCADEMIA_BASE"] = "/content/accademia";
+                    
+                        pathMap["ACCADEMIA_HOME_ENGLISH"] = "/content/accademia/en";
+                    
+                        pathMap["ACCADEMIA_HOME_ITALIAN"] = "/content/accademia/it";
+                    
+                        pathMap["ACCADEMIA_SEARCH_ENGLISH"] = "/content/accademia/en/search";
+                    
+                        pathMap["ACCADEMIA_SEARCH_RESULTS_ENGLISH"] = "/content/accademia/en/search/search-results";
+                    
+                        pathMap["ACCADEMIA_FREE_TEXT_SEARCH_RESULTS_ENGLISH"] = "/content/accademia/en/search/free-text-search-results";
+                    
+                        pathMap["ACCADEMIA_PERSONS_ENGLISH"] = "/content/accademia/en/persons";
+                    
+                        pathMap["ACCADEMIA_PLACES_ENGLISH"] = "/content/accademia/en/places";
+                    
+                        pathMap["ACCADEMIA_PLACES_ITALIAN"] = "/content/accademia/it/places";
+                    
+                        pathMap["ACCADEMIA_DOCUMENTS_ENGLISH"] = "/content/accademia/en/documents";
+                    
+                        pathMap["ACCADEMIA_MAPS_ENGLISH"] = "/content/accademia/en/maps";
+                    
+                        pathMap["ACCADEMIA_MAPS_ITALIAN"] = "/content/accademia/it/maps";
+                    
+                        pathMap["VISIT"] = "/content/ngaweb/visit";
+                    
+                        pathMap["MAPS_AND_INFORMATION"] = "VISIT/maps-and-information";
+                    
+                        pathMap["VISIT_GALLERY_EAST"] = "MAPS_AND_INFORMATION/east-building";
+                    
+                        pathMap["VISIT_GALLERY_WEST"] = "MAPS_AND_INFORMATION/west-building";
+                    
+                        pathMap["VISIT_GALLERY_SCULPTUREGARDEN"] = "MAPS_AND_INFORMATION/sculpture-garden";
+                    
+                        pathMap["CONSERVATION"] = "/content/ngaweb/conservation";
+                    
+                        pathMap["RESEARCH"] = "/content/ngaweb/research";
+                    
+                        pathMap["CALENDAR"] = "/content/ngaweb/calendar";
+                    
+                        pathMap["AUDIO"] = "/content/ngaweb/audio";
+                    
+                        pathMap["ABOUT"] = "/content/ngaweb/about";
+                    
+                        pathMap["SUPPORT"] = "/content/ngaweb/support";
+                    
+                        pathMap["OPPORTUNITIES"] = "/content/ngaweb/opportunities";
+                    
+                        pathMap["PRESS"] = "/content/ngaweb/press";
+                    
+                        pathMap["NOTICES"] = "/content/ngaweb/notices";
+                    
+                        pathMap["CONTACT"] = "/content/ngaweb/contact";
+                    
+                        pathMap["FEATURES"] = "/content/ngaweb/features";
+                    
+                        pathMap["HIGHLIGHTS"] = "/content/ngaweb/collection/highlights";
+                    
+                        pathMap["LEARN"] = "/content/ngaweb/learn";
+                    
+                        pathMap["TMS_STORAGE_BASE"] = "/content/nga/tms";
+                    
+                        pathMap["TMS_CQENHANCE_STORAGE_BASE"] = "/content/nga/tms-storage";
+                    
+                        pathMap["TMS_CQENHANCE_ARTOBJECT"] = "/content/nga/tms-storage/ArtObject";
+                    
+                        pathMap["TMS_CQENHANCE_CONSTITUENT"] = "/content/nga/tms-storage/Constituent";
+                    
+                        pathMap["STORAGE_BASE"] = "/content/nga";
+                    
+                        pathMap["BLOG"] = "/content/ngaweb/blog";
+                    
+                        pathMap["STORY"] = "/content/ngaweb/stories";
+                    
+
+                    this.getPathsMap = function () {return pathMap;};
+                    this.getPath = function (pathName) {return pathMap[pathName];};
+                    this.getExternalizedLoginURL = function(subPath, reqParamName) {
+                       var xLoginUrl = ["https://www.nga.gov/content/ngaweb/users/sign-in.html"];
+                       xLoginUrl.push("?" + reqParamName + "=");
+                       xLoginUrl.push(encodeURI(subPath));
+                       return xLoginUrl.join('');
+                   };
+                    return this;
+               }).call({});
+    nga.config.avPagesUseLightboxPaths = ["/audio-video/video/","/audio-video/audio/","/audio-video/press/","/audio-video/docent/","/audio-video/music/","/audio-video/diamonstein-spielvogel/","/audio-video/wilmerding-symposium/","/audio-video/conversations-with-artists/","/audio-video/conversations-with-collectors/","/audio-video/mellon","/audio-video/wyeth/","/audio-video/safra/","/audio-video/truitt-symposium/","/audio-video/mann-symposium/"];
+    nga.tags = (function ()
+    		{
+                var tagMap = {};
+                
+                    tagMap["ARTOBJECT"] = {"namespace" : "ngaweb:artobjects", "path": "/etc/tags/ngaweb/artobjects"};
+                
+                    tagMap["CONSTITUENT"] = {"namespace" : "ngaweb:constituents", "path": "/etc/tags/ngaweb/constituents"};
+                
+                    tagMap["AUTHORS"] = {"namespace" : "ngaweb:authors", "path": "/etc/tags/ngaweb/authors"};
+                
+                    tagMap["EXHIBITIONS"] = {"namespace" : "ngaweb:exhibitions", "path": "/etc/tags/ngaweb/exhibitions"};
+                
+                    tagMap["AUDIO_VIDEO"] = {"namespace" : "ngaweb:audio-video", "path": "/etc/tags/ngaweb/audio-video"};
+                
+                    tagMap["GLOSSARY"] = {"namespace" : "ngaweb:glossary", "path": "/etc/tags/ngaweb/glossary"};
+                
+                    tagMap["COLLECTIONS"] = {"namespace" : "ngaweb:collections", "path": "/etc/tags/ngaweb/collections"};
+                
+                    tagMap["OSCI_CATALOGUE"] = {"namespace" : "ngaweb:collections/catalogues", "path": "/etc/tags/ngaweb/collections/catalogues"};
+                
+                    tagMap["ICONCLASS"] = {"namespace" : "thesaurus:iconclass", "path": "/etc/tags/thesaurus/iconclass"};
+                
+                    tagMap["SUPPLEMENTAL_SECTION_ARTOBJECT"] = {"namespace" : "ngaweb:cq-artobject-data/section-titles", "path": "/etc/tags/ngaweb/cq-artobject-data/section-titles"};
+                
+                    tagMap["ACCADEMIA_PERSON"] = {"namespace" : "accademia:person", "path": "/etc/tags/accademia/person"};
+                
+                    tagMap["ACCADEMIA_KEY_TERM"] = {"namespace" : "accademia:term", "path": "/etc/tags/accademia/term"};
+                
+                    tagMap["ACCADEMIA_PLACE"] = {"namespace" : "accademia:place", "path": "/etc/tags/accademia/place"};
+                
+                    tagMap["ACCADEMIA_DOCTYPE"] = {"namespace" : "accademia:doctype", "path": "/etc/tags/accademia/doctype"};
+                
+                    tagMap["ACCADEMIA_NOTARY"] = {"namespace" : "accademia:person", "path": "/etc/tags/accademia/person"};
+                
+
+                this.getTagMap = function ()
+                    {
+                	    var constantsClone = {};
+                        jQuery.extend(constantsClone, tagMap);
+                        return constantsClone;
+                    };
+
+                return this;
+    		}).call({});
+      nga.runmode = (function ()
+      {
+          this.inEdit = "false";
+          this.inPreview = "false";
+          this.inDisabled = "true";
+          this.inDesign = "false";
+
+          return this;
+      }).call({});
+      console.log("Update NGA Object", nga);
+    </script>
+
+     <!-- client context -->
+     <div style="display: none">
+      <div class="clientcontext parbase"><script type="text/javascript" src="/etc.clientlibs/foundation/clientlibs/shared.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/cq/personalization/clientlib/underscore.min.js"></script>
+<script type="text/javascript" src="/etc.clientlibs/cq/personalization/clientlib/personalization/kernel.min.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("\/etc\/segmentation");
+        CQ_Analytics.ClientContextUtils.init("\/etc\/clientcontext\/default", "\/content\/ngaweb\/exhibitions\/2024\/paris\u002D1874\u002Dimpressionist\u002Dmoment");
+
+        
+    });
+</script>
+</div>
+
+     </div>
+      
+     <div id="top">
+        <!-- skip main navigation -->
+        <span><a id="skipnav" href="#main">Skip to Main Content</a></span>
+        <!-- header -->
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+<!-- global announcement -->
+<section id="announcement-wrap" class="header-row default">
+	<div class="announcement parbase">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var pathname = window.location.pathname;
+    var lastInd = pathname.lastIndexOf("/");
+    pathname = pathname.substring(0, lastInd);
+
+    var httpRequest;
+    var baseURL = "/content/ngaweb/jcr:content/announcement";
+    var myurl = baseURL + '.text' + '.json';
+
+    //console.log(encodeURI(myurl) + " <br> " + myurl);
+    myurl = encodeURI(myurl);
+    var htmlText;
+
+
+
+
+    jQuery(document).ready(function() {
+        var cookie = nga.utils.getCookie("showAnnouncement");
+        if (cookie == null) {
+          jQuery.ajax({
+
+              url: myurl,
+              type: "GET",
+              dataType: "json",
+              cache: true,
+              success: function(data, status) {
+
+                  if (status == "success") {
+                      //console.log("data: " +  data);
+                      var objJSON = data;
+                      var isHomePg =  false;
+                      var tempAnnouncement  = objJSON.announcement;
+
+                      if ((tempAnnouncement != null) && (tempAnnouncement != "")) {
+                          document.getElementById("announcement").innerHTML = "<p class=\"announcement-icon\"><svg class=\"icon icon-lg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#icon-notice\"></use></svg> <span class=\"sr-only\">Notice:</span></p><p class=\"announcement-text\">" + tempAnnouncement +"</p><button class=\"announcement-close btn-custom\"><svg class=\"icon icon-lg\" aria-hidden=\"true\" focusable=\"false\"><use xlink:href=\"#icon-close\"></use></svg><span class=\"sr-only\">Dismiss Notice</span></button>";
+                          jQuery("#announcement .announcement-close").one("click", function() {
+                            jQuery("#announcement").hide();
+                            nga.utils.setCookie("showAnnouncement", "false", 0);
+                          });
+
+                      }
+
+
+                   } else {
+                      console
+                              .log("ajax response failed in function mycallback");
+                  }
+
+
+              }
+
+              });
+            }
+        });
+</script>
+<div id="announcement" class="header-row-inner"><!--  dynamic content --></div>
+</div>
+
+</section>
+<!-- header -->
+<header>
+  <div id="header-wrap" class="header-row default">
+    <div id="header" class="header-row-inner">
+      <div class="header-col branding">
+        <a href="//www.nga.gov" aria-label="National Gallery of Art">
+          <svg class="site-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 70">
+            <circle cx="21.3" cy="21.3" r="21.3" class="site-logo-min"/>
+            <path d="M24.3 10.2c1.3 1.1 1.4 1.6 1.4 10.3L16.9 11l-1.2-1.5h-5.5l.1 11.5v.2c0 9.5 0 10.2-1.4 11.1v.5h8.9v-.5c-1.3-1.1-1.4-1.6-1.4-10.8l6.8 7.3 3.4 3.9h4.7l.3-13c.1-7.9 0-8.6 1.5-9.7v-.3h-8.9v.5z" class="site-logo-min"/>
+            <path d="M39.5 33.2c2.3 0 3.7-1.1 4.5-3l.4 2.7h7.3v-.5c-1.1-1-1.2-1.7-1.2-7.3v-8.8l-.1-.1-2.8 1.8a9.8 9.8 0 0 0-5.6-1.6c-4.3 0-8.6 3.2-8.6 9.3 0 4.2 2.7 7.5 6.1 7.5zm3.3-12.5 1.2.2v7.6l-.7.1c-1.7 0-2.9-1.3-2.9-3.8 0-2.7 1.2-4.1 2.4-4.1zm10.8 7.1c0 3.9 2.1 5.4 5.6 5.4 2 0 3.4-.5 4.7-1.1l.3-4.4v-.1a4 4 0 0 1-2.1.9c-1 0-1.5-.5-1.5-1.9V21h3.8v-4.3h-3.8v-5h-.3a66.7 66.7 0 0 1-8.1 6v3.4h1.5v6.7zm20.9 4.7c-1.1-1-1.2-1.7-1.2-7.3v-8.4h-8.1v.5c1.1 1 1.2 1.7 1.2 7.3v.5c0 5.6-.1 6.5-1.2 7.3v.6h9.3v-.5zm-4.8-16.7c2.3 0 4.1-1.6 4.1-3.7S72.3 8.5 70 8.5s-4.1 1.6-4.1 3.7c0 1.9 1.3 3.6 3.8 3.6zM84 33.4c4.8 0 8.9-3.4 8.9-8.6S89 16 84.1 16s-8.9 3.4-8.9 8.6c0 5.5 4.1 8.8 8.8 8.8zm0-12.9c1.4 0 2 1.6 2 4.4 0 3.1-.7 4.2-1.7 4.2-1.4 0-2-1.6-2-4.4-.1-3 .7-4.2 1.7-4.2zm27.2 4.6v-3.5c0-3.3-1.2-5.2-4.5-5.2a5.2 5.2 0 0 0-4.7 3.2h-.1v-2.8h-8.1v.5c1.1 1 1.2 1.7 1.2 6.8v1.1c0 5.6-.1 6.5-1.2 7.3v.5h8.9v-.5c-.7-.7-.8-1.7-.8-7v-2.7c0-1.3.6-1.7 1.4-1.7.7 0 1.3.5 1.3 1.7v2.7c0 5.2-.1 6.3-.8 7v.5h8.9v-.5c-1.4-1-1.5-1.8-1.5-7.4zm18.9.1v-8.8l-.1-.1-2.9 1.7a9.8 9.8 0 0 0-5.6-1.6c-4.3 0-8.6 3.2-8.6 9.3 0 4.3 2.6 7.6 6.1 7.6 2.3 0 3.7-1.1 4.5-3l.4 2.7h7.3v-.5c-1-1-1.1-1.8-1.1-7.3zm-6.6 3.4-.7.1c-1.7 0-2.9-1.3-2.9-3.8 0-2.8 1.2-4.2 2.4-4.2l1.2.2v7.7zm17.6 3.9c-1.1-1-1.2-1.7-1.2-7.2V9.7h-8v.5c1.1 1 1.2 1.7 1.2 7.2v8c0 5.5-.1 6.3-1.2 7.2v.4h9.3l-.1-.5zM24.3 52.6c2.7.4 3.1.9 3.1 2.6v2.7c0 1.5-.1 2.2-.7 2.9a7.9 7.9 0 0 1-5.5 1.9c-5.4 0-9.3-4.4-9.3-11.2 0-6.2 3.8-10.9 9-10.9 4.2 0 7.2 2.2 8.5 5.9h.5v-.9c0-1.5 0-2.7.2-3.6-2.5-1.3-5-2.5-8.8-2.5-6.7 0-13 5.3-13 12.6 0 7.1 5.7 11.6 12.2 11.6a19 19 0 0 0 10-3.4c-.2-.4-.2-1.5-.2-2.2v-2.8c0-1.9.4-2.4 1.3-2.7v-.5h-7.3v.5zm24.1 7.2V47.4l-.1-.1-2.2 1.3a8.4 8.4 0 0 0-4.4-1.3 8.4 8.4 0 0 0-8.1 8.8c0 4.5 3.3 7.4 6.7 7.4 2.2 0 3.9-1.1 5.5-3.2L46 63h4.3v-.5c-1.5-.4-1.9-.7-1.9-2.7zm-2.7-.5c-1.5 2-2.9 3-4.4 3-2.5 0-4.4-2.4-4.4-6.6 0-4.4 2.3-7.3 5.1-7.3 1.5 0 2.6.4 3.8 1.3l-.1 9.6zm10.3.5V39.7h-4.7v.5c1.6.4 2 .7 2 2.6v17.1c0 1.9-.3 2.2-2 2.6v.5H58v-.5c-1.6-.4-2-.7-2-2.7zm7.9 0V39.7h-4.7v.5c1.6.4 2 .7 2 2.6v17.1c0 1.9-.4 2.2-2.1 2.6v.5H66v-.5c-1.8-.4-2.1-.7-2.1-2.7zm18.2-5.2c-.2-4.7-2.9-7.4-6.8-7.4-4.1 0-7.8 3.3-7.8 8.5 0 5 3.4 7.8 7.8 7.8 2.1 0 4.2-.7 5.9-2l.1-2.4-.2-.1c-1.5 2.4-3.4 3.5-5.3 3.5-3.3 0-5.3-3.4-5.3-7.7v-.3l11.6.1zM75 48c2.8 0 3.7 2.6 3.8 5.7h-8.3c.4-3.4 2-5.7 4.5-5.7zm13.4 2.7v-3h-4.7v.5c1.7.5 2 .8 2 2.7V60c0 1.9-.3 2.2-2 2.6v.4h6.8v-.5c-1.6-.4-2.1-.7-2.1-2.6v-8.6c1.8-1.1 2.7-1.1 4.8-1v-2.7l-.8-.1c-.9.1-1.8.9-4 3.2zm17.2-2.6c1.3.2 1.6.6 1.6 1.2 0 .4-.1.7-.4 1.5l-3.7 9.3-3.8-9.4-.3-1.3c0-.6.4-1 1.6-1.2v-.5h-6v.5c.8.2 1.1.5 1.8 2.3l5.3 12.7-1.1 2.4c-1.1 2.4-1.8 3.2-3.9 3.9v.5h3.6c.2-1 .6-1.7 1.5-4l6.5-15.4c.8-1.7 1.2-2.1 2.4-2.4v-.5h-5l-.1.4zm16.4-1a8.4 8.4 0 0 0-8.2 8.3c0 4.8 4.2 8.1 8.2 8.1 4 0 8.2-3.4 8.2-8.3 0-4.7-4.1-8.1-8.2-8.1zm0 15.6c-3.2 0-5-3.3-5-7.6 0-4.2 2.2-7 5-7 3.2 0 5 3.3 5 7.6.1 4.1-2.1 7-5 7zm11.7-15h-2v1h2V60c0 1.9-.3 2.2-2 2.6v.4h6.8v-.5c-1.6-.4-2.1-.7-2.1-2.6V48.6h3.8v-1h-3.8v-3.4c0-2.8 1.2-3.3 2.4-3.3.8 0 1.8.4 3.2 1h.1l.3-2.2c-.8-.2-1.7-.4-2.5-.4-3.2.1-6.1 3.3-6.2 8.4zM165 60l-7-16.5-1.7-4.2h-1.1l-1.8 4.2-6.9 15.3c-1.4 2.9-1.7 3.4-2.8 3.7v.5h5.5v-.5c-1.5-.3-2-.6-2-1.2s.4-1.5.9-2.5l1.6-3.7h10.2l1.8 4.4c.3.7.5 1.3.5 1.7 0 .6-.5 1-2 1.2v.5h7v-.5c-1.1-.1-1.5-.7-2.2-2.4zm-14.8-5.9 4.7-10.6 4.4 10.6h-9.1zm22-3.4v-3h-4.7v.5c1.7.5 2 .8 2 2.7V60c0 1.9-.2 2.3-1.3 2.6v.4h6v-.5c-1.6-.4-2.1-.7-2.1-2.6v-8.6c1.8-1.1 2.7-1.1 4.8-1v-2.7l-.8-.1c-1 .1-1.8.9-3.9 3.2zm14.7 9.9c-1 1.3-1.6 1.8-2.5 1.8-1.1 0-1.7-.9-1.7-2.8v-11h4.3v-1h-4.3V44h-.3a17.7 17.7 0 0 1-4.1 4.1v.5h1.6v10.8c0 3.2 2.1 3.9 4.1 3.9.9 0 2.3-.4 3-.9l.2-1.7-.3-.1z"/>
+          </svg>
+         </a>
+        <button class="btn-menu-toggle menu-toggle">
+          <span class="btn-content">
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+            <span class="sr-only">Navigation Menu</span>
+          </span>
+        </button>
+      </div>
+      <div class="header-col navigation">
+        <div class="nav-utilities">
+          <span class="fees">
+  <a href="/visit.html">
+    <svg class="icon icon-sm" aria-hidden="true" focusable="false">
+      <use xlink:href="#icon-ticket"></use>
+    </svg> Admission is always free</a>
+</span>
+
+          <span class="hours">
+          <div class="open">
+  <svg class="icon icon-sm" aria-hidden="true" focusable="false">
+    <use xlink:href="#icon-clock"></use>
+  </svg> <span class="abbreviate">Open today: </span>10:00  to 5:00 
+
+</div>
+
+          </span>
+          <span class="directions">
+            <a class="directions" target="_blank" href="https://www.google.com/maps/place/Constitution+Ave+%26+6th+St/@38.892068,-77.019911,787m/data=!3m1!1e3!4m2!3m1!1s0x89b7b7851f5a1f1b:0x7efed8ff4940062b?hl=en">
+              <svg class="icon icon-sm" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-pin"></use>
+              </svg> Directions
+            </a>
+           </span>
+           <span class="artle">
+            <a class="artle-btn" href="/content/artle.html">
+              <svg class="icon icon-sm" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-smartphone"></use>
+              </svg> Play Artle
+            </a>
+           </span>
+        </div>
+        <nav class="nav nav-default">
+          <div class="nav-menu">
+            <div class="nav-menu-scroller">
+                
+
+
+<ul class="menu">
+  
+  <li>
+      <a class="item" href="/visit.html">Visit</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="/visit.html">Visit</a></li>
+          
+            <li class="subitem "><a href="/visit/getting-here.html">Getting Here</a></li>
+          
+            <li class="subitem "><a href="/visit/accessibility.html">Accessibility</a></li>
+          
+            <li class="subitem "><a href="/visit/tours-and-guides.html">Tours, Guides &amp; Maps</a></li>
+          
+            <li class="subitem "><a href="/visit/food-drink.html">Food &amp; Drink</a></li>
+          
+            <li class="subitem "><a href="/visit/shops.html">Gallery Shops</a></li>
+          
+            <li class="subitem "><a href="/visit/visitor-policies.html">Visitor Policies</a></li>
+          
+            <li class="subitem last"><a href="/visit/ice-rink.html">Ice Rink</a></li>
+          
+      </ul>
+  </li>
+  
+  <li>
+      <a class="item" href="/collection.html">Collection</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="/collection.html">Collection</a></li>
+          
+            <li class="subitem "><a href="/collection/highlights.html">Highlights</a></li>
+          
+            <li class="subitem "><a href="/collection/collection-search.html">Search the Collection</a></li>
+          
+            <li class="subitem "><a href="/collection/artists-search.html">Artists Search</a></li>
+          
+            <li class="subitem "><a href="/collection/recent_acquisitions.html">Acquisition Highlights</a></li>
+          
+            <li class="subitem "><a href="/stories.html">Stories</a></li>
+          
+            <li class="subitem last"><a href="/games.html">Games</a></li>
+          
+      </ul>
+  </li>
+  
+  <li>
+      <a class="item" href="/exhibitions.html">Exhibitions</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="/exhibitions.html">Exhibitions</a></li>
+          
+            <li class="subitem "><a href="/exhibitions/current.html">Current</a></li>
+          
+            <li class="subitem "><a href="/exhibitions/special.html">Special Installations</a></li>
+          
+            <li class="subitem "><a href="/exhibitions/upcoming.html">Upcoming</a></li>
+          
+            <li class="subitem "><a href="/exhibitions/ontour.html">On Tour</a></li>
+          
+            <li class="subitem last"><a href="/exhibitions/past.html">Past</a></li>
+          
+      </ul>
+  </li>
+  
+  <li>
+      <a class="item" href="/calendar.html">Calendar</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="/calendar.html">Calendar</a></li>
+          
+            <li class="subitem "><a href="/calendar/film-programs.html">Films</a></li>
+          
+            <li class="subitem "><a href="/calendar/concerts.html">Performances</a></li>
+          
+            <li class="subitem "><a href="/calendar/lectures.html">Talks</a></li>
+          
+            <li class="subitem "><a href="/calendar/guided-tours.html">Guided Tours</a></li>
+          
+            <li class="subitem "><a href="/calendar/community-events.html">After Hours</a></li>
+          
+            <li class="subitem "><a href="/calendar/family-activities.html">Fun for Kids</a></li>
+          
+            <li class="subitem "><a href="/calendar/festivals.html">Festivals</a></li>
+          
+            <li class="subitem last"><a href="/calendar/workshops.html">Workshops</a></li>
+          
+      </ul>
+  </li>
+  
+  <li>
+      <a class="item" href="/learn.html">Learn</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="/learn.html">Learn</a></li>
+          
+            <li class="subitem "><a href="/learn/teachers.html">Teachers</a></li>
+          
+            <li class="subitem "><a href="/learn/families.html">Families</a></li>
+          
+            <li class="subitem "><a href="/learn/teens.html">Teens</a></li>
+          
+            <li class="subitem "><a href="/learn/adults.html">Adults</a></li>
+          
+            <li class="subitem "><a href="/learn/learningresources.html">Learning Resources</a></li>
+          
+            <li class="subitem "><a href="/music-programs.html">Music Programs</a></li>
+          
+            <li class="subitem last"><a href="/film-programs.html">Film Programs</a></li>
+          
+      </ul>
+  </li>
+  
+  <li>
+      <a class="item" href="/conservation.html">Conservation</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="/conservation.html">Conservation</a></li>
+          
+            <li class="subitem "><a href="/conservation/projects.html">Projects</a></li>
+          
+            <li class="subitem "><a href="/conservation/publications.html">Publications</a></li>
+          
+            <li class="subitem last"><a href="/conservation/resources.html">Resources</a></li>
+          
+      </ul>
+  </li>
+  
+  <li>
+      <a class="item" href="/research.html">Research</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="/research.html">Research</a></li>
+          
+            <li class="subitem "><a href="/research/casva.html">The Center</a></li>
+          
+            <li class="subitem "><a href="/research/publications.html">Publications</a></li>
+          
+            <li class="subitem "><a href="/research/make-an-appointment.html">Make an Appointment</a></li>
+          
+            <li class="subitem "><a href="/research/gallery-archives.html">Archives</a></li>
+          
+            <li class="subitem "><a href="/research/library.html">Library</a></li>
+          
+            <li class="subitem last"><a href="/research/online-editions.html">NGA Online Editions</a></li>
+          
+      </ul>
+  </li>
+  
+  <li>
+      <a class="item" href="/support.html">Support</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="/support.html">Support</a></li>
+          
+            <li class="subitem "><a href="/support/donate-now.html">Donate Now</a></li>
+          
+            <li class="subitem "><a href="/support/national.html">National Membership</a></li>
+          
+            <li class="subitem "><a href="/support/the-circle.html">Circle Membership</a></li>
+          
+            <li class="subitem "><a href="/support/leadership-groups.html">Leadership Groups</a></li>
+          
+            <li class="subitem "><a href="/support/planned-giving.html">Planned Giving</a></li>
+          
+            <li class="subitem "><a href="/support/major-giving.html">Major Giving</a></li>
+          
+            <li class="subitem last"><a href="/support/gifts-of-art.html">Gifts of Art</a></li>
+          
+      </ul>
+  </li>
+  
+  <li>
+      <a class="item" href="//shop.nga.gov">Shop</a>
+      <ul class="submenu">
+          <li class="subitem subitem-mobile"><a href="//shop.nga.gov">Shop</a></li>
+          
+            <li class="subitem "><a href="//shop.nga.gov/books.html">Books</a></li>
+          
+            <li class="subitem "><a href="//shop.nga.gov/jewelry.html">Jewelry</a></li>
+          
+            <li class="subitem "><a href="//shop.nga.gov/apparel-accessories.html">Apparel &amp; Accessories</a></li>
+          
+            <li class="subitem "><a href="//shop.nga.gov/kids.html">Kids</a></li>
+          
+            <li class="subitem last"><a href="//customprints.nga.gov/">NGA Custom Prints</a></li>
+          
+      </ul>
+  </li>
+  
+  <li class="item-artle"><a class="item" href="/content/artle.html"><svg class="icon" aria-hidden="true" focusable="false"><use xlink:href="#icon-smartphone"></use></svg> Play Artle</a></li>
+</ul>
+
+            </div>
+            <div class="nav-menu-actions">
+              <button class="btn-menu-back">
+                <span class="btn-content">
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="#icon-arrow-left"></use>
+                  </svg>
+                  <span class="sr-only">Previous Menu</span>
+                </span>
+              </button>
+              
+
+
+  <form name="myform" id="myform" class="nga-site-search nga-form-group" autocomplete="off" action="/global-site-search-page.html">
+      <input type="text" id="searchterm" name="searchterm" class="nga-site-search-field input-sm" aria-label="Search" placeholder="Search"
+        maxlength="140"/>
+      <button type="submit" class="nga-search-btn btn-sm">
+        <svg class="icon" aria-hidden="true" focusable="false">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </button>
+  </form>
+  <script type="text/javascript">
+    jQuery(function() {
+      /*
+      $( "#searchterm" ).autocomplete({
+        source: function( request, response ) {
+        $.ajax({
+          url: "/content/ngaweb/global-site-search-page.json",
+          dataType: "json",
+          data: {
+          term: request.term.toLowerCase()
+          },
+          success: function( data ) {
+                      var result=[];
+                        for(var key in data[1]){
+                          result[key] = decodeURIComponent(data[1][key]);
+                        }
+              response(result);
+          }
+        });
+        }
+      });
+
+      $( "#searchterm" ).click(function() {
+          this.value = '';
+      });
+      */
+
+      $( ".nga-search-btn" ).click(function() {
+          $(this).closest("form").submit();
+      });
+    });
+  </script>
+
+              <button class="btn-menu-toggle">
+                <span class="btn-content">
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use xlink:href="#icon-close"></use>
+                  </svg>
+                  <span class="sr-only">Hide Menu</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- subheader -->
+  <div id="subheader-wrap" class="header-row">
+    <div id="subheader" class="header-row-inner">
+      
+        <div class="header-col breadcrumbs">
+        <a href="/index.html">Home</a><span>&gt;</span><a href="/exhibitions.html">Exhibitions</a><span>&gt;</span><a href="/exhibitions/2024.html">2024</a><span>&gt;</span><a href="/exhibitions/2024/paris-1874-impressionist-moment.html">Paris 1874: The Impressionist Moment</a>
+        </div>
+      
+
+      <!-- search form -->
+      <div class="header-col searchform">
+        
+
+
+  <form name="myform" id="myform" class="nga-site-search nga-form-group" autocomplete="off" action="/global-site-search-page.html">
+      <input type="text" id="searchterm" name="searchterm" class="nga-site-search-field input-sm" aria-label="Search" placeholder="Search"
+        maxlength="140"/>
+      <button type="submit" class="nga-search-btn btn-sm">
+        <svg class="icon" aria-hidden="true" focusable="false">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+        <span class="sr-only">Search</span>
+      </button>
+  </form>
+  <script type="text/javascript">
+    jQuery(function() {
+      /*
+      $( "#searchterm" ).autocomplete({
+        source: function( request, response ) {
+        $.ajax({
+          url: "/content/ngaweb/global-site-search-page.json",
+          dataType: "json",
+          data: {
+          term: request.term.toLowerCase()
+          },
+          success: function( data ) {
+                      var result=[];
+                        for(var key in data[1]){
+                          result[key] = decodeURIComponent(data[1][key]);
+                        }
+              response(result);
+          }
+        });
+        }
+      });
+
+      $( "#searchterm" ).click(function() {
+          this.value = '';
+      });
+      */
+
+      $( ".nga-search-btn" ).click(function() {
+          $(this).closest("form").submit();
+      });
+    });
+  </script>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+          
+        
+        <div id="main">
+          
+
+
+
+
+
+
+<div class="banner_parsys parsys">
+</div>
+
+
+
+
+<div class="exhibitiondata exhibition">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="herobanner">
+	<div class="herobanner-content hero--default hero--light">
+        
+    	<div class="herobanner-image image-center image-bottom" style="background-image: url('/content/dam/ngaweb/exhibitions/herobanners/2024/hero-auguste-renoir-la-loge.jpg');">
+        	<img src="/content/dam/ngaweb/exhibitions/herobanners/2024/hero-auguste-renoir-la-loge.jpg" class="sr-only" alt="Impressionist painting, Edouard Manet (artist) French, 1832 - 1883, The Railway, 1873, oil on canvas">
+          
+          
+          <div class="scrim-gradient"></div>
+          
+    	</div>
+        
+      <div class="herobanner-text-wrap">
+        <div class="herobanner-text hero-heading">
+          	<!-- exhibition title -->
+              
+              <h1 class="hero-heading exhibition--title">Paris 1874: The Impressionist Moment</h1>
+              
+      	</div>
+      </div>
+	</div>
+</div>
+
+<div id="container" class="col-one">
+    <div id="content">
+        <div class="content-main full">
+            <div class="exhibition-intro">
+                <div class="section-row">
+                  <div class="section-col">
+                    <!-- exhibition status -->
+                    
+                    <p class="category">Now on View</p>
+                    
+                  </div>
+				          <div class="section-row section-row-flex">
+                  	<div class="section-col exhibition--schedule">
+                      <h2 class="heading-mimic-h4">
+                        <span class="exhibition--dates">September 8, 2024&nbsp;&ndash;&nbsp;January 19, 2025</span> <br />
+                        <span class="exhibition--location">West Building, Main Floor</span>
+                      </h2>
+                  	</div>
+                    
+          	     </div>
+                
+            </div>
+
+			<!-- customized content -->
+            <div class="parmain parsys"><div class="text parbase section">
+<p>On this page: <a href="#intro">Overview</a>, <a href="#art">Explore Selected Works</a>, <a href="#deeper">Dive Deeper</a>, <a href="#book">Catalog</a>, <a href="#events">Attend Exhibition Events</a>, <a href="#here">Also on View</a>, and <a href="#faq">FAQs</a><br>
+</p>
+</div>
+<div class="notices section"><div class="notices-row-inner">
+  
+
+  
+
+  
+  <div class="ngatile">
+    <article>
+      <span class="ngatile-link">
+        <div class="ngatile-image" style="background-image:url('/content/dam/ngaweb/visit/website-icons/line-queue-icon.svg')"></div>
+        <div class="ngatile-content">
+          <p><i><br />
+While this exhibition is not ticketed, we anticipate that it will be popular. You may need to join a line on busier days. Weekends tend to be most crowded. <b><a href="#faq">There are no exhibition tours</a></b> and independently led <a href="#faq">groups</a> are not permitted.</i></p>
+
+        </div>
+      </span>
+    </article>
+  </div>
+
+
+  
+</div>
+</div>
+<div class="text parbase section">
+<p><span class="rte-introtxt"><a id="intro"></a>How did impressionism begin? Discover the origins of the French art movement in a new look at the radical 1874 exhibition considered the birth of modern painting.<br>
+</span></p>
+<p><span class="rte-introtxt">A remarkable presentation of 130 works includes a rare reunion of many of the paintings first featured in that now-legendary exhibition. Revisit beloved paintings by&nbsp;<a href="/collection/artist-info.1115.html">Paul Cézanne</a>, <a href="/collection/artist-info.1726.html">Claude Monet</a>,&nbsp;<a href="/collection/artist-info.1733.html">Berthe Morisot</a>,&nbsp;and <a href="/collection/artist-info.1791.html">Camille Pissarro</a> and meet their lesser-known contemporaries. See the art norms they were rebelling against and learn what political and social shifts sparked their new approach to art.</span></p>
+<p><span class="rte-introtxt">Don’t miss the unique chance to immerse yourself in the dynamic Parisian art scene of 1874—we are the only American stop for this historic exhibition.</span><br>
+</p>
+</div>
+<div class="columnheader section">
+
+
+
+
+    
+
+
+    <h2 id="art">Explore Selected Works</h2>
+
+
+</div>
+<div class="slideshowcarousel section">
+
+
+
+
+
+
+
+
+
+
+<div class="slideshow-carousel slideshow"
+  data-view="grid"
+  data-pagesize="42"
+  data-columns="4">
+    
+    <div class="slides">
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/edgar-degas-at-the-races-in-the-countryside.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/edgar-degas-at-the-races-in-the-countryside.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Edgar Degas,&nbsp;<i>At the Races in the Countryside</i>, 1869, oil on canvas, Museum of Fine Arts, Boston. 1931 Purchase Fund, Photograph © 2023 Museum of Fine Arts, Boston&nbsp;</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/jean-leon-gerome-leminence-grise.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/jean-leon-gerome-leminence-grise.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Jean-Léon Gérôme,&nbsp;<i>L’Eminence Grise</i>, 1873, oil on canvas, Museum of Fine Arts, Boston. Bequest of Susan Cornelia Warren. Photograph © 2023 Museum of Fine Arts, Boston</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/claude-monet-impression-soleil-levant.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/claude-monet-impression-soleil-levant.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Claude Monet,&nbsp;<i>Impression, Sunrise</i>, 1872, oil on canvas, Musée Marmottan Monet, Paris, gift of Eugène and Victorine Donop de Monchy, 1940, Inv. 4014. © Musée Marmottan Monet, Paris / Studio Christian Baraja SLB<br>
+</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/auguste-renoir-the-theater-box.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/auguste-renoir-the-theater-box.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Auguste Renoir, <i>The Theater Box</i>, 1874, oil on canvas, The Courtauld, London (Samuel Courtauld Trust) Photo © The Courtauld&nbsp;</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/zacharie-astruc-scene-de-somnambulisme.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/zacharie-astruc-scene-de-somnambulisme.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Zacharie Astruc, <i>Woman Asleep in an Artist's Studio</i>, 1871, watercolor, Collection Musée de l'Opéra de Vichy. Photo: Musée de l'Opéra de Vichy<br>
+</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/felix-bracquemondle-divan-dapres-manet.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/felix-bracquemondle-divan-dapres-manet.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Félix Bracquemond, <i>The Divan</i>, 1867, etching, Samuel Putnam Avery Collection, Print Collection, Miriam and Ira D. Wallach Division of Art, Prints and Photographs, The New York Public Library, Astor, Lenox and Tilden Foundations&nbsp;</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/camille-cabaillot-lassalle-le-salon-de-1874.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/camille-cabaillot-lassalle-le-salon-de-1874.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Camille Cabaillot-Lassalle, <i>The Salon of 1874</i>, 1874, oil on canvas, Paris, Musée d'Orsay, © Musée d’Orsay, dist. RMN-Grand Palais / Sophie Crépy&nbsp;</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/paul-cezanne-la-maison-du-pendu-a-auvers-sur-oise.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/paul-cezanne-la-maison-du-pendu-a-auvers-sur-oise.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Paul Cézanne, <i>House of the Hanged Man, Auvers-sur-Oise</i>, 1873, oil on canvas, Paris, Musée d'Orsay, © Musée d’Orsay, Dist. RMN-Grand Palais / Patrice Schmidt&nbsp;</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/henri-fantin-latour-fleurs-et-objets-divers.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/henri-fantin-latour-fleurs-et-objets-divers.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Henri Fantin-Latour, <i>Still Life with Torso and Flowers</i>, 1874, oil on canvas, Gothenburg Museum of Art, Sweden. Photo: Gothenburg Museum of Art / Hossein Sehatlou&nbsp;</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/auguste-lancon-morts-en-ligne-la-bataille-de-bazeilles.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/auguste-lancon-morts-en-ligne-la-bataille-de-bazeilles.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Auguste Lançon, <i>Dead in Line!</i>, 1873, oil on canvas, Gravelotte, Musée départemental de la Guerre de 1870 &amp; de l'Annexion. On loan from the Musée de la Princerie de Verdun. © Département de la Moselle, MdG1870&amp;A, Rebourg&nbsp;</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/berthe-morisot-le-berceau.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/berthe-morisot-le-berceau.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Berthe Morisot, <i>The Cradle</i>, 1872, oil on canvas, Paris, Musée d'Orsay. © Musée d’Orsay, Dist. RMN-Grand Palais / Patrice Schmidt&nbsp;</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/camille-pissarro-gelee-blanche.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/camille-pissarro-gelee-blanche.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Camille Pissarro, <i>Hoarfrost</i>, 1873, oil on canvas, Paris, Musée d'Orsay&nbsp; Photo: © Musée d’Orsay, Dist. RMN-Grand Palais / Patrice Schmidt<br>
+</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="/content/dam/ngaweb/features/slideshows/paris-1874/jules-breton-la-falaise.jpg">
+            <img src="/content/dam/ngaweb/features/slideshows/paris-1874/jules-breton-la-falaise.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption"><p>Jules Breton, <i>The Cliff</i>, 1874, oil on canvas, Eric Weider Collection<br>
+</p>
+
+              </span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/57b84473-f6f3-4bab-ad88-344bb4d56fb7/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/57b84473-f6f3-4bab-ad88-344bb4d56fb7/full/!400,/0/default.jpg" alt="To our left, a young woman sits facing us on a low stone wall at the base of the vertical, black bars of an iron fence and a young girl stands facing away from us to our right in this horizontal painting. Both have pale skin. The woman looks directly at us with dark eyes as she holds an open book, a closed red fan, and a sleeping brown and white puppy in her lap. Her long auburn hair falls down over her shoulders. Her navy-blue dress is accented with white piping on the skirt, collar, and sleeves, and has three large, white buttons down the front and her black hat is adorned with two red poppies and a daisy. The girl wears a sleeveless white, knee-length dress belted with a marine-blue sash tied in a large bow at her back. The girl’s blond hair is pulled up and tied with a black ribbon. She raises her left hand to grasp the bar of the fence she faces. A bunch of green grapes lies on the low wall to our right. A plume of steam fills much of the space beyond the black fence, which spans the width of the painting and extends off the top edge. A few details can be made out beyond the fence, including a stone-gray building with two wooden doors to our left and a bridge along the right edge."/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Edouard Manet, <em><a href="/collection/art-object-page.43624.html">The Railway</a></em>, 1873, oil on canvas, Gift of Horace Havemeyer in memory of his mother, Louisine W. Havemeyer, 1956.10.1</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/a0d45209-46bf-49c4-a6ba-8c0a1e1ea482/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/a0d45209-46bf-49c4-a6ba-8c0a1e1ea482/full/!400,/0/default.jpg" alt="A pale-skinned girl wearing an arctic-blue ballet costume stands looking at us and almost fills this vertical painting. The scene is painted with blended strokes, giving it a soft, almost blurry look. In pale pink ballet slippers, she stands with her feet in fifth position, so the toes are turned out while her feet are almost parallel, the heel of the front foot touching the toes of the other. Her body faces our left, and she turns her head to look at us with blue eyes. She has delicate, dark brows, rosy cheeks, and full pink lips. Her long honey-brown hair is tied with a sky-blue ribbon like a headband. The fitted bodice of her pale blue dress has a lapis-blue bow at the chest, and the short sleeves tie around the sides of her shoulders. A sash around her middle is also lapis blue. The knee-length tutu has layers of light fabric, and seems to fly up behind her. She wears a black choker necklace and a black bracelet on each wrist. She holds a white object, perhaps a lacy handkerchief, in her right hand at her waist. Her other arm, closer to us, hangs down by her side as she touches the tutu. The background is painted with strokes of spring, sage, and pine green with touches of teal blue. The artist signed and dated the lower right, “A. Renoir. 74.”"/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Auguste Renoir, <em><a href="/collection/art-object-page.1211.html">The Dancer</a></em>, 1874, oil on canvas, Widener Collection, 1942.9.72</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/b4f1920a-2b5d-4c0e-8628-6bf7cad2e0c7/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/b4f1920a-2b5d-4c0e-8628-6bf7cad2e0c7/full/!400,/0/default.jpg" alt="A winged woman has hoisted a young, muscular man up and across one shoulder in this freestanding bronze statue. In this view, the woman runs toward us, her back foot lifted, as she wraps her arms around the man’s thighs. She looks off to our left, her hair swept up. Long, narrow wings slice into the space behind her. Her chest and shoulders are covered with gold armor, and drapery swirls around her legs. The man is nearly nude, covered only with a cloth across his groin. His arms are flung wide, one reaching high in the air and the other holding a broken sword by the woman’s shoulder. His head lolls to one side, his lips parted. A laurel branch lies at the woman’s foot on a small mound textured like a rock. An inscription on the front rim of the base reads “GLORIA VICTIS.”"/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Marius-Jean-Antonin Mercié, <em><a href="/collection/art-object-page.66235.html">Gloria Victis</a></em>, model c. 1874, cast after 1879, bronze, Andrew W. Mellon Fund, 1985.52.1</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/bf6c7c73-82e8-4ef7-8ac8-71920c8eb2b9/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/bf6c7c73-82e8-4ef7-8ac8-71920c8eb2b9/full/!400,/0/default.jpg" alt="From behind a low stone wall, on which a young woman with pale skin sits, we look across a wide, shimmering blue waterway toward a town along the opposite shore, under a pale blue sky with wispy white clouds in this horizontal landscape painting. The caramel-brown, stone wall runs across the lower right corner, into the distance to our right. The woman sits on our side of the wall with her legs angled to our right, and she twists to lean onto her right hand, on our left, as she looks down toward the water. Her brown hair and face are shaded by the pale, shell-pink umbrella she holds in her left hand, to our right. She wears an ankle-length white dress with long sleeves, and a touch of white on the black hat she wears suggests it is decorated with a flower. The waterway seems to be lined with smooth walls like a canal. Ships with black hulls and wooden masts nearly span the passageway and reflect in the surface of the water beyond the woman. The shore across from us is lined with a row of deep green trees in front of a cluster of cream-white buildings with charcoal-gray roofs. More buildings are visible in the distance on our side of the waterway. The scene is loosely painted so many details are difficult to make out, especially in the woman’s face. The artist signed the work in dark paint at the lower center: “B Morisot.”"/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Berthe Morisot, <em><a href="/collection/art-object-page.52192.html">The Harbor at Lorient</a></em>, 1869, oil on canvas, Ailsa Mellon Bruce Collection, 1970.17.48</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/0eb31cfb-ddba-41c2-a0a5-b6b2e41efadf/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/0eb31cfb-ddba-41c2-a0a5-b6b2e41efadf/full/!400,/0/default.jpg" alt="An older woman wearing a long black dress sits reading a book in front of a younger woman wearing cream white, who sits on a couch just beyond, in this vertical portrait painting. The scene is loosely painted with some visible brushstrokes, especially in the furniture, clothing, and room. Both women have pale skin and wear dresses with long sleeves and skirts. To our right, the older woman sits in a chair with a curved back, which runs parallel to the right edge of the canvas. The full skirt of her black dress angles down across the picture, almost spanning the bottom edge of the composition. Her gray hair is pulled back and covered by a black cloth or veil, which falls to her shoulder and blends with her dress. The collar is lined with a white ruffle, and white lace cuffs encircle her wrists. Her face is painted with rosy tones. She looks down at her book with dark eyes, and her rose-pink lips are closed. She wears a gold ring with a light stone on her left ring finger, and the book she holds has a moss-green cover. Her skirt overlaps the younger woman sitting nearby on the couch, which runs along the back wall of the room. The young woman’s knees are angled to our left but she looks slightly back to our right, to gaze down and into the distance with brown eyes. Her skin is paler, but she has lightly flushed cheeks and her petal-pink lips are also closed. An azure-blue bow is tied in her chestnut-brown hair. A few tendrils fall down her back and over one shoulder. Her dress falls loosely over her torso and legs. She wears a gold ring on her left hand and a gold bracelet on that wrist. She fingers a piece of lapis-blue fabric in one hand. The couch behind her has a pattern with stylized flowers or leaves floating within rose-pink ribbons that hang in swags, against a white background. Pillows patterned with ruby red, sky blue, and fawn brown peek out from behind the young woman. A round or oval wooden table with curving legs to our left holds a glass vase with a violet-purple flower, perhaps a hydrangea. A slip of paper or envelope sits on the table next to the vase. The wall behind the couch is fog gray, and the bottom edge of a gold frame hangs behind the young woman."/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Berthe Morisot, <em><a href="/collection/art-object-page.46661.html">The Mother and Sister of the Artist</a></em>, 1869/1870, oil on canvas, Chester Dale Collection, 1963.10.186</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/73f10a5d-7d60-4d8f-916e-1ad76ef25421/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/73f10a5d-7d60-4d8f-916e-1ad76ef25421/full/!400,/0/default.jpg" alt="A tree with emerald-green leaves and laden with white blossoms grows in a dirt field, and is silhouetted against a vibrant blue sky in this horizontal landscape painting. The scene is loosely painted with visible dabs and strokes. The tree takes up most of the left half of the painting, and is closest to us. It casts a dappled shadow onto the ground to our right. A barren tree with gnarled branches grows nearby, in the tree’s shadow. A row of more trees extends in the distance to our right. A narrow dirt path, bordered by low green growth, stretches from the bottom edge of the canvas, to our right of center, into the field. To our left and farther from us, a woman leans over and reaches for the ground. She faces our left in profile and wears a white bonnet, a brown shawl, and a blue skirt. Near the line of trees to our right, a man walks toward the woman. He wears blue pants, a white shirt, a dark cap, and he carries a tan bag over his left shoulder. There are more trees along the horizon, which comes about a third of the way up the composition. The sky above is light gray near the horizon and deepens to vivid blue with fluffy white clouds. The painting is signed and dated in the lower right: “C. Pissarro 1872.”"/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Camille Pissarro, <em><a href="/collection/art-object-page.52195.html">Orchard in Bloom, Louveciennes</a></em>, 1872, oil on canvas, Ailsa Mellon Bruce Collection, 1970.17.51</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/f787246b-badc-4a5a-90b9-16b727c7fea1/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/f787246b-badc-4a5a-90b9-16b727c7fea1/full/!400,/0/default.jpg" alt="We look across a placid pond at sandstone-white buildings with brown and terracotta-red roofs nestled within a grove of green trees and plants in this vertical landscape painting. To our left, the brown roofs cover extensions to the main building, which has the terracotta roof. Between us and the buildings, the remains of a slate-gray wall are partially hidden by a vine or tree. The plants in front of the buildings are created with short daubs of yellow and green with touches of blue. The pond or other small body of water close to us spans the lower width of the canvas. The plants are reflected in the water's smooth surface. The trees to our right and behind the house have olive-green trunks stretching beyond the top edge of the composition. Their leaves blend together to fill the space next to and behind the house with a patchwork of shades of emerald, pine, and celery green. These greens are layered with short, angled strokes over smoother patches, and they fill the upper third of the composition. Patches of orange and a slice of azure-blue sky are visible among the leaves on the left side over the brown roofs. The artist has signed and dated the painting in the lower left corner, “P. Cezanne 73.”"/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Paul Cezanne, <em><a href="/collection/art-object-page.46577.html">House of Père Lacroix</a></em>, 1873, oil on canvas, Chester Dale Collection, 1963.10.102</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/ef0194d2-ac69-424a-a7aa-fe6a1c6cfe79/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/ef0194d2-ac69-424a-a7aa-fe6a1c6cfe79/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Eugène Boudin, <em><a href="/collection/art-object-page.66472.html">Beach House with Flags at Trouville</a></em>, c. 1865, watercolor over graphite, Collection of Mr. and Mrs. Paul Mellon, 1985.64.74</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/a3465d2b-240d-4f93-871f-06c1760e5c67/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/a3465d2b-240d-4f93-871f-06c1760e5c67/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Edouard Manet, <em><a href="/collection/art-object-page.71557.html">Polichinelle</a></em>, 1874, lithograph in black hand-colored with gouache and watercolor on wove paper, Gift (Partial and Promised) of Malcolm Wiener, in Honor of the 50th Anniversary of the National Gallery of Art, 1990.65.1</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/64e0f3d9-0332-47f3-b1a0-afc263306493/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/64e0f3d9-0332-47f3-b1a0-afc263306493/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Berthe Morisot, <em><a href="/collection/art-object-page.164943.html">At the Edge of the Forest (Edma and Jeanne)</a></em>, c. 1872, watercolor and graphite on paper, Collection of Mr. and Mrs. Paul Mellon, 2014.18.33</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/67379c7a-3255-40a9-8716-13af1c46356a/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/67379c7a-3255-40a9-8716-13af1c46356a/full/!400,/0/default.jpg" alt="A densely packed crowd of men and women, all of them with pale skin and most of them wearing black, stand in a theater lobby beneath a mezzanine level that runs close to the top edge of the composition in this horizontal painting. Because the crowd spans the width of the composition, the first impression is of a mass of deep black stretching across the canvas. Slowly, individual faces and poses become evident. Five of the women wear black, oval masks that cover their eyes and noses, and one more mask has fallen onto the rust-red floor below. Two women, wearing bright white and colorful clothing, engage some of the men in conversation. A man cropped by the left edge of the painting wears the green, red, and gold costume and pointed cap of a court jester. Two gold and glass wall sconces hang on the cream-colored wall behind the crowd, one near each top corner. The space within the mezzanine level above is painted loosely so details are difficult to make out, but a pair of legs clad in black britches and white stockings seems to stand with ankles crossed at the top center. A leg wearing a red, high-heeled ankle boot dangles outside of the railing to the right. The brushstrokes are loose throughout. The artist’s signature appears on a piece of discarded paper on the floor near the lower right corner: “Manet.”"/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Edouard Manet, <em><a href="/collection/art-object-page.61246.html">Masked Ball at the Opera</a></em>, 1873, oil on canvas, Gift of Mrs. Horace Havemeyer in memory of her mother-in-law, Louisine W. Havemeyer, 1982.75.1</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/51c334c8-06df-4ef4-ba3a-2589b09a3e5a/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/51c334c8-06df-4ef4-ba3a-2589b09a3e5a/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Eugène Boudin, <em><a href="/collection/art-object-page.66474.html">Ladies and Gentlemen on the Beach, in Two Registers</a></em>, c. 1865, watercolor over graphite, Collection of Mr. and Mrs. Paul Mellon, 1985.64.76</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/1da48f73-a783-4680-9434-6a7b9d6c4e4c/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/1da48f73-a783-4680-9434-6a7b9d6c4e4c/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Eugène Boudin, <em><a href="/collection/art-object-page.52286.html">Three Women at Trouville</a></em>, c. 1865, watercolor and graphite on laid paper, Ailsa Mellon Bruce Collection, 1970.17.142</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/2ad3bda2-f1ab-4302-87a9-bd1cc2f8c4e4/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/2ad3bda2-f1ab-4302-87a9-bd1cc2f8c4e4/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Edouard Manet, <em><a href="/collection/art-object-page.39035.html">Line in Front of the Butcher Shop (Queue devant la boucherie)</a></em>, 1870, etching on wove paper, Rosenwald Collection, 1950.16.100</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/8748e085-ad90-4c08-b1b4-51147ff579b3/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/8748e085-ad90-4c08-b1b4-51147ff579b3/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Edouard Manet, Lemercier & Cie, <em><a href="/collection/art-object-page.8683.html">Civil War (Guerre civile)</a></em>, 1871, lithograph on chine collé, Rosenwald Collection, 1943.3.5758</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/b98ed8df-68aa-420e-a1be-fc271b315879/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/b98ed8df-68aa-420e-a1be-fc271b315879/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Alphée Dubois, <em><a href="/collection/art-object-page.177458.html">The Arcadian Shepherds (Et in Arcadia ego) [obverse]</a></em>, 1874, gilded copper, Corcoran Collection, 2015.19.3970.a</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/04af9f1a-5802-476b-a6da-5cedbb4baae6/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/04af9f1a-5802-476b-a6da-5cedbb4baae6/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Félix Bracquemond, <em><a href="/collection/art-object-page.57860.html">The Road Leading to Bellevue (Le Chemin montant à Bellevue)</a></em>, 1873, etching on Japan paper, Rosenwald Collection, 1980.45.210</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/80f79af5-ddab-46eb-9515-c8096b0cf9b2/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/80f79af5-ddab-46eb-9515-c8096b0cf9b2/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Giuseppe De Nittis, <em><a href="/collection/art-object-page.150387.html">The Dancer Holoke-GO-Zen</a></em>, 1873, etching, drypoint, and roulette on laid paper, Ailsa Mellon Bruce Fund, 2010.7.1</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/fd9464d1-c739-429a-9466-afd1c9e5bc2d/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/fd9464d1-c739-429a-9466-afd1c9e5bc2d/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Alphée Dubois, <em><a href="/collection/art-object-page.215947.html">1874 Salon Medal for Painting to Louis Priou [reverse]</a></em>, 1874, gilded copper, Corcoran Collection, 2015.19.3970.b</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/d6673e44-13ce-4ff7-a8a7-811474697144/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/d6673e44-13ce-4ff7-a8a7-811474697144/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Edouard Manet, <em><a href="/collection/art-object-page.33391.html">The Barricade (La barricade)</a></em>, 1871, crayon lithograph with scraping on chine collé [proof], Rosenwald Collection, 1946.21.133</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/d88db3a5-dcc2-4d43-b9d4-2c8a180746ce/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/d88db3a5-dcc2-4d43-b9d4-2c8a180746ce/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Maxime Lalanne, <em><a href="/collection/art-object-page.224048.html">A Guard Post  (Un Poste de garde)</a></em>, 1871, etching on Japanese paper, Gift of Carol and James Goodfriend, 2021.113.28</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/f2817a6e-53d5-4f11-a32d-0886942075b7/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/f2817a6e-53d5-4f11-a32d-0886942075b7/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Maxime Lalanne, <em><a href="/collection/art-object-page.224044.html">Avenue de Boulogne</a></em>, 1871, etching on wove paper, Gift of Carol and James Goodfriend, 2021.113.24</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/20067adf-b37b-45fe-aeb5-e7563609f197/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/20067adf-b37b-45fe-aeb5-e7563609f197/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Maxime Lalanne, <em><a href="/collection/art-object-page.224041.html">The Effects of Bombardment (Les Effets du bombardement)</a></em>, 1871, etching and drypoint on Japanese paper, Gift of Carol and James Goodfriend, 2021.113.21</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/0e9f3ca6-c407-4040-bc4e-07eff8550055/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/0e9f3ca6-c407-4040-bc4e-07eff8550055/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Maxime Lalanne, Cadart et Luquet, <em><a href="/collection/art-object-page.224042.html">Le Cavalier, Bastion 63 (The Rider, Bastion 63)</a></em>, 1871, etching on laid paper, Gift of Carol and James Goodfriend, 2021.113.22</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/658b3fbb-c7e4-4598-bee1-ff285ec1abf4/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/658b3fbb-c7e4-4598-bee1-ff285ec1abf4/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Félix Bracquemond, <em><a href="/collection/art-object-page.32654.html">Alphonse Legros</a></em>, 1861, etching on laid paper, Gift of George Matthew Adams in memory of his mother, Lydia Havens Adams, 1946.4.12</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/c094095f-7a78-440e-85e4-e90cb6fb862f/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/c094095f-7a78-440e-85e4-e90cb6fb862f/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Maxime Lalanne, John Constable, <em><a href="/collection/art-object-page.224056.html">Weymouth Bay</a></em>, 1873, etching on laid paper, Gift of Carol and James Goodfriend, 2021.113.36</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/2929fe10-e593-4d40-883f-b94eb0182b2d/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/2929fe10-e593-4d40-883f-b94eb0182b2d/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Félix Bracquemond, <em><a href="/collection/art-object-page.5262.html">Charles Meryon</a></em>, 1854, etching in brown-black and red on laid paper, Rosenwald Collection, 1943.3.2101</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/691d634d-82c6-4302-831a-ceaf1efb85d9/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/691d634d-82c6-4302-831a-ceaf1efb85d9/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Félix Bracquemond, Hans Holbein the Younger, <em><a href="/collection/art-object-page.32719.html">Erasmus</a></em>, 1863, etching on chine collé on wove paper, Gift of Addie Burr Clark, 1946.9.21</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+        <div class="carousel-item" data-path="https://media.nga.gov/iiif/429add4a-0adb-499c-ae5d-bb6e659a521c/full/!740,560/0/default.jpg">
+            <img src="https://media.nga.gov/iiif/429add4a-0adb-499c-ae5d-bb6e659a521c/full/!400,/0/default.jpg" alt=""/>
+            <div class="slide-details">
+              <span class="slide-title">Paris 1874: The Impressionist Moment</span>
+              <span class="slide-subtitle"></span>
+              <span class="slide-caption">
+              <p>Félix Bracquemond, Albert de Balleroy, François Liénard, <em><a href="/collection/art-object-page.132133.html">The Hare (Le Lièvre)</a></em>, 1865 (1872 edition), etching and stipple on wove paper, Ailsa Mellon Bruce Fund, 2005.45.1</p></span>
+              <span class="slide-description"></span>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+
+
+    <button class="btn-grid-preview">See more</button>
+
+
+</div>
+<div class="columnheader section">
+
+
+
+
+    
+
+
+    <h2 id="deeper">Dive Deeper</h2>
+
+
+</div>
+<div class="iframe section">
+<span class="iframe-widescreen ">
+	<iframe src="https://www.youtube.com/embed/FfehaHSdpD0?si=9tgDsZg6isv-GCdF" frameborder="0" allowfulllscreen style="width: 100%;"></iframe>
+</span>
+
+</div>
+<div class="promo-row-wrap parsys section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <span class="">
+        	<div class="promo-row parsys"><div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/stories/1874-birthday-of-impressionism.html">
+	    	<div class="promo-content promo-parallel">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/stories/2024/1874-the-birthday-of-impressionism/card-monet-impression-sunrise.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">stories</p>
+							
+							<h3 class="promo-heading">1874: The Birth of Impressionism</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>Start with this primer on how a landmark exhibition led to the birth of an influential movement. &nbsp;</p>
+
+								
+								
+									<div class="cta-link-btn">Read more</div>
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+
+</div>
+
+        </span>
+    
+
+</div>
+<div class="promo-row-wrap parsys section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <span class="promo-col-half">
+        	<div class="promo-row parsys"><div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/stories/what-is-impressionism-4-things-to-know.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/stories/2024/what-is-impressionism/the_seine_at_giverny_1963.10.180.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">stories</p>
+							
+							<h3 class="promo-heading">What is Impressionism? 4 Things to Know</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>Learn the hallmarks of one of the most recognizable art movements in the world. &nbsp;</p>
+
+								
+								
+									<div class="cta-link-btn">Read more</div>
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="https://www.nga.gov/artle/past-art-games/artle-impressionists.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/promos/2024/promo-artle-paris1874.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">artle</p>
+							
+							<h3 class="promo-heading">Can You Guess Who These Impressionists Are?</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>You will have four chances to guess each artist. We've included some hints. Select skip to jump to the answer.&nbsp;</p>
+
+								
+								
+									<div class="cta-link-btn">Play now</div>
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/features/impressionism.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/features/impressionism/the_japanese_footbridge_1992.9.1.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">theme</p>
+							
+							<h3 class="promo-heading">Impressionism</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>Visit our hub on the movement for more stories, artworks, and educator resources.<br>
+</p>
+
+								
+								
+									<div class="cta-link-btn">Explore</div>
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="https://www.youtube.com/watch?v=N7yr7GjE3c8">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/cards/2024/maxresdefault.jpg');">
+						
+							<span class="video-icon"></span>
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">National Gallery Talk</p>
+							
+							<h3 class="promo-heading">Uncover the Origins of Impressionism</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>Curators Mary Morton and Kimberly Jones discuss the exhibition.</p>
+
+								
+								
+									<div class="cta-link-btn">Watch</div>
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+
+</div>
+
+        </span>
+    
+
+</div>
+<div class="text parbase section">
+<p><a id="book"></a><br></p>
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+			<a href="https://shop.nga.gov/paris-1874-the-impressionist-moment">
+	    	<div class="promo-content promo-content-callout promo-theme-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/promos/2024/promo_cover_paris1874_catalog.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<h3 class="promo-heading">Get the book</h3>
+						
+							<p>Add the catalog for this historic exhibition to your library.<br>
+</p>
+
+						
+						
+							<div class="cta-link-btn">Now available</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+		
+    
+
+</div>
+<div class="columnheader section">
+
+
+
+
+    
+
+
+    <h2 id="events">Attend Exhibition Events</h2>
+
+
+</div>
+<div class="promo-row-wrap parsys section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <span class="promo-col-third">
+        	<div class="promo-row parsys"><div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/calendar/lectures/art-lovers-unite.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/calendar-2/talks/promo-paris-1874-women.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">September 19, 2024 – January 19, 2025</p>
+							
+							<h3 class="promo-heading">Art Lovers Unite!</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p><b>Drop-In Discussions</b><br>
+</p>
+<p>Chat with fellow art lovers. A&nbsp;special meet up for makers and artists occurs on October 17 and a&nbsp;session focusing on trailblazing women occurs on November 3.</p>
+
+								
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/calendar/lectures/exhibitions/paris-1874-impressionist-moment.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/calendar-2/talks/promo-auguste-renoir-the-dancer.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">September 24, 2024 – January 15, 2025</p>
+							
+							<h3 class="promo-heading">Exhibition Overview</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p><b>Talk</b><br>
+</p>
+<p>Start your visit with this 30-minute talk orienting you to the exhibition's themes and highlights. &nbsp;</p>
+
+								
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/calendar/film-programs/art-films-special-screenings/1874-birth-impressionism.html/2024/11/02/1400.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/calendar-2/films/promo-1874-birth-impressionism.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">November 2 and other dates</p>
+							
+							<h3 class="promo-heading">1874, The Birth of Impressionism</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p><b>Art Films and Special Screenings</b></p>
+<p>Produced on the occasion of this exhibition and with the support of Musée d’Orsay and Arte Film, this new documentary takes a hybrid approach to the early story of that radical group of French painters known as the impressionists.&nbsp;</p>
+
+								
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="https://www.nga.gov/calendar/film-programs/color-cinema-impressionist-moment.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/calendar-2/films/promo-voyage-sur-jupiter.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">October 19 – November 30</p>
+							
+							<h3 class="promo-heading">Color, Cinema, and the Impressionist Moment</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p><b>Film Series</b><br>
+</p>
+<p>This series of three film programs examines how the beginnings of cinema shaped and was shaped by the modern world of color.</p>
+
+								
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/calendar/lectures/exhibitions/hybrid-lecture-manet-emile-zola-friendship.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/cards/2024/card-edouard-manet-railway.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">November 3</p>
+							
+							<h3 class="promo-heading">Edouard Manet and Émile Zola: A Portrait of Friendship</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p><b>Hybrid Talk</b><br>
+</p>
+<p>Learn about how the revolutionary creative sensibilities of Edouard Manet and Émile Zola inspired 20th-century artists and writers.<br>
+</p>
+
+								
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/calendar/lectures/exhibitions/impressionism-beyond-paris.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/cards/2024/promo-camille-pissarro-two-women-chatting-sea-st-thomas.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">November 8</p>
+							
+							<h3 class="promo-heading">Impressionism Beyond Paris: A Global Perspective</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>Dive deeper into this exhibition with presentations and discussion that examine the impact of Impressionism beyond the French capital.</p>
+
+								
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/calendar/lectures/exhibitions/paris-1874--spotlighting-women-artists.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/cards/2024/card-morisot-cradle-berceau.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">November 10</p>
+							
+							<h3 class="promo-heading">Paris 1874: Spotlighting Women Artists</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>Join us for a conversation about women artists involved in the impressionist movement and the 1874 Salon where it all began with curators Mary Morton and Kimberly Jones.&nbsp;</p>
+
+								
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/calendar/lectures/the-art-of-looking/edouard-manet-masked-ball-opera-2.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/cards/2024/promo-masked-ball-opera.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">December 6</p>
+							
+							<h3 class="promo-heading">The Art of Looking</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p><b>Virtual Conversation</b><br>
+</p>
+<p>Edouard Manet's&nbsp;<i>Masked Ball at the Opera</i>&nbsp;inspires this one-hour interactive conversation. <br>
+</p>
+
+								
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+
+</div>
+
+        </span>
+    
+
+</div>
+<div class="columnheader section">
+
+
+
+
+    
+
+
+    <h2 id="here">Also on View</h2>
+
+
+</div>
+<div class="promo-row-wrap parsys section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <span class="promo-col-half">
+        	<div class="promo-row parsys"><div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="/exhibitions/2024/library-impressionists-paris.html">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/promos/2024/promo-library-impressionists-paris.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">exhibition</p>
+							
+							<h3 class="promo-heading">In the Library: Life in the Impressionists’ Paris</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>A related exhibition of 40 archival photographs and prints shows the world of the artists and artworks in <i>Paris 1874</i>.</p>
+
+								
+								
+									<div class="cta-link-btn">Read more</div>
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+<div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+		
+    
+			<a href="https://www.nga.gov/collection/locationview.html?sortOrder=LOCATIONVIEW_DEFAULT&roomprfx=M-085&pageSize=30&pageNumber=1&lastFacet=roomprfx">
+	    	<div class="promo-content promo-default">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/promos/2024/promo_impressionistgalleries_paris1874.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<div class="promo-text-col">
+							
+								<p class="category">collection</p>
+							
+							<h3 class="promo-heading">Impressionist Galleries</h3>
+						</div>
+						
+							<div class="promo-text-col">
+								
+									<p>Stroll through our recently reopened galleries featuring paintings by Cassatt, Monet, Renoir, and more.<br>
+</p>
+
+								
+								
+									<div class="cta-link-btn">See the map</div>
+								
+							</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+
+</div>
+
+</div>
+
+        </span>
+    
+
+</div>
+<div class="promo-row-wrap parsys section">
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <span class="">
+        	<div class="promo-row parsys"><div class="promo section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+			<a href="/visit/food-drink/menu-paris-1874-impressionist-moment.html">
+	    	<div class="promo-content promo-content-callout promo-theme-green">
+					<div class="promo-image" style="background-image:url('/content/dam/ngaweb/exhibitions/promos/2024/promo_menu_paris1874.jpg');">
+						
+					</div>
+					<div class="promo-text text">
+						<h3 class="promo-heading">A Taste of Paris</h3>
+						
+							<p>Take a culinary tour through Paris with special, limited-edition menu items inspired by our <i>Paris 1874: The Impressionist Moment</i> exhibition.<br>
+</p>
+
+						
+						
+							<div class="cta-link-btn">Browse the menu</div>
+						
+					</div>
+	      </div>
+			</a>
+    
+		
+    
+
+</div>
+
+</div>
+
+        </span>
+    
+
+</div>
+<div class="text parbase section">
+<p><b><span class="rte-subheading"><a id="faq"></a>Frequently Asked Questions</span></b><br>
+</p>
+<p><b>Why is there a line?<br>
+ </b>To protect the 130 works on view and ensure all audiences the best experience possible, capacity will be limited inside the exhibition space. Please expect to join a line on busier days. Weekends tend to be most crowded.<b><br>
+</b></p>
+<p><b>Are exhibition tours available?</b><br>
+Guided exhibition tours are not available due to capacity limitations. Additionally, independently led tours are not permitted in the exhibition. Groups are welcome to join the exhibition queue but may need to split into smaller groups to view the exhibition. Groups may join our <a href="https://www.nga.gov/calendar/lectures/art-lovers-unite.html">drop-in discussions</a> and <a href="https://www.nga.gov/calendar/lectures/exhibitions/paris-1874-impressionist-moment.html/2024/09/24/1100">exhibition overview lectures</a>.</p>
+<p>We do offer group tours that visit our permanent collection Impressionism galleries:</p>
+<ul>
+<li>For groups: request a <i>French Art: Impressionism to the Early 20th Century</i> tour on the <a href="https://www.nga.gov/visit/schedule-a-group-tour.html">group tour form</a></li>
+<li>For educators: request a <a href="https://www.nga.gov/learn/teachers/school-tours/french-art.html"><i>French Art</i></a> tour on the <a href="https://www.nga.gov/learn/teachers/school-tours/schedule-request.html">school field trip form</a></li>
+</ul>
+<div>More questions? Contact us at <a href="/cdn-cgi/l/email-protection#52243b213b26123c35337c35333d24"><span class="__cf_email__" data-cfemail="5a2c3329332e1a343d3b743d352c">[email&#160;protected]</span></a> or 202.737.4215.<br>
+</div>
+</div>
+<div class="text parbase section">
+<p><a href="more"></a><a id="credits"></a><br>
+&nbsp;</p>
+</div>
+
+</div>
+
+
+        </div>
+
+        <div class="exhibition-credits text">
+            <div class="section-row section-row-flex">
+                <div class="section-col">
+                    
+                    <p class="exhibition--organization"><strong>Organization </strong> <br />
+                        Organized by the National Gallery of Art, Washington, and the Musée d’Orsay, Paris</p>
+
+                    </p>
+                    
+
+                    
+                    <p class="exhibition--curators">The exhibition is curated by Mary Morton, curator and head of the department of French paintings, National Gallery of Art; Kimberly Jones, curator of 19th-century French paintings, National Gallery of Art;&nbsp;Sylvie Patry, former Deputy Director for collections and curatorial affairs, Musée d’Orsay; and Anne Robbins, curator of paintings, Musée d’Orsay.</p>
+</p>
+                    
+
+                    
+                    <p class="exhibition--ontour"><strong>Other venues </strong><br /> Musée d’Orsay, Paris, March 25&ndash;July 14, 2024<br /></p>
+                    
+
+                </div>
+                <div class="section-col">
+                    
+                    <p class="exhibition--sponsors"><strong>Sponsors </strong><br /> Major support for the exhibition has been provided by The Robert and Mercedes Eichholz Foundation, Lugano, Bank of America, and the Judy and Peter Blum Kovler Foundation.<br>
+</p>
+<p>The exhibition in Washington is also generously supported by the Hata Foundation, the Buffy and William Cafritz Family Fund, the Annenberg Fund for the International Exchange of Art, the Edwin L. Cox Exhibition Fund, and the Director’s Circle of the National Gallery of Art.</p>
+<p>With the special participation of the Musée Marmottan Monet and the Académie des Beaux-Arts, Paris.</p>
+<p>The exhibition is supported by an indemnity from the Federal Council on the Arts and the Humanities.</p>
+</p>
+                    
+                    <p class="exhibition--passes"><strong>Passes </strong><br /> Admission is always free. While this exhibition is not ticketed, we anticipate that it will be popular. You may need to join a line on busier days. Weekends tend to be most crowded. Independently led groups are not permitted.<br>
+</p>
+</p>
+                    
+                </div>
+        	</div>
+        </div>
+
+        <div class="exhibition-image-credit">
+            <div class="section-row">
+                <div class="section-col">
+                    
+                    <p class="exhibition--image-credit caption"><strong>Banner detail</strong>: Auguste Renoir,&nbsp;<i>La Loge (The Theater Box)</i>, 1874, oil on canvas, The Courtauld, London (Samuel Courtauld Trust) Photo © The Courtauld&nbsp;</p>
+</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div> <!-- /#content -->
+</div>
+</div>
+
+
+
+
+
+        </div>
+        <div id="return-to-top" data-js="fixed">
+        	<a href="#top" class="rte-button" aria-label="Return to top">
+        		<svg class="icon icon-xl" aria-hidden="true" focusable="false">
+        			<use xlink:href="#icon-arrow-up"></use>
+        		</svg>
+        	</a>
+        </div>
+      </div>
+      
+
+<div id="page-footnotes-wrap">
+    
+
+
+<div id="page-footnotes">
+    <div class="page_footnotes footnotes parbase">
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+</div>
+
+<div class="iparsys parsys"><div class="section"><div class="new"></div>
+</div><div class="iparys_inherited"><div class="iparsys parsys"></div>
+</div>
+</div>
+
+
+<footer class="footer">
+  <!-- newsletter subscription -->
+  <div class="footer-row footer-row-subscribe">
+  	<div class="footer-row-inner">
+      <div class="footer-col subscribe-col">
+        <h3>Stay <span>connected</span></h3>
+        <p>Learn more about our exhibitions, news, programs, and special offers.</p>
+      </div>
+      <div class="footer-col subscribe-col">
+        <!-- Begin Mailchimp signup form embed -->
+        <div id="mc_embed_signup">
+          <form action="https://nga.us4.list-manage.com/subscribe/post?u=e894a1837aca4526f7e8a11b3&amp;id=2085ff9475" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll" class="nga-form-group">
+              <div class="mc-field-group">
+                <label class="sr-only" for="mce-EMAIL">Email Address for National Gallery newsletter subscription </label>
+                <input type="email" value="" placeholder="Enter e-mail here" name="EMAIL" class="required email input-lg" id="mce-EMAIL">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e894a1837aca4526f7e8a11b3_2085ff9475" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button btn-lg"></div>
+            </div>
+          </form>
+        </div> <!-- end mc_embed_signup-->
+      </div>
+    </div>
+  </div> <!-- /.footer-row subscribe -->
+
+  <!-- utility navigation -->
+  <div class="footer-row footer-row-nav">
+    <div class="footer-row-inner">
+      
+
+
+
+  <div class="footer-col footer-col-nav section">
+    <p class="footer-heading">About</p>
+    <ul>
+        <li><a href="/about.html">About the National Gallery</a></li>
+    
+        <li><a href="/stories.html">Stories</a></li>
+    
+        <li><a href="/press.html">Press</a></li>
+    
+        <li><a href="/faq.html">FAQs</a></li>
+    
+        <li><a href="/contact-us.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col footer-col-nav section">
+    <p class="footer-heading">Plan a Visit</p>
+    <ul>
+        <li><a href="/visit/getting-here.html">Getting Here</a></li>
+    
+        <li><a href="/visit/accessibility.html">Accessibility</a></li>
+    
+        <li><a href="/visit/tours.html">Today&#39;s Tours</a></li>
+    
+        <li><a href="/visit/food-drink.html">Food &amp; Drink</a></li>
+    
+        <li><a href="/calendar.html">Calendar</a></li>
+    
+        <li><a href="/content/dam/ngaweb/visit/reopening/campus-map-2023-07-26.pdf">Downloadable Map</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col footer-col-nav section">
+    <p class="footer-heading">Get Involved</p>
+    <ul>
+        <li><a href="/support/donate-now.html">Donate</a></li>
+    
+        <li><a href="/support.html">Membership</a></li>
+    
+        <li><a href="/opportunities/volunteer-opportunities.html">Volunteer</a></li>
+    
+        <li><a href="/opportunities.html">Opportunities</a></li>
+    
+        <li><a href="https://shop.nga.gov/">Shop Online</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col footer-col-nav section">
+    <p class="footer-heading">Resources</p>
+    <ul>
+        <li><a href="/collection/collection-search.html">Search the Collection</a></li>
+    
+        <li><a href="/conservation.html">Conservation</a></li>
+    
+        <li><a href="/research/library.html">Library</a></li>
+    
+        <li><a href="/research/gallery-archives.html">Archives</a></li>
+    
+        <li><a href="/research/casva.html">The Center</a></li>
+    
+        <li><a href="/film-programs.html">Film Programs</a></li>
+    
+        <li><a href="/music-programs.html">Music Programs</a></li>
+    
+        <li><a href="/audio-video.html">Audio/Video</a></li>
+    
+        <li><a href="/open-access-images.html">Free Images for Download</a></li>
+    </ul>
+  </div>
+
+
+    </div>
+  </div>
+
+  <!-- visit information -->
+  <div class="footer-row footer-row-visit">
+  	<div class="footer-row-inner">
+      
+<div class="footer-col footer-col-map">
+  <p><a href="https://www.google.com/maps/dir//National%2BGallery%2Bof%2BArt,%2BConstitution%2BAve.%2BNW,%2BWashington,%2BDC%2B20565/@38.8912473,-77.0211352,18z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89b7b79b3b528c49:0xa8ecd80f2bb2879b!2m2!1d-77.019965!2d38.891298!3e0?hl=en"><img src="/content/dam/ngaweb/imgs/nga-campus-map-icon.jpg" alt="map of Gallery's campus between 3rd Street and 9th Street on Constitution Ave, NW"/></a></p>
+</div>
+<div class="footer-col footer-col-hours">
+  <p>Hours: 10:00 a.m. to 5:00 p.m. daily</p>
+<p><b>West Building<br />
+ </b><a href="https://www.google.com/maps/place/National+Gallery+of+Art/@38.8912785,-77.0220192,17z/data=!4m8!1m2!2m1!1sNational+Gallery+of+Art!3m4!1s0x89b7b79b3b528c49:0xa8ecd80f2bb2879b!8m2!3d38.891298!4d-77.019965">6th St and Constitution Ave NW</a><br />
+<i>Enter or exit from Constitution Avenue, 4th Street, 7th Street, or Madison Drive on the National Mall.</i></p>
+<p><b>East Building<br />
+ </b><a href="https://www.google.com/maps/place/National+Gallery+of+Art+-+East+Building/@38.89262,-77.0239842,16z/data=!4m19!1m13!4m12!1m4!2m2!1d-77.0218907!2d38.8944036!4e1!1m6!1m2!1s0x89b7b785d56a0c1d:0xe8476719128ffcc9!2sNational+Gallery+of+Art+-+East+Building,+4th+St+NW,+Washington,+DC+20565!2m2!1d-77.0167076!2d38.8912507!3m4!1s0x89b7b785d56a0c1d:0xe8476719128ffcc9!8m2!3d38.8912507!4d-77.0167076">4th St and Constitution Ave NW</a><br />
+<i style="">Enter or exit from 4th Street.</i></p>
+<p><b>Sculpture Garden<br />
+ </b><a href="https://www.google.com/maps/place/National+Gallery+of+Art+%E2%80%93+Sculpture+Garden/@38.8912785,-77.0220192,17z/data=!4m8!1m2!2m1!1sNational+Gallery+of+Art!3m4!1s0x0:0x68b0d8261a1fb851!8m2!3d38.8912959!4d-77.0229538">7th St and Constitution Ave NW</a><br />
+<i style="">Enter or exit from 7th Street, Constitution Avenue, or Madison Drive on the National Mall.</i></p>
+<p>We are closed on December 25 and January 1.</p>
+
+</div>
+<div class="footer-col footer-col-hours">
+  <p><i style="">The National Gallery of Art serves the nation by welcoming all people to explore and experience art, creativity, and our shared humanity.</i></p>
+
+</div>
+
+    </div>
+  </div>
+
+  <!-- minimal footer -->
+  <div class="footer-row footer-row-utility">
+  	<div class="footer-row-inner">
+    	<div class="footer-col footer-col-social">
+        <ul class="footer-social">
+          <li>
+          	<a href="https://twitter.com/ngadc" class="twitter" title="Twitter">
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+              <span class="sr-only">Twitter</span>
+          	</a>
+          </li>
+          <li>
+          	<a href="https://www.facebook.com/nationalgalleryofart" class="facebook" title="Facebook">
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+              <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          <li>
+          	<a href="http://instagram.com/ngadc" class="instagram" title="Instagram">
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+		      <li>
+          	<a href="http://pinterest.com/ngadc" class="pinterest" title="Pinterest">
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-pinterest"></use>
+              </svg>
+              <span class="sr-only">Pinterest</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/NationalGalleryArtDC" class="youtube" title="YouTube">
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+              <span class="sr-only">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col footer-col-copyright">
+        <p>&copy; 2024 National Gallery of Art &nbsp; <span class="policies"><a href="/notices.html">Notices</a> &nbsp; <a href="/notices/terms-of-use.html">Terms of Use</a> &nbsp; <a href="/notices/privacy-policy.html">Privacy Policy</a></span></p>
+      </div>
+    </div>
+  </div> <!-- /.footer-row minimal -->
+</footer>
+<!-- global svg icons -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="display:none;">
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></symbol>
+  <symbol id="icon-arrow-left" viewBox="0 0 24 24" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></symbol>
+  <symbol id="icon-caret" viewBox="0 0 24 24" class="feather feather-custom"><polygon points="9,18 15,12 9,6 " fill="currentColor"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></symbol>
+  <symbol id="icon-compare" viewBox="0 0 24 24"><path d="M17 9h3c1.1 0 2 .9 2 2v9c0 1.1-.9 2-2 2h-9c-1.1 0-2-.9-2-2v-3"/><path d="M13 16h-3v-5c0-.6.4-1 1-1h5v3c0 1.7-1.3 3-3 3z"/><path d="M4 2h9c1.1 0 2 .9 2 2v3h-4c-2.2 0-4 1.8-4 4v4H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2z" class="icon-compare"/></symbol>
+  <symbol id="icon-datepicker" viewBox="0 0 24 24" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></symbol>
+  <symbol id="icon-download" viewBox="0 0 24 24" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></symbol>
+  <symbol id="icon-filters" viewBox="0 0 24 24" class="feather feather-custom"><line x1="3" y1="4" x2="10" y2="4"/><line x1="14" y1="4" x2="21" y2="4"/><line x1="3" y1="12" x2="12" y2="12"/><line x1="16" y1="12" x2="21" y2="12"/><line x1="3" y1="20" x2="8" y2="20"/><line x1="12" y1="20" x2="21" y2="20"/><line x1="10" y1="2" x2="10" y2="6"/><line x1="16" y1="10" x2="16" y2="14"/><line x1="8" y1="18" x2="8" y2="22"/></symbol>
+  <symbol id="icon-grid" viewBox="0 0 24 24" class="feather feather-grid"><rect x="3" y="3" width="7" height="7" fill="currentColor"></rect><rect x="14" y="3" width="7" height="7" fill="currentColor"></rect><rect x="14" y="14" width="7" height="7" fill="currentColor"></rect><rect x="3" y="14" width="7" height="7" fill="currentColor"></rect></symbol>
+  <symbol id="icon-info" viewBox="0 0 24 24" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></symbol>
+  <symbol id="icon-list" viewBox="0 0 24 24" class="feather feather-list feather-custom"><line x1="3" y1="3" x2="21" y2="3"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="3" y1="21" x2="21" y2="21"></line></symbol>
+  <symbol id="icon-loader" viewBox="0 0 24 24" class="feather feather-loader"><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line><line x1="2" y1="12" x2="6" y2="12"></line><line x1="18" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"></line><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"></line></symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></symbol>
+  <symbol id="icon-notice" viewBox="0 0 24 24" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></symbol>
+  <symbol id="icon-share" viewBox="0 0 24 24" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></symbol>
+  <symbol id="icon-smartphone" viewBox="0 0 24 24" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></symbol>
+  <symbol viewBox="0 0 48 48" id="icon-ticket">
+    <path fill="none" d="M0 0h48v48H0"/>
+    <path d="M27.63 11.34l9 9-16.29 16.29-9-9zm-6 27.89l17.6-17.61a1.79 1.79 0 000-2.56L28.91 8.74a1.86 1.86 0 00-2.56 0L8.75 26.35a1.76 1.76 0 000 2.56l10.31 10.32a1.86 1.86 0 002.56 0M47 21.08L21.11 46.94a3.67 3.67 0 01-5.16 0l-3.59-3.59a5.48 5.48 0 000-7.74A5.24 5.24 0 008.49 34a5.28 5.28 0 00-3.88 1.6L1.06 32a3.67 3.67 0 010-5.16L26.89 1.05a3.69 3.69 0 015.16 0l3.56 3.57A5.28 5.28 0 0034 8.49a5.28 5.28 0 001.6 3.87 5.49 5.49 0 007.75 0L47 15.92a3.69 3.69 0 010 5.16"/>
+  </symbol>
+  <symbol id="icon-virtual" viewBox="0 0 24 24" class="feather feather-monitor"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></symbol>
+  <symbol id="icon-zoom" viewBox="0 0 24 24" class="feather feather-zoom-in"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></symbol>
+  <symbol id="icon-pause" viewBox="0 0 24 24" class="feather feather-pause"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></symbol>
+  <symbol id="icon-skipback" viewBox="0 0 24 24" class="feather feather-rotate-ccw"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></symbol>
+  <symbol id="icon-skipforward" viewBox="0 0 24 24" class="feather feather-rotate-cw"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></symbol>
+  <symbol id="icon-transcript" viewBox="0 0 24 24" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></symbol>
+  <symbol viewBox="0 0 48 48" id="icon-oe">
+    <path fill="none" d="M0 0h48v48H0z"/>
+    <path d="M33.12 36.67c-3.65 0-6.38-1.1-8.26-3.07a11.89 11.89 0 01-8.35 3.07c-6.91 0-12.77-5-12.77-12.67s5.91-12.67 12.92-12.67a11.49 11.49 0 018.25 3.17 10.07 10.07 0 017.87-3.17c8.17 0 11.48 5.42 11.48 14.54H30.1c.62 3.27 2.68 4.75 5.52 4.75s4.75-1 7.39-2.68l.14.09a42.27 42.27 0 00-.57 6.43 20.29 20.29 0 01-9.46 2.21zM16.51 17.38c-1.87 0-2.88 1.68-2.88 6.09s1.34 7.15 3.46 7.15C19 30.62 20 29 20 24.58s-1.38-7.2-3.49-7.2zm13.39 4.27H35c-.15-3.6-1.21-4.65-2.6-4.65s-2.3 1.33-2.5 4.65z"/>
+  </symbol>
+  <symbol id="icon-facebook" viewBox="0 0 32 32">
+      <path d="M32 16c0-8.9-7.1-16-16-16S0 7.2 0 16c0 8 5.9 14.6 13.5 15.8V20.6H9.4V16h4.1v-3.5c0-4.1 2.3-6.2 6.1-6.2 1.7 0 3.6 0.3 3.6 0.3v3.9h-2c-2 0-2.6 1.3-2.6 2.5v3H23l-0.7 4.6h-3.7v11.2C26.1 30.6 32 24 32 16z"/>
+  </symbol>
+  <symbol id="icon-instagram" viewBox="0 0 32 32">
+    <path d="M16 2.9c4.3 0 4.8 0 6.5 0.1 1.6 0.1 2.5 0.3 3 0.5 0.7 0.3 1.3 0.6 1.8 1.2s0.9 1.1 1.2 1.8c0.2 0.5 0.4 1.4 0.5 3 0.1 1.7 0.1 2.2 0.1 6.5s0 4.8-0.1 6.5c-0.1 1.6-0.3 2.5-0.5 3 -0.3 0.7-0.6 1.3-1.2 1.8s-1.1 0.9-1.8 1.2c-0.5 0.2-1.4 0.4-3 0.5 -1.7 0.1-2.2 0.1-6.5 0.1s-4.8 0-6.5-0.1c-1.6-0.1-2.5-0.3-3-0.5 -0.7-0.3-1.3-0.6-1.8-1.2s-0.9-1.1-1.2-1.8c-0.2-0.5-0.4-1.4-0.5-3 -0.1-1.7-0.1-2.2-0.1-6.5s0-4.8 0.1-6.5c0.1-1.6 0.3-2.5 0.5-3 0.3-0.6 0.6-1.2 1.2-1.8 0.5-0.5 1.1-0.9 1.8-1.2C7 3.3 7.9 3.1 9.5 3 11.2 2.9 11.7 2.9 16 2.9M16 0c-4.4 0-4.9 0-6.6 0.1S6.5 0.4 5.5 0.9c-1.1 0.4-1.9 1-2.9 1.8 -0.9 1-1.4 1.8-1.8 2.9S0.2 7.7 0.1 9.4C0 11.1 0 11.6 0 16s0 4.9 0.1 6.6 0.3 2.9 0.7 3.8c0.4 1.1 1 1.9 1.8 2.9 0.9 0.9 1.8 1.4 2.9 1.8 1.1 0.4 2.1 0.6 3.8 0.7C11.1 32 11.6 32 16 32s4.9 0 6.6-0.1c1.7-0.1 2.9-0.3 3.8-0.7 1.1-0.4 1.9-1 2.9-1.8 0.9-0.9 1.4-1.8 1.8-2.9 0.4-1.1 0.6-2.1 0.7-3.8C32 20.9 32 20.4 32 16s0-4.9-0.1-6.6c-0.1-1.7-0.3-2.9-0.7-3.8 -0.4-1.1-1-1.9-1.8-2.9 -0.9-0.9-1.8-1.4-2.9-1.8 -1.1-0.4-2.1-0.6-3.8-0.7C20.9 0 20.4 0 16 0L16 0z"/>
+    <path d="M16 7.8c-4.6 0-8.2 3.6-8.2 8.2s3.6 8.2 8.2 8.2 8.2-3.6 8.2-8.2S20.6 7.8 16 7.8zM16 21.3c-3 0-5.3-2.3-5.3-5.3s2.3-5.3 5.3-5.3 5.3 2.3 5.3 5.3S19 21.3 16 21.3z"/>
+    <circle cx="24.5" cy="7.5" r="1.9"/>
+  </symbol>
+  <symbol id="icon-pinterest" viewBox="0 0 32 32">
+    <circle cx="16" cy="16.1" r="16" fill="none"/>
+    <path d="M16 0.1c-8.9 0-16 7.1-16 16C0 22.9 4.2 28.7 10.1 31c-0.1-1.2-0.3-3.2 0.1-4.5 0.3-1.2 1.9-7.9 1.9-7.9s-0.5-0.9-0.5-2.4c0-2.3 1.2-3.9 2.9-3.9 1.3 0 2.1 1 2.1 2.3 0 1.3-0.8 3.4-1.3 5.4 -0.4 1.5 0.8 2.9 2.4 2.9 2.9 0 5.1-3 5.1-7.3 0-3.8-2.8-6.5-6.7-6.5 -4.5 0-7.2 3.4-7.2 6.9 0 1.3 0.5 2.9 1.1 3.6 0.1 0.2 0.1 0.3 0.1 0.4 -0.1 0.5-0.4 1.5-0.4 1.9C9.4 22 9.3 22 9 21.9c-2-0.9-3.2-3.8-3.2-6.2C5.8 10.6 9.4 6 16.3 6c5.6 0 9.8 3.9 9.8 9.2 0 5.5-3.5 9.9-8.3 9.9 -1.7 0-3.1-0.8-3.6-1.9 0 0-0.8 3.1-1 3.8 -0.3 1.4-1.3 3.1-2 4.2 1.5 0.4 3.1 0.7 4.7 0.7 8.9 0 16-7.1 16-16C32 7.2 24.9 0.1 16 0.1z"/>
+  </symbol>
+  <symbol id="icon-twitter" viewBox="0 0 32 32">
+    <path d="M32 16c0 8.9-7.1 16-16 16S0 24.9 0 16 7.1 0 16 0 32 7.1 32 16zM13.1 24.4c7.1 0 11-5.9 11-11 0-0.2 0-0.3 0-0.5 0.7-0.5 1.4-1.2 1.9-2 -0.6 0.3-1.4 0.5-2.2 0.6 0.9-0.4 1.4-1.3 1.7-2.1 -0.7 0.4-1.6 0.7-2.5 1 -0.7-0.7-1.7-1.2-2.9-1.2 -2.1 0-3.8 1.7-3.8 3.8 0 0.3 0 0.6 0.1 0.9 -3.2-0.2-6.1-1.7-8-4.1 -0.3 0.5-0.5 1.3-0.5 1.9 0 1.4 0.6 2.6 1.7 3.2 -0.6 0-1.2-0.2-1.7-0.4l0 0c0 1.9 1.3 3.4 3.1 3.7 -0.3 0.1-0.6 0.1-1.1 0.1 -0.2 0-0.5 0-0.7-0.1 0.5 1.5 1.9 2.7 3.6 2.7 -1.3 1.1-3 1.6-4.8 1.6 -0.3 0-0.6 0-1-0.1C8.9 23.8 10.9 24.4 13.1 24.4"/>
+  </symbol>
+  <symbol id="icon-youtube" viewBox="0 0 32 32"><path d="M16 0C7.1 0 0 7.1 0 16s7.1 16 16 16 16-7.1 16-16S24.9 0 16 0zM26.6 21.5c-0.4 1.1-1.1 1.9-2.1 2.1C22.9 24 16.3 24 16 24s-6.8 0-8.5-0.4c-1-0.2-1.8-1.1-2.1-2.1C5 19.7 5 16.2 5 16c0-0.1 0-3.7 0.4-5.5 0.4-1.2 1.1-1.9 2.1-2.1C9.1 8 15.7 8 16 8c0.3 0 6.9 0 8.5 0.4 1 0.2 1.8 1.1 2.1 2.1C27 12.3 27 15.9 27 16 27 16.2 27 19.7 26.6 21.5z"/><polygon points="13.9 19.3 19.6 16 13.9 12.7 "/></symbol>
+</svg>
+
+
+      <!-- development -->
+      
+
+
+
+
+
+
+
+<!--
+More detailed timing info is available by uncommenting some code in the timing.jsp component
+Timing chart URL:
+http://chart.apis.google.com/chart?chtt=paris-1874-impressionist-moment.html+%2873959ms%29&cht=bhs&chxt=x&chco=c6d9fd,4d89f9&chbh=a&chds=0,73959,0,73959&chxr=0,0,73959&chd=t:5,4154,4830,5110,5553,5779,6870,7551,7831,9057,9332,9849,10763,18056,20810,20948,21230,21364,21684,36229,36758,37014,37837,38081,38369,50503,50817,51547,51852,52158,52607,52870,53204,53610,54337,54736,58356,58600,59142,59404,59644,59996,60436,60846,61303,61870,62312,62736,63152,63578,63837,64128,64408,64813,65422,65668,65922,66361,66585,68685,68814,69082,69391,69561,69805,70218,71328|1915,661,2183,1880,83,229,118,180,13106,149,366,457,7093,135,106,45835,109,45413,45072,30467,124,651,116,156,11922,173,559,915,591,262,5579,2309,230,529,223,420,121,365,134,4042,3778,258,238,279,378,264,246,232,247,135,1438,1129,232,420,799,535,258,108,90,5274,409,118,656,78,221,926,817&chly=handleSecurity|preprocess.jsp|head.jsp|headlibs.jsp|init.jsp|namespaceheaders.jsp|custom_headlibs.jsp|clientcontext.jsp|header.jsp|announcement.jsp|admission.html|gallery_open_hours.html|mainnav.html|searchform.jsp|searchform.jsp|layout.jsp|parsys.jsp|content.jsp|exhibition.jsp|parsys.jsp|text.jsp|notices.html|text.jsp|columnheader.jsp|slideshowcarousel.jsp|columnheader.jsp|iframe.html|promo-row-wrap.jsp|parsys.jsp|promo.jsp|promo-row-wrap.jsp|parsys.jsp|promo.jsp|promo.jsp|promo.jsp|promo.jsp|text.jsp|promo.jsp|columnheader.jsp|promo-row-wrap.jsp|parsys.jsp|promo.jsp|promo.jsp|promo.jsp|promo.jsp|promo.jsp|promo.jsp|promo.jsp|promo.jsp|columnheader.jsp|promo-row-wrap.jsp|parsys.jsp|promo.jsp|promo.jsp|promo-row-wrap.jsp|parsys.jsp|promo.jsp|text.jsp|text.jsp|footer.jsp|footnotes.jsp|footnotes.jsp|iparsys.jsp|new.jsp|par.jsp|footernav.html|footerdetail.html&chs=600x500
+-->
+
+
+      <div class="cloudservices servicecomponents">
+</div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+    </html>
+
