@@ -50,6 +50,31 @@ header {
     }
 }
 
+.frontIMG {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center the foreground image */
+    width: auto;
+    height: 50%;
+    /* Adjust as needed */
+    z-index: 2;
+    /* Foreground image is on top */
+}
+
+.backIMG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Make sure the background image covers the container */
+    z-index: 1;
+    /* Background image is under the foreground image */
+}
+
 .h-inner {
     width: 175vw;
 }
