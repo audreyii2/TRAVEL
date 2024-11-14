@@ -115,9 +115,15 @@ h2:hover {
 
 .promo-img {
     width: 100%;
-    height: 200px;
+    height: 230px;
     background-size: cover;
     background-position: center;
+}
+
+.promo-img video {
+    width: 100%;
+    height: max-content;
+    background-position: right;
 }
 
 .category {
