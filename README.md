@@ -1,8 +1,8 @@
 # TRAVEL (About this Repo)
 
-Page dedicated to Audrey's travel plog: https://audreyii2.github.io/TRAVEL/index.html
+Current page for short-term goals (to satisfy SI project requirements): https://audreyii2.github.io/TRAVEL/journey.html
 
-Page for short-term goals (to satisfy SI project requirements): https://audreyii2.github.io/TRAVEL/journey.html
+Page dedicated to Audrey's travel plog: https://audreyii2.github.io/TRAVEL/index.html
 
 -------------------------------------------------------------------------------------
 # Notes on Major Update:
