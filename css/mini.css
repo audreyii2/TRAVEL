@@ -196,6 +196,17 @@ p.caption:hover {
     color: #6e6700;
 }
 
+p, h2, h3, span {
+    margin-left: 27px;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+}
+
 /* Footer Styles */
 .footer {
     background: #fff8ff;

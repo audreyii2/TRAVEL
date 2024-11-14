@@ -1,0 +1,15 @@
+/* Red Text */
+h3.c-sg, h2.c-sg:hover {
+    background-color: #fff8ff;
+    color: #ff6866;
+    margin-left: 27px;
+    width: fit-content;
+}
+
+/* Red Background */
+h2.c-sg {
+    background-color: #ff6866;
+    color: #fff8ff;
+    margin-left: 27px;
+    width: fit-content;
+}
