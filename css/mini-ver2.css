@@ -26,9 +26,10 @@ h1, h3, p {
 
 /* Header and Footer */
 .header, .footer {
-    background-color: #f8f8f8;
+    background-color: #fffaff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: #575294 4px solid;
 }
 
 .header h1, .footer h3, .footer p {
