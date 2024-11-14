@@ -8,12 +8,12 @@ Page for short-term goals (to satisfy SI project requirements): https://audreyii
 # Notes on Major Update:
 
 * Auto-scrolling progress bar.
-* "Back to Top" button...................................................[B. 50% done]
-* Cleaner, concise, one stylesheet.......................................[C. 50% done]
+* "Back to Top" button.....................................................[B. 50% done]
+* Cleaner, concise, one stylesheet.....................................................[C. 50% done]
 * Search and filter forms for in-site info.
 * Tab index.
 * Toggle theme selector.
-* Visual effects and animations (with turn off button) such as fade-in....[V. on going]
+* Visual effects and animations (with turn off button) such as fade-in.....................................................[V. on going]
 
 # Personal Tools Convenient for Remote Editing:
 
