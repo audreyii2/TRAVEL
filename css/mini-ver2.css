@@ -1,7 +1,8 @@
 /* Combined CSS from jquery-ui-min.css, coralui3-min.css, and site-min.css */
 
 /* Simplified and normalized base styles */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -11,7 +12,9 @@ body, html {
     justify-content: center;
 }
 
-h1, h3, p {
+h1,
+h3,
+p {
     margin: 0 0 1em 0;
 }
 
@@ -37,19 +40,28 @@ h2:hover {
 }
 
 /* Header and Footer */
-.header, .footer {
+.header,
+.footer {
     background-color: #fffaff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: #575294 9px solid;
+}
+
+.header {
+    min-inline-size: -webkit-fill-available;
+    border-style: dashed;
     margin-bottom: 9vh;
 }
 
 .footer {
     margin-top: 12vh;
+    margin-bottom: 9vh;
 }
 
-.header h1, .footer h3, .footer p {
+.header h1,
+.footer h3,
+.footer p {
     color: #333257;
     font-family: -webkit-body;
     font-style: italic;
@@ -64,7 +76,8 @@ h2:hover {
     font-size: medium;
 }
 
-.header:hover, .footer:hover {
+.header:hover,
+.footer:hover {
     background-color: #ffffd2;
     border: #d2d2ff 9px solid;
 }
@@ -79,12 +92,14 @@ h2:hover {
 }
 
 .sr-only {
-    color: black;;
+    color: black;
+    ;
     font-size: x-small;
 }
 
 .promo-item {
-    flex: 1 1 calc(33.333% - 1rem); /* Three columns with margin */
+    flex: 1 1 calc(33.333% - 1rem);
+    /* Three columns with margin */
     background-color: #fff;
     /* border: 1px solid #ddd; */
     border-radius: 4px;
@@ -112,7 +127,10 @@ h2:hover {
     font-weight: bold;
 }
 
-.category, .rte-introtxt, h5, .cta-btn{
+.category,
+.rte-introtxt,
+h5,
+.cta-btn {
     padding-left: 1rem;
 }
 
@@ -148,12 +166,14 @@ h5 {
     color: #00615c;
 }
 
-#gr, #bg:hover {
+#gr,
+#bg:hover {
     background-color: #5b5b06;
     color: white;
 }
 
-#gr:hover, #bg {
+#gr:hover,
+#bg {
     background-color: #ffffad;
     color: #5b5b06;
 }
@@ -180,7 +200,7 @@ h5 {
 
 #it-tl {
     border: 2px solid #00615c;
-    text-shadow: 0 0 grey; 
+    text-shadow: 0 0 grey;
 }
 
 #it-tl:hover {
@@ -224,5 +244,4 @@ img.icon {
 
 main {
     display: block;
-    margin-top: 27px;
 }
