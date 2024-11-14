@@ -125,18 +125,29 @@ h2:hover {
     color: black;
     padding-top: 1rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .category,
 .rte-introtxt,
-h5,
+h3,
 .cta-btn {
     padding-left: 1rem;
 }
 
-h5 {
+.rte-introtxt {
+    font-size: x-large;
+    /* font-variant-caps: small-caps; */
+    color: purple;
+}
+
+.rte-introtxt:hover {
+    color: #ff0000;
+    background-color: #ffffad;
+}
+
+h3 {
     display: block;
-    font-size: 0.83em;
     margin-block-start: 1.67em;
     margin-block-end: 1.67em;
     margin-inline-start: 0px;
@@ -153,7 +164,7 @@ h5 {
     text-decoration: none;
     transition: background-color 0.3s ease;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 #tl {
