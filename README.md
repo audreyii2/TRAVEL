@@ -10,10 +10,13 @@ Page for short-term goals (to satisfy SI project requirements): https://audreyii
 * Auto-scrolling progress bar.
 * "Back to Top" button.....................................................[B. 50% done]
 * Cleaner, concise, one stylesheet.....................................................[C. 50% done]
-* Search and filter forms for in-site info.
+* Search (by region / country / keywords) and filter (by year) forms for in-site info.
 * Tab index.
 * Toggle theme selector.
 * Visual effects and animations (with turn off button) such as fade-in.....................................................[V. on going]
+* Visual statistics of this year's travel times (counting search year results).
+* VSO last year's travel times, new destinations (calculating the difference between the 2, if positive).
+VSO this year's & overall travel by regions / countries (postal code map view).
 
 # Personal Tools Convenient for Remote Editing:
 
