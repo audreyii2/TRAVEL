@@ -11,6 +11,7 @@ Page for short-term goals (to satisfy SI project requirements): https://audreyii
 * "Back to Top" button.                                                 [B. 50% done]
 * Cleaner, concise, one stylesheet.
 * Search and filter forms for in-site info.
+* Tab index.
 * Toggle theme selector.
 * Visual effects and animations (with turn off button) such as fade-in.  [V. on going]
 
