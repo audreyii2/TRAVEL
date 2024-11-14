@@ -33,10 +33,14 @@ h1, h3, p {
 }
 
 .header h1, .footer h3, .footer p {
-    color: #333;
+    color: #333257;
     font-family: -webkit-body;
     font-style: italic;
     font-variant: petite-caps;
+}
+
+.header h2 {
+    color: #565732;
 }
 
 /* Promo Section Styles */
