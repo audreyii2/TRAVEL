@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/mini-ver2.css">
+    <link rel="stylesheet" href="css/dm.css">
     <title>Audrey's Journey</title>
 </head>
 
@@ -134,8 +135,22 @@
         </div>
         <!-- Repeat promo-item for other promotions as needed -->
         </section>
-        </div>
     </main>
+
+    <div id="premap">
+        <h2>Map My Adventure &#x1F30F</h2>
+        <div id="map">
+            <gmp-map center="42.28132,-83.74546" zoom="4" map-id="DEMO_MAP_ID" style="height: 400px">
+                <gmp-advanced-marker position="37.77938,-122.41843" title="San Francisco, CA"></gmp-advanced-marker>
+                <gmp-advanced-marker position="1.30437, 103.82458" title="Singapore"></gmp-advanced-marker>
+                <gmp-advanced-marker position="22.27980, 114.18580" title="Hong Kong SAR, China"></gmp-advanced-marker>
+                <gmp-advanced-marker position="29.12352, 120.31426" title="China"></gmp-advanced-marker>
+            </gmp-map>
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
+                defer></script>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-row footer-row-subscribe">
