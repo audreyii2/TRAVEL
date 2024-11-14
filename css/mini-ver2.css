@@ -21,6 +21,12 @@ h1:hover {
     color: #333257;
 }
 
+h2:hover {
+    font-size: xx-large;
+    font-style: italic;
+    color: #333257;
+}
+
 /* General Utility Classes */
 .text-center {
     text-align: center;

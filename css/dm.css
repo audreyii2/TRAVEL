@@ -1,18 +1,19 @@
 #map {
-    height: 100%;
-  }
-  
-  /* 
-   * Optional: Makes the sample page fill the window. 
-   */
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  gmp-map {
-    height: 400px;
-  }
-  
+  height: auto;
+  width: 81vw;
+  place-self: center;
+}
+
+#premap {
+  margin-top: 12vh;
+}
+
+#premap h2 {
+  border: 9px solid #00615c;
+  text-shadow: 0 0 grey;
+  width: max-content;
+}
+
+gmp-map {
+  height: 400px;
+}
