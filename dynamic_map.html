@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Add a Map with Markers using HTML</title>
+    <link rel="stylesheet" href="css/dm.css">
+    <!-- jsFiddle will insert css and js -->
+    <!--https://jsfiddle.net/gh/get/library/pure/googlemaps/js-samples/tree/master/dist/samples/web-components-markers/jsfiddle-->
+</head>
+
+<body>
+    <gmp-map center="42.28132,-83.74546" zoom="4" map-id="DEMO_MAP_ID" style="height: 400px">
+        <gmp-advanced-marker position="37.77938,-122.41843" title="San Francisco, CA"></gmp-advanced-marker>
+        <gmp-advanced-marker position="1.30437, 103.82458" title="Singapore"></gmp-advanced-marker>
+        <gmp-advanced-marker position="22.27980, 114.18580" title="Hong Kong SAR, China"></gmp-advanced-marker>
+        <gmp-advanced-marker position="29.12352, 120.31426" title="China"></gmp-advanced-marker>
+    </gmp-map>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
+        defer></script>
+</body>
+
+</html>
