@@ -40,7 +40,10 @@ h1, h3, p {
 }
 
 .header h2 {
+    background-color: #ffffd2;
     color: #565732;
+    font-family: cursive;
+    container-type: inline-size;
 }
 
 /* Promo Section Styles */
