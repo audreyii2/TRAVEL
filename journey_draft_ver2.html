@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/jquery-ui-min.css">
+    <link rel="stylesheet" href="css/coralui3-min.css">
+    <link rel="stylesheet" href="css/site-min.css">
+    <title>Can you guess these Impressionists? Play Artle to find out</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        // JavaScript code simplified for cleanliness and conciseness.
+        nga.user = { getCurrentUserId: function () { return "anonymous"; } };
+        nga.paths = { getPathsMap: function () { return {}; } };
+        nga.iiif = { icon: "", iconClassName: "iiifCompareIcon", maxComparables: 8 };
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var cookies = document.cookie.split(";");
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                var eqPos = cookie.indexOf("=");
+                var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+
+            // Unloading event listeners
+            window.removeEventListener('DOMContentLoaded', function () { });
+
+            // Additional code for site features
+            // ... your additional JavaScript code for side-nav-toggle, drawer, infobox, etc.
+        });
+    </script>
+
+    <div id="main">
+        <div class="banner_parsys parsys">
+            <div id="container" class="col-one">
+                <div id="content">
+                    <div class="content-main full">
+                        <div class="parmain parsys">
+                            <div class="columnheader section">
+                                <h1>Do You Know These?</h1>
+                            </div>
+                        </div>
+                        <div class="promo-row-wrap parsys section">
+                            <span class="promo-col-third">
+                                <div class="promo-row parsys">
+                                    <div class="promo section">
+                                        <a href="journey.html">
+                                            <div class="promo-content promo-default">
+                                                <div class="promo-image" style="background-image:url('pic/A.png');">
+                                                </div>
+                                                <div class="promo-text text">
+                                                    <div class="promo-text-col">
+                                                        <p class="category">Article Hint</p>
+                                                        <h3 class="promo-heading"></h3>
+                                                    </div>
+                                                    <div class="promo-text-col">
+                                                        <p>
+                                                            <span class="rte-introtxt">An untimely death cut short this artist's promising career.</span>
+                                                        </p>
+                                                        <div class="cta-link-btn">Guess who!</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="promo section">
+                                        <a href="journey.html">
+                                            <div class="promo-content promo-default">
+                                                <div class="promo-image" style="background-image:url('pic/A.png');">
+                                                </div>
+                                                <div class="promo-text text">
+                                                    <div class="promo-text-col">
+                                                        <p class="category">Article Hint</p>
+                                                        <h3 class="promo-heading"></h3>
+                                                    </div>
+                                                    <div class="promo-text-col">
+                                                        <p>
+                                                            <span class="rte-introtxt">An untimely death cut short this artist's promising career.</span>
+                                                        </p>
+                                                        <div class="cta-link-btn">Guess who!</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="promo section">
+                                        <a href="journey.html">
+                                            <div class="promo-content promo-default">
+                                                <div class="promo-image" style="background-image:url('pic/A.png');">
+                                                </div>
+                                                <div class="promo-text text">
+                                                    <div class="promo-text-col">
+                                                        <p class="category">Article Hint</p>
+                                                        <h3 class="promo-heading"></h3>
+                                                    </div>
+                                                    <div class="promo-text-col">
+                                                        <p>
+                                                            <span class="rte-introtxt">An untimely death cut short this artist's promising career.</span>
+                                                        </p>
+                                                        <div class="cta-link-btn">Guess who!</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="promo section">
+                                        <a href="journey.html">
+                                            <div class="promo-content promo-default">
+                                                <div class="promo-image" style="background-image:url('pic/A.png');">
+                                                </div>
+                                                <div class="promo-text text">
+                                                    <div class="promo-text-col">
+                                                        <p class="category">Article Hint</p>
+                                                        <h3 class="promo-heading"></h3>
+                                                    </div>
+                                                    <div class="promo-text-col">
+                                                        <p>
+                                                            <span class="rte-introtxt">An untimely death cut short this artist's promising career.</span>
+                                                        </p>
+                                                        <div class="cta-link-btn">Guess who!</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-row footer-row-subscribe">
+            <div class="footer-row-inner">
+                <div class="fotter-col subscribe-col">
+                    <h3>"Stay" <span>connected</span></h3>
+                    <p>Learn more about me</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-row footer-row-utility">
+        <div class="footer-row-inner">
+            <div class="footer-col footer-col-social">
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://twitter.com" class="twitter" title="twitter">
+                            <svg class="icon" aria-hidden="true" focusable="false">
+                            </svg>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" class="twitter" title="twitter">
+                            <svg class="icon" aria-hidden="true" focusable="false">
+                            </svg>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" class="twitter" title="twitter">
+                            <svg class="icon" aria-hidden="true" focusable="false">
+                            </svg>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" class="twitter" title="twitter">
+                            <svg class="icon" aria-hidden="true" focusable="false">
+                            </svg>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
