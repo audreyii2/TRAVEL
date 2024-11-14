@@ -21,3 +21,4 @@ VSO this year's & overall travel by regions / countries (postal code map view).
 # Personal Tools Convenient for Remote Editing:
 
 Python online shell: https://pythonhow.com/python-shell
+Map marker: https://jsfiddle.net/gh/get/library/pure/googlemaps/js-samples/tree/master/dist/samples/web-components-markers/jsfiddle
