@@ -16,7 +16,7 @@ Page dedicated to Audrey's travel plog: https://audreyii2.github.io/TRAVEL/index
 * Visual effects and animations (with turn off button) such as fade-in.....................................................[V. on going]
 * Visual statistics of this year's travel times (counting search year results).
 * VSO last year's travel times, new destinations (calculating the difference between the 2, if positive).
-VSO this year's & overall travel by regions / countries (postal code map view).[100%!!!]
+VSO this year's & overall travel by regions / countries (postal code map view).[100%!!!][***Something went wrong***]
 
 # Personal Tools Convenient for Remote Editing:
 
