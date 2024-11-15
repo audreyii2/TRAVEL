@@ -46,3 +46,4 @@ Reference links:
 18. https://mariokarttour.com/en-GB
 19. https://www.nintendo.com/us/store/products/mysims-cozy-bundle-switch/
 20. https://www.nintendo.com/us/store/products/super-mario-rpg-switch/
+21. https://splatoon.nintendo.com/?_gl=1*1x4jrrn*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTY1MDg2NS4zLjEuMTczMTY1NDE2Ni4wLjAuMA..
