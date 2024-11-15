@@ -23,3 +23,13 @@ VSO this year's & overall travel by regions / countries (postal code map view).[
 Python online shell: https://pythonhow.com/python-shell
 
 Map marker: https://jsfiddle.net/gh/get/library/pure/googlemaps/js-samples/tree/master/dist/samples/web-components-markers/jsfiddle
+
+Reference links: 
+
+https://www.nintendo.com/us/store/products/super-mario-party-jamboree-switch/
+https://mario.nintendo.com/?_gl=1*1tdssow*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTYzOTM3NC4wLjAuMA..
+https://kirby.nintendo.com/?_gl=1*99dtco*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTYzOTM3Ny4wLjAuMA..
+https://play.nintendo.com/themes/friends/isabelle/?view=embed
+https://animalcrossing.nintendo.com/new-horizons/
+https://animalcrossing.nintendo.com/
+https://www.nintendo.com/us/store/products/the-legend-of-zelda-echoes-of-wisdom-switch/
