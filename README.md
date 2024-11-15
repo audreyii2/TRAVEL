@@ -26,10 +26,17 @@ Map marker: https://jsfiddle.net/gh/get/library/pure/googlemaps/js-samples/tree/
 
 Reference links: 
 
-https://www.nintendo.com/us/store/products/super-mario-party-jamboree-switch/
-https://mario.nintendo.com/?_gl=1*1tdssow*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTYzOTM3NC4wLjAuMA..
-https://kirby.nintendo.com/?_gl=1*99dtco*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTYzOTM3Ny4wLjAuMA..
-https://play.nintendo.com/themes/friends/isabelle/?view=embed
-https://animalcrossing.nintendo.com/new-horizons/
-https://animalcrossing.nintendo.com/
-https://www.nintendo.com/us/store/products/the-legend-of-zelda-echoes-of-wisdom-switch/
+1. https://www.nintendo.com/us/store/products/super-mario-party-jamboree-switch/
+2. https://mario.nintendo.com/?_gl=1*1tdssow*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTYzOTM3NC4wLjAuMA..
+3. https://kirby.nintendo.com/?_gl=1*99dtco*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTYzOTM3Ny4wLjAuMA..
+4. https://play.nintendo.com/themes/friends/isabelle/?view=embed
+5. https://animalcrossing.nintendo.com/new-horizons/
+6. https://animalcrossing.nintendo.com/
+7. https://www.nintendo.com/us/store/products/the-legend-of-zelda-echoes-of-wisdom-switch/](https://www.nintendo.com/us/store/products/super-mario-party-jamboree-switch/
+8. https://animalcrossing.nintendo.com/
+9. https://animalcrossing.nintendo.com/new-horizons/
+10. https://kirby.nintendo.com/?_gl=1*99dtco*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTYzOTM3Ny4wLjAuMA..
+11. https://mario.nintendo.com/?_gl=1*1tdssow*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTYzOTM3NC4wLjAuMA..
+12. https://play.nintendo.com/themes/friends/isabelle/?view=embed
+13. https://www.nintendo.com/us/store/products/the-legend-of-zelda-echoes-of-wisdom-switch/
+
