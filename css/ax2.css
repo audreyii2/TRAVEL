@@ -1,0 +1,173 @@
+.page-home .scene4__sign {
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/home/sign_2x.png');
+    background-size: 100%;
+    background-size: 115% 100%;
+    background-position: 50% 50%;
+    padding: 10px 25px 60px 25px;
+    color: #fff;
+    width: 100%;
+    max-width: 300px;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    margin: 0 auto;
+}
+
+.birthday {
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: -30px;
+    margin-top: -50px;
+    z-index: 30;
+}
+
+.birthday__stripe {
+    position: absolute;
+    top: 50%;
+    /* -webkit-transform: translateY(-50%); */
+    transform: translateY(-50%);
+    background-position: center top;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/birthday-red_2x.jpg');
+    /* background-size: 17px 17px; */
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.row {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.birthday__ribbon {
+    position: relative;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/birthday-ribbon.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.birthday__content {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 90%;
+    bottom: 5px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-family: 'Arvo', serif;
+}
+
+.page-home .yellow-bg-wrap {
+    background-image: linear-gradient(-180deg, #fbbb37 0%, #fdd119 100%);
+    padding-top: 80px;
+    position: relative;
+}
+
+.pattern--triangles {
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/triangles-yellow-2x.png');
+    background-size: 170px auto;
+}
+
+.fancy-border:after, .modal__content:after {
+    content: '';
+    background-image: url('/assets/img/common/corner-left-top_2x.png'),url('/assets/img/common/corner-right-top_2x.png'),url('/assets/img/common/corner-left-bottom_2x.png'),url('/assets/img/common/corner-right-bottom_2x.png');
+    background-position: 0 0, 100% 0, 0 100%, 100% 100%;
+    background-size: 53px 53px;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -10px;
+    margin: auto;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    position: absolute;
+}
+
+.featured-games {
+    text-align: center;
+    position: relative;
+    padding-top: 125px;
+    padding-bottom: 0;
+    background-image: linear-gradient(-180deg, #6ddcff 13%, #fff 100%);
+}
+
+.foliage-cap--apple:before {
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/common/apple-border-top_2x.png');
+    background-size: 995px 125px;
+    height: 125px;
+}
+
+.foliage-cap:before {
+    content: '';
+    background-repeat: repeat-x;
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+}
+
+.foliage-cap--apple:after {
+    background-color: #FDD119;
+}
+
+.foliage-cap:after {
+    content: '';
+    left: -25%;
+    right: 0;
+    padding-bottom: 25%;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 65%;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+.page-home .section--pocket-camp .pattern-blade::before {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/pattern-stripes.jpg');
+    background-size: 20px 20px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+section.amiibo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 400%;
+    height: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #01A623;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/green-triangles.png');
+    background-size: 156px 154.5px;
+    background-position: 50% 28%;
+    z-index: -1;
+}
+
+section.amiibo .char--town {
+    padding-bottom: 300px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/common/town-footer_2x.png');
+    background-size: auto 125%;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+}
+

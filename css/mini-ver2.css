@@ -256,9 +256,10 @@ img.icon {
 }
 
 .footer-social a:hover {
-    background-color: hsl(60, 30%, 54%);
+    background-color: #adad67;
 }
 
 main {
     display: block;
 }
+

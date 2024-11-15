@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #adad67;
+}
+
 /* Body and Link Styles */
 body {
     margin: 0;
@@ -98,7 +102,7 @@ section.content-wrapper.one-column.padding-top {
 }
 
 .footer-social a:hover {
-    background-color: hsl(60, 30%, 54%);
+    background-color: #adad67;
 }
 
 /* Header Specific Styles */
@@ -303,7 +307,6 @@ h2.c-sg {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fff;
     color: #333;
 }
 
@@ -338,4 +341,26 @@ h2.c-sg {
 
 .grid-item img:hover {
     transform: scale(1.05);
+}
+
+.scene4__sign {
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/home/sign_2x.png');
+    background-size: 120% 100%;
+    background-position: 50% 50%;
+    padding: 10px 25px 60px 25px;
+    color: #fff;
+    width: 100%;
+    max-width: 300px;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    margin: 0 auto;
+}
+
+.birthday__ribbon {
+    width: 120vw;
+    backdrop-filter: brightness(0.5);
+    margin-left: 50vw;
+    color: #adad67;
+    padding: 4vw;
+    min-width: fit-content;
+    margin-top: 9vh;
 }
