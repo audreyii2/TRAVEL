@@ -42,3 +42,56 @@
 .grid-item img:hover {
     transform: scale(1.05);
 }
+
+/* Footer Styles */
+.footer {
+    background-color: #fffaff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: #575294 9px solid;
+    margin-top: 12vh;
+    margin-bottom: 9vh;
+    border-style: dashed;
+}
+
+.footer h3,
+.footer p {
+    color: #333257;
+    font-family: -webkit-body;
+    font-style: italic;
+    font-variant: petite-caps;
+}
+
+.footer:hover {
+    background-color: #ffffd2;
+    border: #d2d2ff 9px solid;
+}
+
+/* Footer Social Icons */
+.footer-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-social li {
+    display: inline-block;
+}
+
+.footer-social a {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.footer-social a:hover {
+    background-color: hsl(60, 30%, 54%);
+}
