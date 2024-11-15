@@ -43,3 +43,4 @@ Reference links:
 15. https://www.nintendo.com/us/store/products/paper-mario-the-thousand-year-door-switch/
 16. https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/
 17. https://www.nintendo.com/us/store/products/minecraft-switch/
+18. https://mariokarttour.com/en-GB
