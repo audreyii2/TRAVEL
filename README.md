@@ -10,6 +10,7 @@ Page dedicated to Audrey's travel plog: https://audreyii2.github.io/TRAVEL/index
 * Auto-scrolling progress bar.
 * "Back to Top" button.....................................................[B. 50% done]
 * Cleaner, concise, one stylesheet.....................................................[C. 50% done]
+* Comment / Private message section.
 * Search & sort & filter. (Most Recent Date, Most Aggregated Visits, Region / Country, Alphabetical, keywords)
 * Tab index.
 * Toggle theme selector.
