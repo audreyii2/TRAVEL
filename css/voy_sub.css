@@ -43,6 +43,26 @@
     transform: scale(1.05);
 }
 
+/* Header Styles */
+.header {
+    background-color: #fffaff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: #575294 9px solid;
+}
+
+.header h1 {
+    color: #333257;
+    font-family: -webkit-body;
+    font-style: italic;
+    font-variant: petite-caps;
+}
+
+.header:hover {
+    background-color: #ffffd2;
+    border: #d2d2ff 9px solid;
+}
+
 /* Footer Styles */
 .footer {
     background-color: #fffaff;

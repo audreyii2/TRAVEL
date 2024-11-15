@@ -10,7 +10,7 @@ header {
     padding: 0;
     position: absolute;
     z-index: 9999;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: block;
 }
 
@@ -18,10 +18,10 @@ header {
 
 @media (min-width: 32px) {
     .h-top {
-        background-color: #b1b37b;
+        /* background-color: #b1b37b; */
         height: 27vh;
         justify-self: center;
-        overflow: scroll;
+        /* overflow: scroll; */
         float: inline-end;
     }
 
@@ -36,7 +36,7 @@ header {
 
 @media (min-width: 320px) {
     .h-top {
-        background-color: #b1b37b;
+        /* background-color: #b1b37b; */
         height: 27vh;
         justify-self: center;
         float: inline-start;
@@ -207,48 +207,18 @@ span {
     display: flex;
 }
 
-/* Footer Styles */
-.footer {
-    background: #fff8ff;
-    color: #6e67a4;
-    padding: 2rem 0;
+/* Red Text */
+h3.c-sg, h2.c-sg:hover {
+    background-color: #fff8ff;
+    color: #ff6866;
+    margin-left: 27px;
+    width: fit-content;
 }
 
-.footer-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-upper,
-.footer-lower {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-contact h4 {
-    margin-bottom: 1rem;
-}
-
-footer address {
-    margin: 0;
-}
-
-.footer-social {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-social a img {
-    width: 24px;
-    height: 24px;
-}
-
-.footer-lower p {
-    margin: 0;
+/* Red Background */
+h2.c-sg {
+    background-color: #ff6866;
+    color: #fff8ff;
+    margin-left: 27px;
+    width: fit-content;
 }
