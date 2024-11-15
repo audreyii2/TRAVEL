@@ -28,6 +28,12 @@ a:hover {
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: #575294 9px solid;
+    min-width: max-content;
+}
+
+section.content-wrapper.one-column.padding-top {
+    min-width: max-content;
+    padding-right: 18vw;
 }
 
 .header h1 {
