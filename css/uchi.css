@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+
+:root {
+    /* ===== GLOBAL ===== */
+    --em-global-maxwidth-layout: 1400px;
+    --em-global-color-link: #1a1a1a;
+    --em-global-color-linkhover: #8c8585;
+    --em-global-color-basedark: #1a1a1a;
+    --em-global-color-highlight: #ee3224;
+
+    /* ===== TYPOGRAPHY ===== */
+    --em-typography-font-body: 'Open Sans', sans-serif;
+    --em-typography-font-title: 'Open Sans', sans-serif;
+    --em-typography-font-basesize: 16px;
+
+    /* ===== HEADER ===== */
+    --em-header-padding-vertical: 30px;
+    --em-header-color-bg: #f5f5f5;
+    --em-header-color-text: #1a1a1a;
+
+    /* ===== FOOTER ===== */
+    --em-footer-padding-vertical: 30px;
+    --em-footer-color-bg: #f5f5f5;
+    --em-footer-color-text: #1a1a1a;
+
+    /* ===== HERO ===== */
+    --em-hero-bgposition-top: center;
+    --em-hero-height: 400px;
+
+    /* ===== GRID ===== */
+    --em-grid-width-gutter: 15px;
+
+    /* ===== DETAIL PAGE */
+    --em-mediazone-color-bg: #f5f5f5;
+
+    /* ===== Secret Options ===== */
+    --em-mosaicgrid-height-base: 700px;
+    --em-global-border-std: 1px solid #ccc;
+    --em-global-border-subtle: 1px solid rgba(0, 0, 0, 0.11);
+    --em-global-border-bold: 2px solid var(--em-global-color-highlight);
+}
+
+/* ===== Secret Option! ===== */
+.emuseum-grid-border {
+    --em-grid-width-gutter: 0;
+}
