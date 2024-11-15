@@ -1,82 +1,65 @@
-/* Global Styles */
-*,
-:after,
-:before {
-    box-sizing: border-box;
-}
-
-html {
-    background-color: #adad67;
-}
-
-/* Body and Link Styles */
-body {
+/* Start of essential header and footer*/
+body, html {
     margin: 0;
     padding: 0;
-    color: #333;
-    font-family: -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 27px;
+    width: max-content;
+    justify-content: center;
 }
 
-a {
-    color: #0065a4;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Header Styles */
 .header {
+    min-inline-size: -webkit-fill-available;
+    margin-bottom: 9vh;
+}
+
+.header, .footer {
     background-color: #fffaff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: #575294 9px solid;
-    min-width: max-content;
+    width: 81vw;
 }
 
-section.content-wrapper.one-column.padding-top {
-    min-width: max-content;
-    padding-right: 18vw;
-}
-
-.header h1 {
+.header h1, .footer h3, .footer p {
     color: #333257;
     font-family: -webkit-body;
     font-style: italic;
     font-variant: petite-caps;
 }
 
-.header:hover {
-    background-color: #ffffd2;
-    border: #d2d2ff 9px solid;
+h1, h3, p {
+    margin: 0 0 1em 0;
 }
 
-/* Footer Styles */
+.header h2 {
+    background-color: #ffffd2;
+    color: #565732;
+    font-family: cursive;
+    container-type: inline-size;
+    font-size: medium;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Arvo', serif;
+    margin: 0.65em 0 0.45em 0;
+    line-height: 1.5;
+}
+
 .footer {
-    background-color: #fffaff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: #575294 9px solid;
     margin-top: 12vh;
     margin-bottom: 9vh;
     border-style: dashed;
 }
 
-.footer h3,
-.footer p {
-    color: #333257;
-    font-family: -webkit-body;
-    font-style: italic;
-    font-variant: petite-caps;
+.header, .footer {
+    background-color: #fffaff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: #575294 9px solid;
 }
 
-.footer:hover {
-    background-color: #ffffd2;
-    border: #d2d2ff 9px solid;
-}
-
-/* Footer Social Icons */
 .footer-social {
     list-style: none;
     margin: 0;
@@ -101,266 +84,22 @@ section.content-wrapper.one-column.padding-top {
     transition: background-color 0.3s ease;
 }
 
-.footer-social a:hover {
-    background-color: #adad67;
+img.icon {
+    width: 32px;
+    height: 32px;
 }
 
-/* Header Specific Styles */
-header {
-    background: transparent;
-    height: var(--s-header-height);
-    padding: 0;
+.sr-only {
+    color: black;
+    font-size: x-small;
+}
+
+/* End of essential header and footer*/
+
+.birthday__stripe {
     position: absolute;
-    z-index: 9999;
-    display: block;
-}
-
-/* Media Queries for Responsive Design */
-@media (min-width: 32px) {
-    .h-top {
-        height: 27vh;
-        justify-self: center;
-        float: inline-end;
-    }
-
-    img {
-        margin-top: 150px;
-        width: 175vw;
-        height: auto;
-        overflow-clip-margin: content-box;
-        overflow: clip;
-    }
-}
-
-@media (min-width: 320px) {
-    .h-top {
-        height: 27vh;
-        justify-self: center;
-        float: inline-start;
-    }
-
-    img {
-        width: 175vw;
-        height: auto;
-        overflow-clip-margin: content-box;
-        overflow: clip;
-    }
-}
-
-@media (min-width: 320px) {
-    .content-inner {
-        padding-top: 144vh;
-    }
-}
-
-/* Image Styles */
-.frontIMG {
-    position: absolute;
-    top: 13vh;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    z-index: 2;
-}
-
-.backIMG {
-    position: absolute;
-    width: 127%;
-    height: auto;
-    object-fit: cover;
-    position: sticky;
-}
-
-/* Content Inner Styles */
-.content-inner {
-    padding-top: 2vh;
-}
-
-/* Header Inner Styles */
-.h-inner {
-    width: 175vw;
-}
-
-.h-inner-top {
-    padding: 8vh;
-    height: var(--s-header-height);
-    margin: 0 var(--d-grid-margin);
-    display: -webkit-inline-box;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--color-black-100);
-}
-
-.h-title {
-    font-weight: bold;
-    font-size: x-large;
-    margin: 4vh;
-}
-
-/* Navigation Styles */
-.h-bottom .navi {
-    backdrop-filter: hue-rotate(12deg) blur(2px);
-    display: none;
-    color: #0076e6;
-    font-weight: bolder;
-    font-size: medium;
-    line-height: 1.8em;
-    text-shadow: 2px 2px #ceffff;
-    margin-right: 27vw;
-}
-
-.h-bottom.m-opened .navi {
-    padding: 10px 0 12px;
-    display: block;
-}
-
-/* Close Button */
-.close-menu {
-    background-color: #ffffff;
-    color: #00389a;
-    font-size: x-large;
-    font-style: italic;
-    inline-size: min-content;
-}
-
-/* Search, Menu, Calendar Icons */
-.search-wrapper .search-icon,
-.menu-trigger .menu-link,
-.calendar-wrapper .calendar-icon {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    color: #ffffff;
-}
-
-/* Menu Link */
-.menu-trigger .menu-link {
-    background-color: #6e67a4;
-    color: #fff8ff;
-    border-radius: 5vw;
-    font-size: 24px;
-    margin-bottom: 120px;
-}
-
-.menu-trigger.active + .h-bottom nav {
-    display: block;
-}
-
-.h-bottom nav {
-    display: none;
-}
-
-/* Icon Styles */
-.icon {
-    width: 48px;
-    height: 48px;
-}
-
-/* Caption Styles */
-.caption {
-    background-color: #fff8ff;
-    color: #6E67A3;
-    -webkit-text-stroke: thin;
-    font-variant-caps: all-petite-caps;
-    font-size: 17px;
-    font-weight: 600;
-    text-align: center;
-    border: solid 3px;
-    margin-left: 27px;
-}
-
-p.caption:hover {
-    background-color: #ffffad;
-    color: #6e6700;
-}
-
-/* Paragraph, Heading, Span Styles */
-p, h2, h3, span {
-    margin-left: 27px;
-    width: fit-content;
-    margin-inline: auto;
-}
-
-span {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-}
-
-/* Special Text Styles */
-h3.c-sg, h2.c-sg:hover {
-    background-color: #fff8ff;
-    color: #ff6866;
-    margin-left: 27px;
-    width: fit-content;
-}
-
-h2.c-sg {
-    background-color: #ff6866;
-    color: #fff8ff;
-    margin-left: 27px;
-    width: fit-content;
-}
-
-/* Gallery Styles */
-.gallery {
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-bottom: 54vh;
-    margin-top: -31vh;
-}
-
-.grid-item {
-    position: relative;
-}
-
-.grid-item:nth-child(odd) {
-    transform: translateY(75%);
-}
-
-.grid-item img {
-    width: 54vw;
-    display: block;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: transform 0.3s ease;
-}
-
-.grid-item img:hover {
-    transform: scale(1.05);
-}
-
-.scene4__sign {
-    background-image: url('https://animalcrossing.nintendo.com/assets/img/home/sign_2x.png');
-    background-size: 120% 100%;
-    background-position: 50% 50%;
-    padding: 10px 25px 60px 25px;
-    color: #fff;
-    width: 100%;
-    max-width: 300px;
-    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
-    margin: 0 auto;
-}
-
-.birthday__ribbon {
-    width: 120vw;
-    backdrop-filter: brightness(0.5);
-    margin-left: 50vw;
-    color: #adad67;
-    padding: 4vw;
-    min-width: fit-content;
-    margin-top: 9vh;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/birthday-red_2x.jpg');
+    width: 64vw;
+    height: 11vh;
+    margin-left: 11vw;
 }
