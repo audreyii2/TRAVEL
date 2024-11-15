@@ -1,12 +1,18 @@
 /* Start of essential header and footer*/
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
-    margin-left: 27px;
+    margin-left: 7px;
     width: max-content;
     justify-content: center;
+}
+
+html {
+    background-color: #aeb078;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
 }
 
 .header {
@@ -14,22 +20,35 @@ body, html {
     margin-bottom: 9vh;
 }
 
-.header, .footer {
+.header,
+.footer {
     background-color: #fffaff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: #575294 9px solid;
     width: 81vw;
+    margin-right: 13px;
+    place-self: center;
 }
 
-.header h1, .footer h3, .footer p {
+.header:hover,
+.footer:hover {
+    background-color: #ffffd2;
+    border: #d2d2ff 9px solid;
+}
+
+.header h1,
+.footer h3,
+.footer p {
     color: #333257;
     font-family: -webkit-body;
     font-style: italic;
     font-variant: petite-caps;
 }
 
-h1, h3, p {
+h1,
+h3,
+p {
     margin: 0 0 1em 0;
 }
 
@@ -41,7 +60,11 @@ h1, h3, p {
     font-size: medium;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Arvo', serif;
     margin: 0.65em 0 0.45em 0;
     line-height: 1.5;
@@ -53,7 +76,8 @@ h1, h2, h3, h4, h5 {
     border-style: dashed;
 }
 
-.header, .footer {
+.header,
+.footer {
     background-color: #fffaff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -105,11 +129,27 @@ img.icon {
     min-width: 270px;
 }
 
-#main {
-    padding: 7vw;
-}
-
 .first-img {
     width: 169vw;
     margin-left: -54px;
+}
+
+.caption1 {
+    margin-right: 7px;
+    justify-self: center;
+}
+
+.caption1 {
+    padding: 3vw;
+    border: #7a78b0 9px solid;
+    background-color: #c3bffc;
+    width: fit-content;
+}
+
+.cap_back {
+    background-color: #363869;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
+    background-size: 36px 6px;
+    background-size: contain;
+    margin-right: 13px;
 }
