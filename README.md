@@ -40,3 +40,4 @@ Reference links:
 12. https://play.nintendo.com/themes/friends/isabelle/?view=embed
 13. https://www.nintendo.com/us/store/products/the-legend-of-zelda-echoes-of-wisdom-switch/
 14. https://www.nintendo.com/us/store/products/princess-peach-showtime-switch/?_gl=1*13bsx65*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTY0MDkzOC4wLjAuMA..
+15. https://www.nintendo.com/us/store/products/paper-mario-the-thousand-year-door-switch/
