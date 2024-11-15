@@ -44,3 +44,4 @@ Reference links:
 16. https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/
 17. https://www.nintendo.com/us/store/products/minecraft-switch/
 18. https://mariokarttour.com/en-GB
+19. https://www.nintendo.com/us/store/products/mysims-cozy-bundle-switch/
