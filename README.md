@@ -10,7 +10,7 @@ Page dedicated to Audrey's travel plog: https://audreyii2.github.io/TRAVEL/index
 * Auto-scrolling progress bar.
 * "Back to Top" button.....................................................[B. 50% done]
 * Cleaner, concise, one stylesheet.....................................................[C. 50% done]
-* Search (by region / country / keywords) and filter (by year) forms for in-site info.
+* Search and filter. (Most Recent Date, Most Aggregated Visits, Region / Country, Alphabetical, keywords)
 * Tab index.
 * Toggle theme selector.
 * Visual effects and animations (with turn off button) such as fade-in.....................................................[V. on going]
