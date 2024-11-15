@@ -102,4 +102,14 @@ img.icon {
     width: 64vw;
     height: 11vh;
     margin-left: 11vw;
+    min-width: 270px;
+}
+
+#main {
+    padding: 7vw;
+}
+
+.first-img {
+    width: 169vw;
+    margin-left: -54px;
 }
