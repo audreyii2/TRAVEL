@@ -51,6 +51,18 @@
     .footer {
         width: 81vw;
     }
+
+    .content-main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .content-main li {
+        flex: 1 1 calc(49% - 1rem);
+        margin-bottom: 1rem;
+        box-sizing: border-box;
+    }
 }
 
 /* Simplified and normalized base styles */
