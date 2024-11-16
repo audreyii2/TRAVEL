@@ -9,15 +9,15 @@ Page dedicated to Audrey's travel plog: https://audreyii2.github.io/TRAVEL/index
 
 * Auto-scrolling progress bar.
 * "Back to Top" button.....................................................[B. 50% done]
-* Cleaner, concise, one stylesheet.....................................................[C. 50% done]
+* Cleaner, concise, one stylesheet.[100%!!!]
 * Comment / Private message section.
 * Search & sort & filter. (Most Recent Date, Most Aggregated Visits, Region / Country, Alphabetical, keywords)
-* Tab index.
-* Toggle theme selector.
+* Tab index.....................................................
+* Toggle theme selector.[100%!!!]
 * Visual effects and animations (with turn off button) such as fade-in.....................................................[V. on going]
 * Visual statistics of this year's travel times (counting search year results).
 * VSO last year's travel times, new destinations (calculating the difference between the 2, if positive).
-VSO this year's & overall travel by regions / countries (postal code map view).[100%!!!][***Something went wrong***](working good on local but broken on github page)
+VSO this year's & overall travel by regions / countries (postal code map view).[99.9999%][***Something went wrong***](working good on local but broken on github page)
 
 # Personal Tools Convenient for Remote Editing:
 
