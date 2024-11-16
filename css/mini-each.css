@@ -1,3 +1,79 @@
+@media only screen and (min-width: 196px) {
+    .first-img {
+        width: 169vw;
+        margin-left: -54px;
+    }
+
+    .cap_back {
+        background-color: #363869;
+        background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
+        background-size: 81px 81px;
+        border-bottom-left-radius: 36%;
+        border-bottom-right-radius: 36%;
+        margin-right: 13px;
+        padding-bottom: 64px;
+    }
+
+    img.dec-town {
+        margin-top: 10vh;
+        margin-bottom: 8vh;
+        margin-left: 17vw;
+        width: 120vw;
+        border-radius: 10vw;
+        mix-blend-mode: hard-light;
+    }
+
+    .li-social {
+        display: table-cell;
+    }
+
+    img.icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .a-social {
+        -webkit-text-stroke: thin;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .hder {
+        min-width: auto;
+    }
+
+    .cap_back {
+        border-bottom-left-radius: 64%;
+        border-bottom-right-radius: 64%;
+    }
+
+    img.icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .first-img {
+        width: 81vw;
+        margin-left: 23px;
+    }
+
+    .cap_back {
+        margin-left: 23px;
+        width: 81vw;
+    }
+
+    img.dec-town {
+        margin-left: 13vw;
+        width: 60vw;
+    }
+
+    .a-social {
+        margin-right: 48px;
+    }
+}
+
 /* Start of essential header and footer*/
 body,
 html {
@@ -13,16 +89,41 @@ html {
 html {
     background-color: #aeb078;
     background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
+    background-blend-mode: normal;
 }
 
-.header {
+.thm-light {
+    color-scheme: light;
+}
+
+.thm-dark {
+    color-scheme: dark;
+}
+
+html.thm-light {
+    background-color: #aeb078;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
+    background-blend-mode: normal;
+}
+
+html.thm-dark {
+    background-color: #5e5d44;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
+    background-blend-mode: color-burn;
+}
+
+.hder {
     min-inline-size: -webkit-fill-available;
+}
+
+header {
     margin-bottom: 9vh;
 }
 
-.header,
-.footer {
-    background-color: #fffaff;
+.hder,
+.fter {
+    /* background-color: #ffdcff; */
+    background-color: #e9e9ff;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: #575294 9px solid;
@@ -31,15 +132,15 @@ html {
     place-self: center;
 }
 
-.header:hover,
-.footer:hover {
+.hder:hover,
+.fter:hover {
     background-color: #ffffd2;
     border: #d2d2ff 9px solid;
 }
 
-.header h1,
-.footer h3,
-.footer p {
+.hder h1,
+.fter h3,
+.fter p {
     color: #333257;
     font-family: -webkit-body;
     font-style: italic;
@@ -52,7 +153,7 @@ p {
     margin: 0 0 1em 0;
 }
 
-.header h2 {
+.hder h2 {
     background-color: #ffffd2;
     color: #565732;
     font-family: cursive;
@@ -70,21 +171,16 @@ h5 {
     line-height: 1.5;
 }
 
-.footer {
+footer {
     margin-top: 12vh;
+}
+
+.fter {
     margin-bottom: 9vh;
     border-style: dashed;
 }
 
-.header,
-.footer {
-    background-color: #fffaff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: #575294 9px solid;
-}
-
-.footer-social {
+.fter-social {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -93,11 +189,11 @@ h5 {
     gap: 1rem;
 }
 
-.footer-social li {
+.fter-social li {
     display: inline-block;
 }
 
-.footer-social a {
+.fter-social a {
     width: 2rem;
     height: 2rem;
     display: block;
@@ -108,9 +204,8 @@ h5 {
     transition: background-color 0.3s ease;
 }
 
-img.icon {
-    width: 32px;
-    height: 32px;
+img.dec-town:hover {
+    mix-blend-mode: color;
 }
 
 .sr-only {
@@ -119,20 +214,6 @@ img.icon {
 }
 
 /* End of essential header and footer*/
-
-.birthday__stripe {
-    position: absolute;
-    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/birthday-red_2x.jpg');
-    width: 64vw;
-    height: 11vh;
-    margin-left: 11vw;
-    min-width: 270px;
-}
-
-.first-img {
-    width: 169vw;
-    margin-left: -54px;
-}
 
 .caption1 {
     margin-right: 7px;
@@ -146,10 +227,36 @@ img.icon {
     width: fit-content;
 }
 
-.cap_back {
-    background-color: #363869;
-    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
-    background-size: 36px 6px;
-    background-size: contain;
-    margin-right: 13px;
+.menu {
+    margin-top: 1vh;
+    font-family: 'Arvo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.trg-theme {
+    background-color: #d7d83e;
+    border: #898f00 4px solid;
+    border-radius: 20px;
+}
+
+.theme-item {
+    background-color: #a1a700;
+    border: #6f7800 4px solid;
+    color: white;
+    margin-top: 0.6vh;
+    cursor: pointer;
+}
+
+.trg-theme:focus+.dropdown-content,
+.trg-theme:active+.dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 6px 18px 0px black;
+    z-index: 1;
 }
