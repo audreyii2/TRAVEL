@@ -1,4 +1,17 @@
 /* Combined CSS from jquery-ui-min.css, coralui3-min.css, and site-min.css */
+@media only screen and (min-width: 106px) {
+    .header {
+        min-inline-size: -webkit-fill-available;
+        margin-bottom: 9vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        width: 64vw;
+        justify-self: center;
+    }
+}
 
 /* Simplified and normalized base styles */
 body,
@@ -46,11 +59,6 @@ h2:hover {
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: #575294 9px solid;
-}
-
-.header {
-    min-inline-size: -webkit-fill-available;
-    margin-bottom: 9vh;
 }
 
 .footer {
@@ -262,4 +270,3 @@ img.icon {
 main {
     display: block;
 }
-
