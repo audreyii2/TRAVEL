@@ -278,13 +278,19 @@ img.dec-town:hover {
     margin-top: 1vh;
     font-family: 'Arvo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .trg-theme {
     background-color: #d7d83e;
     border: #898f00 4px solid;
     border-radius: 20px;
+    color: black;
+    margin-right: 13px;
+}
+
+.trg-default {
+    font-size: small;
     color: black;
 }
 
@@ -307,6 +313,7 @@ img.dec-town:hover {
     min-width: 160px;
     box-shadow: 0px 6px 18px 0px black;
     z-index: 1;
+    margin-top: 11vh;
 }
 
 .theme-indicator {
