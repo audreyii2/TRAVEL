@@ -45,23 +45,43 @@
     }
 }
 
-@media only screen and (min-width: 586px) {
+@media only screen and (min-width: 424px) {
 
     .header,
-    .footer {
+    .footer,
+    #map {
         width: 81vw;
+        margin-left: -120vw;
     }
 
     .content-main {
-        display: flex;
+        display: -webkit-box;
         flex-wrap: wrap;
         gap: 1rem;
     }
 
     .content-main li {
-        flex: 1 1 calc(49% - 1rem);
+        flex: 1 1 calc(34% - 1rem);
         margin-bottom: 1rem;
         box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+
+    .header,
+    .footer,
+    #map {
+        justify-self: center;
+        margin-left: 25vw;
+    }
+
+    .content-main {
+        display: flex;
+    }
+
+    .content-main li {
+        flex: 1 1 calc(49% - 1rem);
     }
 }
 
