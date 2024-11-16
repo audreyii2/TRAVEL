@@ -16,17 +16,17 @@
     </div>
     <!--Start of Menu-->
     <div class="menu">
-        <button class="trg-theme" title="Theme">
+        <button class="trg-theme" title="Theme" onclick="themeTrigger()">
             <span>Theme Color</span>
         </button>
-        <div class="dropdown-content">
+        <div class="theme-list">
             <ul>
-                <li>
+                <li class="theme-indicator">
                     <button class="theme-item" data-theme="light" aria-label="light mode">
                         <span>Light</span>
                     </button>
                 </li>
-                <li>
+                <li class="theme-indicator">
                     <button class="theme-item" data-theme="dark" aria-label="dark mode">
                         <span>Dark</span>
                     </button>
@@ -73,9 +73,9 @@
 <footer>
     <img class="dec-town" src="pic/townSG.png" alt="Decorational Image above the Footer Part">
     <div class="fter">
-        <div class="footer-row footer-row-subscribe">
+        <div class="footer-row">
             <div class="footer-row-inner">
-                <div class="footer-col subscribe-col">
+                <div class="footer-col-title">
                     <h2>Stay <span>connected</span></h2>
                     <p>Learn more about me</p>
                 </div>
@@ -83,7 +83,7 @@
         </div>
         <div class="footer-row footer-row-utility">
             <div class="footer-row-inner">
-                <div class="footer-col footer-col-social">
+                <div class="footer-col-social">
                     <ul class="footer-social">
                         <li class="li-social">
                             <a href="https://www.linkedin.com/in/audrey-lin-b34b262a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
@@ -131,7 +131,13 @@
     </div>
 </footer>
 
-<script src="js/theme-trigger.js"></script>
+<script>
+    function themeTrigger() {
+        var element = document.documentElement;
+        element.classList.toggle("thm-dark");
+    }
+</script>
+
 </body>
 
 </html>
