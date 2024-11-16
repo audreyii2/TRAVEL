@@ -35,6 +35,12 @@
     .a-social {
         -webkit-text-stroke: thin;
     }
+
+    .sr-only {
+        color: black;
+        font-size: x-small;
+        margin-right: 12px;
+    }
 }
 
 @media only screen and (min-width: 375px) {
@@ -69,9 +75,23 @@
         width: 60vw;
     }
 
-    .a-social {
-        margin-right: 48px;
+    img.icon {
+        width: 48px;
+        height: 48px;
     }
+
+    .sr-only {
+        margin-right: 32px;
+    }
+}
+
+.thm-dark .cap_back {
+    background-blend-mode: color-burn;
+}
+
+.thm-dark img.icon {
+    background-color: #2c2e45;
+    border: #2c2e45 4px solid;
 }
 
 /* Start of essential header and footer*/
@@ -92,18 +112,8 @@ html {
     background-blend-mode: normal;
 }
 
-.thm-light {
-    color-scheme: light;
-}
-
 .thm-dark {
     color-scheme: dark;
-}
-
-html.thm-light {
-    background-color: #aeb078;
-    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
-    background-blend-mode: normal;
 }
 
 html.thm-dark {
@@ -130,12 +140,30 @@ header {
     width: 81vw;
     margin-right: 13px;
     place-self: center;
+    color: black;
+}
+
+.thm-dark .hder,
+.thm-dark .fter {
+    background-color: #545478;
+    border: #8780c2 9px solid;
+    color: white;
+}
+
+.thm-dark .fter {
+    border-style: dashed;
 }
 
 .hder:hover,
 .fter:hover {
     background-color: #ffffd2;
     border: #d2d2ff 9px solid;
+}
+
+.thm-dark .hder:hover,
+.thm-dark .fter:hover {
+    background-color: #626601;
+    border: #b9b1e0 9px solid;
 }
 
 .hder h1,
@@ -145,6 +173,18 @@ header {
     font-family: -webkit-body;
     font-style: italic;
     font-variant: petite-caps;
+}
+
+.thm-dark .hder h1,
+.thm-dark .fter h3,
+.thm-dark .fter p,
+.thm-dark .sr-only {
+    color: #fff;
+}
+
+.thm-dark .a-social {
+    -webkit-text-stroke: unset;
+    font-weight: bold;
 }
 
 h1,
@@ -161,6 +201,11 @@ p {
     font-size: medium;
 }
 
+.thm-dark .hder h2 {
+    color: #ffffd2;
+    background-color: #626601;
+}
+
 h1,
 h2,
 h3,
@@ -174,6 +219,8 @@ h5 {
 footer {
     margin-top: 12vh;
 }
+
+
 
 .fter {
     margin-bottom: 9vh;
@@ -208,9 +255,8 @@ img.dec-town:hover {
     mix-blend-mode: color;
 }
 
-.sr-only {
-    color: black;
-    font-size: x-small;
+.thm-dark img.dec-town:hover {
+    mix-blend-mode: difference;
 }
 
 /* End of essential header and footer*/
@@ -225,6 +271,7 @@ img.dec-town:hover {
     border: #7a78b0 9px solid;
     background-color: #c3bffc;
     width: fit-content;
+    color: black;
 }
 
 .menu {
@@ -238,6 +285,7 @@ img.dec-town:hover {
     background-color: #d7d83e;
     border: #898f00 4px solid;
     border-radius: 20px;
+    color: black;
 }
 
 .theme-item {
@@ -248,15 +296,23 @@ img.dec-town:hover {
     cursor: pointer;
 }
 
-.trg-theme:focus+.dropdown-content,
-.trg-theme:active+.dropdown-content {
+.trg-theme:focus+.theme-list,
+.trg-theme:active+.theme-list {
     display: block;
 }
 
-.dropdown-content {
+.theme-list {
     display: none;
     position: absolute;
     min-width: 160px;
     box-shadow: 0px 6px 18px 0px black;
     z-index: 1;
+}
+
+.theme-indicator {
+    color: white;
+}
+
+.thm-dark .theme-indicator {
+    color: black;
 }
