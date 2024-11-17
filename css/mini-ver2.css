@@ -136,8 +136,18 @@
         box-sizing: border-box;
     }
 
-    .promo-item {
+    .promo-item#it-bg,
+    .promo-item#it-tl-op {
+        background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-leaves-white.jpg');
+        background-color: #d2c2c9;
+        background-blend-mode: luminosity;
+    }
+
+    .promo-item#it-gr,
+    .promo-item#it-tl {
         background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-characters-2x.jpg');
+        background-color: #99e5ac;
+        background-blend-mode: darken;
     }
 }
 
@@ -243,14 +253,17 @@ h3 {
 }
 
 
-#tl {
+#tl,
+#tl-op:hover {
     background-color: #00615c;
     color: white;
 }
 
-#tl:hover {
-    background-color: #e4ffff;
-    color: #00615c;
+#tl:hover,
+#tl-op {
+    background-color: #9abcc0;
+    color: #002e2b;
+    font-weight: bolder;
 }
 
 #gr,
@@ -265,33 +278,39 @@ h3 {
     color: #5b5b06;
 }
 
-#it-gr {
-    border: 2px solid #5b5b06;
+#it-gr,
+#it-bg:hover {
+    border: 4px solid #5b5b06;
     text-shadow: 0 0 grey;
 }
 
 #it-bg:hover {
-    border: 9px solid #5b5b06;
-    text-shadow: 0 0 grey;
+    border-style: 9px;
 }
 
-#it-bg {
-    border: 2px solid #ffffad;
+#it-bg,
+#it-gr:hover {
+    border: 4px solid #ffffad;
     text-shadow: 0 0 black;
 }
 
 #it-gr:hover {
-    border: 9px solid #ffffad;
-    text-shadow: 0 0 black;
+    border-style: 9px;
 }
 
-#it-tl {
-    border: 2px solid #00615c;
+#it-tl,
+#it-tl-op:hover {
+    border: 4px solid #00615c;
     text-shadow: 0 0 grey;
 }
 
-#it-tl:hover {
-    border: 9px solid #e4ffff;
+#it-tl-op:hover {
+    border-style: 9px;
+}
+
+#it-tl:hover,
+#it-tl-op {
+    border: 4px solid #9abcc0;
     text-shadow: 0 0 black;
 }
 
