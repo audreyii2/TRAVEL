@@ -1,6 +1,6 @@
 @media only screen and (min-width: 141px) {
     .first-img {
-        width: 169vw;
+        width: 256vw;
         margin-left: -54px;
     }
 
@@ -17,7 +17,7 @@
     img.dec-town {
         margin-top: 10vh;
         margin-bottom: 8vh;
-        margin-left: 17vw;
+        margin-left: 50vw;
         width: 120vw;
         border-radius: 10vw;
         mix-blend-mode: hard-light;
@@ -41,6 +41,25 @@
         font-size: x-small;
         margin-right: 12px;
     }
+
+    header,
+    footer,
+    main {
+        margin-left: 7vw;
+    }
+
+    .hder,
+    .fter {
+        background-color: #e9e9ff;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: #575294 9px solid;
+        width: 120vw;
+        margin-right: 13px;
+        place-self: center;
+        display: grid;
+        color: black;
+    }
 }
 
 @media only screen and (min-width: 375px) {
@@ -56,6 +75,11 @@
     img.icon {
         width: 32px;
         height: 32px;
+    }
+
+    .hder,
+    .fter {
+        width: 81vw;
     }
 }
 
@@ -129,20 +153,6 @@ html.thm-dark {
 
 header {
     margin-bottom: 9vh;
-}
-
-.hder,
-.fter {
-    /* background-color: #ffdcff; */
-    background-color: #e9e9ff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: #575294 9px solid;
-    width: 81vw;
-    margin-right: 13px;
-    place-self: center;
-    display: grid;
-    color: black;
 }
 
 .thm-dark .hder,
