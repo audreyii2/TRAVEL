@@ -1,70 +1,20 @@
-@media only screen and (min-width: 141px) {
-    .first-img {
-        width: 256vw;
-        margin-left: -54px;
+@media (min-width: 180px) {
+    .dec-ribbon-lt,
+    .dec-ribbon-rt {
+        height: 48vh;
+        background-repeat: no-repeat;
+        background-position-y: 40px;
+        background-size: 160px;
+        width: 32vw;
+        position: absolute;
+        z-index: 15;
+        margin-top: 4vh;
+        margin-left: -32vw;
     }
 
-    .cap_back {
-        background-color: #363869;
-        background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
-        background-size: 81px 81px;
-        border-bottom-left-radius: 36%;
-        border-bottom-right-radius: 36%;
-        margin-right: 13px;
-        padding-bottom: 64px;
-    }
-
-    img.dec-town {
-        margin-top: 10vh;
-        margin-bottom: 8vh;
-        margin-left: 50vw;
-        width: 120vw;
-        border-radius: 10vw;
-        mix-blend-mode: hard-light;
-    }
-
-    .li-social {
-        display: table-cell;
-    }
-
-    img.icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    .a-social {
-        -webkit-text-stroke: thin;
-    }
-
-    .sr-only {
-        color: black;
-        font-size: x-small;
-        margin-right: 12px;
-    }
-
-    header,
-    footer,
-    main {
-        margin-left: 7vw;
-    }
-
-    .hder,
-    .fter {
-        background-color: #e9e9ff;
-        padding: 1rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border: #575294 9px solid;
-        width: 120vw;
-        margin-right: 13px;
-        place-self: center;
-        display: grid;
-        color: black;
-    }
-}
-
-@media only screen and (min-width: 375px) {
-    .hder {
-        min-width: auto;
+    .dec-ribbon-rt {
+        transform: scaleX(-1);
+        margin-left: 112vw;
     }
 
     .cap_back {
@@ -77,58 +27,75 @@
         height: 32px;
     }
 
+    .first-img {
+        width: 380vw;
+    }
+
     .hder,
     .fter {
+        overflow-wrap: break-word;
+        min-width: 230%;
+    }
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 12vw;
+        margin-left: 81vw;
+        width: 100%;
+        justify-content: center;
+        display: grid;
+    }
+
+    .hder {
+        min-inline-size: -webkit-fill-available;
+        background-color: #e9e9ff;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: #575294 9px solid;
         width: 81vw;
+        place-self: center;
+        display: grid;
+        color: black;
+        position: relative;
+        z-index: 20;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 425px) {
+    body,
+    html {
+        font-size: 32px;
+        margin-left: 36vw;
+    }
+
     .first-img {
-        width: 81vw;
-        margin-left: 23px;
+        width: 220vw;
     }
 
-    .cap_back {
-        margin-left: 23px;
-        width: 81vw;
-    }
-
-    img.dec-town {
-        margin-left: 13vw;
-        width: 60vw;
-    }
-
-    img.icon {
-        width: 48px;
-        height: 48px;
-    }
-
-    .sr-only {
-        margin-right: 32px;
+    .hder,
+    .fter {
+        min-width: 120%;
     }
 }
 
-.thm-dark .cap_back {
-    background-blend-mode: color-burn;
+@media (min-width: 660px) {
+    .dec-ribbon-rt {
+        margin-left: 79vw;
+    }
+
+    body,
+    html {
+        font-size: 32px;
+    }
 }
 
-.thm-dark img.icon {
-    background-color: #2c2e45;
-    border: #2c2e45 4px solid;
-}
-
-/* Start of essential header and footer*/
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 7px;
-    width: max-content;
-    justify-content: center;
-    display: grid;
+@media (min-width: 760px) {
+    .dec-ribbon-rt {
+        margin-left: 79vw;
+    }
 }
 
 html {
@@ -137,26 +104,106 @@ html {
     background-blend-mode: normal;
 }
 
-.thm-dark {
-    color-scheme: dark;
-}
-
 html.thm-dark {
     background-color: #5e5d44;
     background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
     background-blend-mode: color-burn;
 }
 
-.hder {
-    min-inline-size: -webkit-fill-available;
-}
-
 header {
     margin-bottom: 9vh;
+    z-index: 10;
+    position: relative;
+    place-self: center;
+}
+
+.first-img,
+.fter,
+.dec-town,
+.cap_back {
+    display: grid;
+    justify-self: center;
+}
+
+.fter {
+    min-width: max-content;
+}
+
+.full-ribbon {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.ribbon-container {
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%);
+    width: 77%;
+    max-width: 300px;
+    color: #6b5c43;
+}
+
+.ribbon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+    line-height: 1.2;
+    padding: 17px;
+    border-radius: 3px;
+}
+
+.ribbon::before,
+.ribbon::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 63px;
+    width: 58px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ribbon--green::before,
+.ribbon--green::after {
+    background-image: url('/new-horizons/assets/img/global/ribbon-end-green.svg');
+}
+
+.ribbon::before {
+    left: 0;
+}
+
+.ribbon::after {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.footer {
+    margin-top: 12vh;
+}
+
+.fter {
+    background-color: #e9e9ff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: #575294 9px solid;
+    width: 81vw;
+    place-self: center;
+    display: grid;
+    color: black;
+    margin-bottom: 9vh;
+    border-style: dashed;
 }
 
 .thm-dark .hder,
-.thm-dark .fter {
+.thm-dark .fter,
+.thm-dark .cap_back,
+.thm-dark .sr-only {
     background-color: #545478;
     border: #8780c2 9px solid;
     color: white;
@@ -189,8 +236,7 @@ header {
 
 .thm-dark .hder h1,
 .thm-dark .fter h3,
-.thm-dark .fter p,
-.thm-dark .sr-only {
+.thm-dark .fter p {
     color: #fff;
 }
 
@@ -199,18 +245,11 @@ header {
     font-weight: bold;
 }
 
-h1,
-h3,
-p {
-    margin: 0 0 1em 0;
-}
-
-.hder h2 {
+.hder #sub-title {
     background-color: #ffffd2;
     color: #565732;
     font-family: cursive;
     container-type: inline-size;
-    font-size: medium;
 }
 
 .thm-dark .hder h2 {
@@ -218,77 +257,18 @@ p {
     background-color: #626601;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Arvo', serif;
-    margin: 0.65em 0 0.45em 0;
-    line-height: 1.5;
-}
-
-footer {
-    margin-top: 12vh;
-}
-
-
-
-.fter {
-    margin-bottom: 9vh;
-    border-style: dashed;
-}
-
-.fter-social {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    display: grid;
-    gap: 1rem;
-}
-
-.fter-social li {
-    display: inline-block;
-}
-
-.fter-social a {
-    width: 2rem;
-    height: 2rem;
-    display: block;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 2rem;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-img.dec-town:hover {
-    mix-blend-mode: color;
-}
-
-.thm-dark img.dec-town:hover {
-    mix-blend-mode: difference;
-}
-
-/* End of essential header and footer*/
-
 .caption1 {
-    margin-right: 7px;
-    justify-self: center;
-    display: grid;
-}
-
-.caption1 {
-    padding: 3vw;
     border: #7a78b0 9px solid;
     background-color: #c3bffc;
-    width: fit-content;
+    width: 66%;
     color: black;
+    place-self: center;
+    padding: 4vw;
 }
 
 .menu {
     margin-top: 1vh;
+    margin-left: 10vw;
     font-family: 'Arvo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     display: inline-flex;
@@ -335,4 +315,60 @@ img.dec-town:hover {
 
 .thm-dark .theme-indicator {
     color: black;
+}
+
+.cap_back {
+    background-color: #363869;
+    background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/squares.png');
+    background-size: 81px 81px;
+    border-bottom-left-radius: 36%;
+    border-bottom-right-radius: 36%;
+    margin-right: 13px;
+    padding-bottom: 64px;
+    width: 64%;
+    overflow-wrap: break-word;
+}
+
+img.dec-town {
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    width: 64%;
+    border-radius: 10vw;
+    mix-blend-mode: hard-light;
+}
+
+.li-social {
+    display: table-cell;
+}
+
+img.icon {
+    width: 24vw;
+    height: 24vw;
+    margin-right: 12vw;
+}
+
+.a-social {
+    -webkit-text-stroke: thin;
+}
+
+.sr-only {
+    color: black;
+    margin-right: 12px;
+}
+
+.thm-dark .cap_back {
+    background-blend-mode: color-burn;
+}
+
+.thm-dark img.icon {
+    background-color: #2c2e45;
+    border: #2c2e45 4px solid;
+}
+
+img.dec-town:hover {
+    mix-blend-mode: color;
+}
+
+.thm-dark img.dec-town:hover {
+    mix-blend-mode: difference;
 }
