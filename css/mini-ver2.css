@@ -35,6 +35,7 @@
         margin-right: 13px;
         width: max-content;
         justify-content: center;
+        display: grid;
     }
 
     h1:hover {
