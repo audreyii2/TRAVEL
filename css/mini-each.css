@@ -141,6 +141,7 @@ header {
     width: 81vw;
     margin-right: 13px;
     place-self: center;
+    display: grid;
     color: black;
 }
 
@@ -232,8 +233,8 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
     justify-content: center;
+    display: grid;
     gap: 1rem;
 }
 
@@ -265,6 +266,7 @@ img.dec-town:hover {
 .caption1 {
     margin-right: 7px;
     justify-self: center;
+    display: grid;
 }
 
 .caption1 {
