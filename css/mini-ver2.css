@@ -12,17 +12,6 @@
         margin-bottom: 9vh;
     }
 
-    .promo-item {
-        flex: 1 1 calc(33.333% - 1rem);
-        /* Three columns with margin */
-        background-color: #fff;
-        /* border: 1px solid #ddd; */
-        border-radius: 4px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
     .promo-img {
         width: 100%;
         height: 230px;
@@ -35,6 +24,73 @@
         height: max-content;
         background-position: right;
     }
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        margin-left: 27px;
+        margin-right: 13px;
+        width: max-content;
+        justify-content: center;
+    }
+
+    h1:hover {
+        font-size: xx-large;
+        font-style: italic;
+        color: #333257;
+    }
+
+    h2:hover {
+        font-size: xx-large;
+        font-style: italic;
+        color: #333257;
+    }
+
+    .header h2 {
+        background-color: #ffffd2;
+        color: #565732;
+        font-family: cursive;
+        container-type: inline-size;
+        font-size: medium;
+    }
+
+    .sr-only {
+        color: black;
+        font-size: x-small;
+    }
+
+    .category {
+        font-size: 0.85rem;
+        color: black;
+        padding-top: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .rte-introtxt {
+        font-size: x-large;
+        /* font-variant-caps: small-caps; */
+        color: purple;
+    }
+
+    .cta-btn {
+        display: block;
+        margin-top: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 2px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+
+    .footer-social li {
+        display: inline-block;
+        margin-right: 16px;
+    }
 }
 
 @media only screen and (min-width: 375px) {
@@ -43,6 +99,14 @@
     .footer {
         width: 120vw;
     }
+
+    .sr-only {
+        font-size: small;
+    }
+
+    .footer-social li {
+        margin-right: 32px;
+    }
 }
 
 @media only screen and (min-width: 424px) {
@@ -50,7 +114,7 @@
     .header,
     .footer,
     #map {
-        width: 81vw;
+        width: 100vw;
         margin-left: -120vw;
     }
 
@@ -64,6 +128,10 @@
         flex: 1 1 calc(34% - 1rem);
         margin-bottom: 1rem;
         box-sizing: border-box;
+    }
+
+    .promo-item {
+        background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-characters-2x.jpg');
     }
 }
 
@@ -80,23 +148,16 @@
         display: flex;
     }
 
-    .content-main li {
-        flex: 1 1 calc(49% - 1rem);
+    .promo-item {
+        width: 67%;
+    }
+
+    body {
+        width: unset;
     }
 }
 
 /* Simplified and normalized base styles */
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    margin-left: 27px;
-    margin-right: 13px;
-    width: max-content;
-    justify-content: center;
-}
 
 html {
     background-image: url('https://animalcrossing.nintendo.com/assets/img/patterns/footer-dots.png');
@@ -108,18 +169,6 @@ h1,
 h3,
 p {
     margin: 0 0 1em 0;
-}
-
-h1:hover {
-    font-size: xx-large;
-    font-style: italic;
-    color: #333257;
-}
-
-h2:hover {
-    font-size: xx-large;
-    font-style: italic;
-    color: #333257;
 }
 
 /* General Utility Classes */
@@ -147,14 +196,6 @@ h2:hover {
     font-variant: petite-caps;
 }
 
-.header h2 {
-    background-color: #ffffd2;
-    color: #565732;
-    font-family: cursive;
-    container-type: inline-size;
-    font-size: medium;
-}
-
 .header:hover,
 .footer:hover {
     background-color: #ffffd2;
@@ -162,24 +203,14 @@ h2:hover {
 }
 
 /* Promo Section Styles */
-.sr-only {
-    color: black;
-    ;
-    font-size: x-small;
-}
+
 
 .promo-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.category {
-    font-size: 0.85rem;
-    color: black;
-    padding-top: 1rem;
-    font-weight: bold;
-    text-align: center;
-}
+
 
 .category,
 .rte-introtxt,
@@ -188,11 +219,6 @@ h3,
     padding-left: 1rem;
 }
 
-.rte-introtxt {
-    font-size: x-large;
-    /* font-variant-caps: small-caps; */
-    color: purple;
-}
 
 .rte-introtxt:hover {
     color: #ff0000;
@@ -209,16 +235,6 @@ h3 {
     unicode-bidi: isolate;
 }
 
-.cta-btn {
-    display: block;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 2px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-    font-size: xx-large;
-}
 
 #tl {
     background-color: #00615c;
@@ -285,10 +301,6 @@ h3 {
 img.icon {
     width: 32px;
     height: 32px;
-}
-
-.footer-social li {
-    display: inline-block;
 }
 
 .footer-social a {
