@@ -9,7 +9,7 @@ Page dedicated to Audrey's travel plog: https://audreyii2.github.io/TRAVEL/index
 
 * Auto-scrolling progress bar.
 * "Back to Top" button.....................................................[B. 50% done]
-* Cleaner, concise, one stylesheet.[99.9999%!!!](Modify the "caption" part (esceoically the sizes), add a home page button at the central & bottom of footer)
+* Cleaner, concise, one stylesheet.[99.9999%!!!](Modify the "caption" part (esceoically the sizes), add a home page button at the central & bottom of footer, recover the hover effects & .thm-dark for dec-town image)
 * Comment / Private message section.
 * Search & sort & filter. (Most Recent Date, Most Aggregated Visits, Region / Country, Alphabetical, keywords)
 * Tab index.....................................................
