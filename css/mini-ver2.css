@@ -136,18 +136,33 @@
         box-sizing: border-box;
     }
 
-    .promo-item#it-bg,
+    
+    .promo-item#it-bg:hover,
     .promo-item#it-tl-op {
         background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-leaves-white.jpg');
         background-color: #d2c2c9;
         background-blend-mode: luminosity;
     }
 
+    .promo-item#it-bg,
+    .promo-item#it-tl-op:hover {
+        background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-leaves-white.jpg');
+        background-color: #d20000;
+        background-blend-mode: hard-light;
+    }
+
     .promo-item#it-gr,
-    .promo-item#it-tl {
+    .promo-item#it-tl:hover {
         background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-characters-2x.jpg');
         background-color: #99e5ac;
         background-blend-mode: darken;
+    }
+
+    .promo-item#it-gr:hover, 
+    .promo-item#it-tl {
+        background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-characters-2x.jpg');
+        background-color: #99e;
+        background-blend-mode: hard-light;
     }
 }
 
