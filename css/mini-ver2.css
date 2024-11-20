@@ -148,7 +148,7 @@
     .promo-item#it-tl-op:hover {
         background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-leaves-white.jpg');
         background-color: #d20000;
-        background-blend-mode: screen;
+        background-blend-mode: lighten;
     }
 
     .promo-item#it-gr,
