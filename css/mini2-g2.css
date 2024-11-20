@@ -1,4 +1,18 @@
+@media only screen and (min-width: 32px) {
+
+    .dec-ribbon-lt,
+    .dec-ribbon-rt {
+        height: 64px;
+        width: 64px;
+    }
+
+    .dec-ribbon-rt {
+        transform: scaleX(-1);
+    }
+}
+
 @media only screen and (min-width: 886px) {
+
     .dec-ribbon-lt,
     .dec-ribbon-rt {
         height: 124px;
@@ -54,16 +68,6 @@ header {
 
 #sub-title {
     margin-top: -4vh;
-}
-
-.dec-ribbon-lt,
-.dec-ribbon-rt {
-    height: 64px;
-    width: 64px;
-}
-
-.dec-ribbon-rt {
-    transform: scaleX(-1);
 }
 
 .menu {
