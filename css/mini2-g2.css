@@ -18,7 +18,7 @@ html {
 
 /* Header styles */
 header {
-    margin-bottom: 6vh;
+    /* margin-bottom: 6vh; */
     width: 100%;
     height: 70vh;
 }
@@ -42,6 +42,10 @@ header {
     margin: 0 auto;
     display: grid;
     margin-top: 3vh;
+}
+
+#sub-title {
+    margin-top: -4vh;
 }
 
 .dec-ribbon-lt,
@@ -158,10 +162,10 @@ footer {
 .dec-town {
     width: 95%;
     max-width: 800px;
-    margin: 0 auto 2vh;
+    margin: -9vh auto 2vh;
     border-radius: 10vw;
     background-color: currentColor;
-    mix-blend-mode: hard-light;
+    mix-blend-mode: color-burn;
 }
 
 .fter {
@@ -250,4 +254,8 @@ html.thm-dark {
 .fter:hover {
     background-color: #ffffd2;
     border: #d2d2ff 9px solid;
+}
+
+.thm-dark .dec-town {
+    mix-blend-mode: exclusion;
 }
