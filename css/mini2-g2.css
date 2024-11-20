@@ -20,6 +20,7 @@ html {
 header {
     margin-bottom: 6vh;
     width: 100%;
+    height: 70vh;
 }
 
 .full-ribbon {
@@ -108,7 +109,6 @@ header {
     background-size: 81px 81px;
     border-bottom-left-radius: 36%;
     border-bottom-right-radius: 36%;
-    margin-bottom: 2vh;
     padding: 2vw;
     width: 90%;
     display: grid;
@@ -152,7 +152,6 @@ h3 {
 /* Footer styles */
 footer {
     margin-top: 5vh;
-    width: 89%;
     text-align: center;
 }
 
@@ -168,6 +167,7 @@ footer {
 .fter {
     background-color: #e9e9ff;
     padding: 1rem;
+    padding-top: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: #575294 9px solid;
     border-style: dashed;
