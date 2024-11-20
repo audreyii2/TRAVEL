@@ -7,7 +7,7 @@
         padding: 1rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border: #575294 9px solid;
-        width: 140vw;
+        width: 100vw;
         justify-self: center;
         display: grid;
         margin-bottom: 9vh;
@@ -34,7 +34,7 @@
         font-size: 16px;
         margin-left: 27px;
         margin-right: 13px;
-        width: max-content;
+        width: 100vw;
         justify-content: center;
         display: grid;
     }
@@ -103,7 +103,7 @@
 
     .header,
     .footer {
-        width: 120vw;
+        width: 100vw;
     }
 
     .sr-only {
@@ -121,7 +121,7 @@
     .footer,
     #map {
         width: 100vw;
-        margin-left: -120vw;
+        margin-left: 0;
     }
 
     .content-main {
@@ -173,7 +173,7 @@
     #map {
         display: grid;
         justify-self: center;
-        margin-left: 25vw;
+        margin-left: 0;
     }
 
     .content-main {
@@ -185,7 +185,7 @@
     }
 
     body {
-        width: unset;
+        width: 100vw;
     }
 }
 
