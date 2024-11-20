@@ -161,6 +161,8 @@ footer {
     max-width: 800px;
     margin: 0 auto 2vh;
     border-radius: 10vw;
+    background-color: currentColor;
+    mix-blend-mode: hard-light;
 }
 
 .fter {
