@@ -1,3 +1,11 @@
+@media only screen and (min-width: 886px) {
+    .dec-ribbon-lt,
+    .dec-ribbon-rt {
+        height: 124px;
+        width: 124px;
+    }
+}
+
 /* Base styles for body and html */
 body,
 html {
@@ -95,8 +103,8 @@ header {
     margin-top: 0.6vh;
 }
 
-.trg-theme:focus + .theme-list,
-.trg-theme:active + .theme-list {
+.trg-theme:focus+.theme-list,
+.trg-theme:active+.theme-list {
     display: block;
 }
 
