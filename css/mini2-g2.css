@@ -185,7 +185,7 @@ footer {
     padding: 1rem;
     padding-top: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: #575294 9px solid;
+    border: #575294 3px solid;
     border-style: dashed;
     max-width: 800px;
     margin: 0 auto 5vh;
@@ -254,6 +254,15 @@ html.thm-dark {
 
 .thm-dark .theme-indicator {
     color: black;
+}
+
+.thm-dark .footer-row-util {
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
+
+.thm-dark .li-social {
+    display: ruby-text;
 }
 
 /* Accessibility styles */
