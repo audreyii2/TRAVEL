@@ -16,7 +16,7 @@
     .promo-img {
         min-width: 100%;
         /* min-height: 600px; */
-        min-height: 300px;
+        min-height: 180px;
         background-size: cover;
         background-position: center;
     }
@@ -121,6 +121,10 @@
         gap: 2rem;
         align-items: center;
     }
+
+    .promo-img {
+        min-height: 270px;
+    }
 }
 
 @media only screen and (min-width: 424px) {
@@ -171,6 +175,10 @@
         background-image: url('https://animalcrossing.nintendo.com/new-horizons/assets/img/global/patterns/pattern-characters-2x.jpg');
         background-color: #99e;
         background-blend-mode: hard-light;
+    }
+
+    .promo-img {
+        min-height: 180px;
     }
 }
 
