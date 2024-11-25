@@ -10,6 +10,11 @@
         transform: scaleX(-1);
     }
 
+    .dec-tree {
+        height: 128px;
+        mix-blend-mode: hard-light;
+    }
+
     #gallery-image, 
     #gallery .gallery-container .full-width-image img {
         box-shadow: goldenrod 10px 10px 5px;
