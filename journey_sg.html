@@ -6,7 +6,7 @@
     <!-- <link rel="stylesheet" href="css/ax-microsite.css"> -->
     <!-- <link rel="stylesheet" media="screen" href="css/ax-main.css"> -->
     <!-- <link rel="stylesheet" href="css/mini-each.css"> -->
-     <link rel="stylesheet" href="css/mini2-g2.css">
+    <link rel="stylesheet" href="css/mini2-g2.css">
     <title>SG | Audrey's Journey</title>
 </head>
 
@@ -58,6 +58,19 @@
 </main>
 
 <!--Start of actual main contents-->
+<section id="gallery">
+    <h2>&#x270C Gallery</h2>
+    <!-- Gallery container with image navigation -->
+    <div class="gallery-container">
+        <div class="full-width-image">
+            <img id="gallery-image" src="pic/IMG_1670.jpg" alt="Gallery Display of Event, runner #992">
+        </div>
+        <a class="prev" onclick="changeImage(-1)" title="Previous Image">
+            &#10094;<span class="tooltip-text">Back</span></a>
+        <a class="next" onclick="changeImage(1)" title="Next Image">
+            &#10095;<span class="tooltip-text">Next</span></a>
+    </div>
+</section>
 <!--End of actual main contents-->
 
 <footer>
@@ -75,7 +88,7 @@
                 <div class="promo-section">
                     <div class="promo-item" id="it-gr">
                         <div class="promo-img" style="background-image:url('pic/IMG_8050.jpg');"></div>
-    
+
                         <p class="category">Early August, 2024</p>
                         <p>
                             <span class="rte-introtxt">&#x26F2 All About Wildlife, Water, and
@@ -95,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-row-util">
+        <div class="footer-row footer-row-utility">
             <div class="footer-row-inner">
                 <div class="footer-col-social">
                     <ul class="footer-social">
@@ -146,11 +159,56 @@
     </div>
 </footer>
 
+<!--Java Script for Color Switching-->
 <script>
     function themeTrigger() {
         var element = document.documentElement;
         element.classList.toggle("thm-dark");
     }
+</script>
+
+<!-- Java Script for Gallery Display-->
+<script>
+    // Gallery carousel script with special styles
+    let images = [];
+    let currentImageIndex = 0;
+
+    function preloadImages() {
+        images = [
+            // Add more gallery images with their specific styles here
+            { src: "pic/IMG_1670.jpg", alt: "Presenting Gallery Picture #1" },
+            { src: "pic/IMG_1599.jpg", alt: "Presenting Gallery Picture #2" },
+            { src: "pic/IMG_1666.jpg", alt: "Presenting Gallery Picture #3" },
+            { src: "pic/IMG_1688.jpg", alt: "Presenting Gallery Picture #4" },
+            { src: "pic/IMG_1559.jpg", alt: "Presenting Gallery Picture #5" },
+            { src: "pic/IMG_1665.jpg", alt: "Presenting Gallery Picture #6" },
+        ];
+
+        images.sort((a, b) => {
+            return a.src.localeCompare(b.src);
+        });
+    }
+
+    function showImage(index) {
+        const imgElement = document.getElementById("gallery-image");
+        imgElement.src = images[index].src;
+    }
+
+    function changeImage(n) {
+        currentImageIndex += n;
+        if (currentImageIndex >= images.length) {
+            currentImageIndex = 0;
+        } else if (currentImageIndex < 0) {
+            currentImageIndex = images.length - 1;
+        }
+        showImage(currentImageIndex);
+    }
+
+    // Initialize gallery
+    window.onload = function () {
+        preloadImages();
+        showImage(currentImageIndex);
+    };
 </script>
 
 </body>
