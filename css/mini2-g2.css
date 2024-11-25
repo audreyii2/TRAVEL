@@ -165,6 +165,74 @@ h3 {
     margin-top: 0.5em;
 }
 
+/* Gallery Styles */
+
+#gallery {
+    margin: 2vw;
+}
+
+#gallery-image {
+    box-shadow: goldenrod 10px 10px 5px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#gallery .gallery-container .full-width-image img {
+    box-shadow: rgb(218, 165, 32) 10px 10px 5px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.gallery-container {
+    position: relative;
+    width: 53vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+}
+
+.gallery-container .prev,
+.gallery-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background-color: #465d18;
+    /* main theme color */
+    font-weight: bold;
+    font-size: 15px;
+    /* same size as h2 */
+    transition: 0.6s ease;
+    user-select: none;
+    width: 13vw;
+}
+
+.gallery-container .prev {
+    left: -13vw;
+}
+
+.gallery-container .next {
+    right: -13vw;
+}
+
+.gallery-container .prev:hover,
+.gallery-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-container .prev:hover .tooltip-text,
+.gallery-container .next:hover .tooltip-text {
+    display: block;
+}
+
+
 /* Footer styles */
 footer {
     margin-top: 5vh;
@@ -265,6 +333,11 @@ html.thm-dark {
     display: ruby-text;
 }
 
+.thm-dark .gallery-container .prev,
+.thm-dark .gallery-container .next {
+    background-color: #81d564;
+    color:black;
+}
 /* Accessibility styles */
 .sr-only {
     color: black;
