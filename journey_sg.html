@@ -13,7 +13,7 @@
 <header>
     <div class="full-ribbon">
         <img class="dec-ribbon-lt" src="pic/ribbonSG.png" alt="Decorational Ribbon on the Left">
-        <div class="hder">
+        <div class="hder" tabindex="4">
             <h1>Audrey's Journey</h1>
             <h5 id="sub-title">Uncovering the Hidden Gems Around the World With Me!</h5>
         </div>
@@ -22,25 +22,25 @@
 
     <!--Start of Menu-->
     <div class="menu">
-        <button class="trg-theme" title="Theme" onclick="themeTrigger()">
+        <button class="trg-theme" title="Theme" onclick="themeTrigger()" tabindex="6">
             <span>Theme Color</span>
         </button>
-        <div class="theme-list">
+        <div class="theme-list" tabindex="7">
             <ul>
-                <li class="theme-indicator">
-                    <button class="theme-item" data-theme="light" aria-label="light mode">
+                <li class="theme-indicator" tabindex="8">
+                    <button class="theme-item" data-theme="light" aria-label="light mode" tabindex="9">
                         <span>Light</span>
                     </button>
                 </li>
-                <li class="theme-indicator">
-                    <button class="theme-item" data-theme="dark" aria-label="dark mode">
+                <li class="theme-indicator" tabindex="10">
+                    <button class="theme-item" data-theme="dark" aria-label="dark mode" tabindex="11">
                         <span>Dark</span>
                     </button>
                 </li>
             </ul>
         </div>
 
-        <div class="trg-theme" title="Home">
+        <div class="trg-theme" title="Home" tabindex="12">
             <span>
                 <a class="trg-default" href="journey.html">Home Page</a>
             </span>
@@ -50,28 +50,28 @@
 </header>
 
 <!--Cover image-->
-<img class="first-img" src="pic/IMG_8050.jpg" alt="Cover Image of this Trip">
+<img class="first-img" src="pic/IMG_8050.jpg" alt="Cover Image of this Trip" tabindex="14">
 
 <!--C&P Description from journey.html-->
-<main>
+<main tabindex="15">
 
 </main>
 
 <!--Start of actual main contents-->
-<section id="gallery">
+<section id="gallery" tabindex="16">
     <h2 class="gallery-title">&#x270C Gallery</h2>
     <!-- Gallery container with image navigation -->
-    <div class="gallery-container">
+    <div class="gallery-container" tabindex="17">
         <div class="full-width-image">
             <img id="gallery-image" src="pic/IMG_1670.jpg" alt="Gallery Display of Travel">
         </div>
-        <a class="prev" onclick="changeImage(-1)" title="Previous Image">
+        <a class="prev" onclick="changeImage(-1)" title="Previous Image" tabindex="19">
             &#10094;<span class="tooltip-text">Back</span></a>
-        <a class="next" onclick="changeImage(1)" title="Next Image">
+        <a class="next" onclick="changeImage(1)" title="Next Image" tabindex="20">
             &#10095;<span class="tooltip-text">Next</span></a>
     </div>
 
-    <video class="dec-tree" autoplay muted loop>
+    <video class="dec-tree" autoplay muted loop tabindex="21">
         <source src="pic/treeSG.mp4" type="video/mp4">
     </video>
 </section>
@@ -85,13 +85,13 @@
             <section class="caption1">
                 <!--Singapore-->
                 <div class="parmain">
-                    <div class="columnheader">
+                    <div class="columnheader" tabindex="25">
                         <h1>Singapore &#x1F981</h1>
                     </div>
                 </div>
                 <div class="promo-section">
                     <div class="promo-item" id="it-gr">
-                        <div class="promo-img" style="background-image:url('pic/IMG_8050.jpg');"></div>
+                        <div class="promo-img" style="background-image:url('pic/IMG_8050.jpg');" tabindex="26"></div>
 
                         <p class="category">Early August, 2024</p>
                         <p>
@@ -104,19 +104,19 @@
             </section>
         </div>
 
-        <div class="footer-row">
+        <div class="footer-row" tabindex="27">
             <div class="footer-row-inner">
-                <div class="footer-col-title">
+                <div class="footer-col-title" tabindex="28">
                     <h2>Stay <span>connected</span></h2>
                     <p>Learn more about me</p>
                 </div>
             </div>
         </div>
-        <div class="footer-row footer-row-utility">
+        <div class="footer-row footer-row-utility" tabindex="29">
             <div class="footer-row-inner">
-                <div class="footer-col-social">
+                <div class="footer-col-social" tabindex="30">
                     <ul class="footer-social">
-                        <li class="li-social">
+                        <li class="li-social" tabindex="31">
                             <a href="https://www.linkedin.com/in/audrey-lin-b34b262a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                                 class="a-social" title="LinkedIn">
                                 <img src="pic/LI-In-Bug.png" alt="Logo of LinkedIn" class="icon" aria-hidden="true"
@@ -125,7 +125,7 @@
                             </a>
                         </li>
                         <!-- Repeat for other social links -->
-                        <li class="li-social">
+                        <li class="li-social" tabindex="32">
                             <a href="https://www.instagram.com/p/C-zVZpdudAEvcoyCprQf1s1Sz69pyS611OBxpY0/?igsh=MWQxbnl1dHRvN3lqeA=="
                                 class="a-social" title="Instagram">
                                 <img src="pic/Instagram_Glyph_Gradient.png" alt="Logo of Instagram" class="icon"
@@ -133,21 +133,21 @@
                                 <h5 class="sr-only">Social</h5>
                             </a>
                         </li>
-                        <li class="li-social">
+                        <li class="li-social" tabindex="33">
                             <a href="mailto:audreyll@umich.edu" class="a-social" title="Gmail">
                                 <img src="pic/Gmail_logo.png" alt="Logo of Gmail" class="icon" aria-hidden="true"
                                     focusable="false">
                                 <h5 class="sr-only">Email</h5>
                             </a>
                         </li>
-                        <li class="li-social">
+                        <li class="li-social" tabindex="34">
                             <a href="tel: +1 734-596-1413" class="a-social" title="Phone">
                                 <img src="pic/callme.png" alt="Logo of phone call" class="icon" aria-hidden="true"
                                     focusable="false">
                                 <h5 class="sr-only">Call</h5>
                             </a>
                         </li>
-                        <li class="li-social">
+                        <li class="li-social" tabindex="35">
                             <a href="https://docs.google.com/document/d/1eUGvTkz8SySWMCA5R91PiK8jgICnLNgaKqfUpKY8GKk/edit?usp=sharing"
                                 class="a-social" title="Audrey's Resume">
                                 <img src="pic/microsoft_docx.svg" alt="Logo of document" class="icon" aria-hidden="true"
@@ -159,7 +159,7 @@
                 </div>
             </div>
         </div>
-        <img class="dec-town" src="pic/townSG.png" alt="Decorational Image above the Footer Part">
+        <img class="dec-town" src="pic/townSG.png" alt="Decorational Image above the Footer Part" tabindex="36">
     </div>
 </footer>
 
