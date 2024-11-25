@@ -43,8 +43,10 @@ Reference links:
 14. https://www.nintendo.com/us/store/products/princess-peach-showtime-switch/?_gl=1*13bsx65*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTYzODc4Ni4yLjEuMTczMTY0MDkzOC4wLjAuMA..
 15. https://www.nintendo.com/us/store/products/paper-mario-the-thousand-year-door-switch/
 16. https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/
-17. https://www.nintendo.com/us/store/products/minecraft-switch/
-18. https://mariokarttour.com/en-GB
-19. https://www.nintendo.com/us/store/products/mysims-cozy-bundle-switch/
-20. https://www.nintendo.com/us/store/products/super-mario-rpg-switch/
-21. https://splatoon.nintendo.com/?_gl=1*1x4jrrn*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTY1MDg2NS4zLjEuMTczMTY1NDE2Ni4wLjAuMA..
+17. https://animalcrossing.nintendo.com/new-horizons/explore/
+18. https://animalcrossing.nintendo.com/new-horizons/create/
+19. https://www.nintendo.com/us/store/products/minecraft-switch/
+20. https://mariokarttour.com/en-GB
+21. https://www.nintendo.com/us/store/products/mysims-cozy-bundle-switch/
+22. https://www.nintendo.com/us/store/products/super-mario-rpg-switch/
+23. https://splatoon.nintendo.com/?_gl=1*1x4jrrn*_gcl_au*MTkyNDQxODU0LjE3Mjk4NzI2NzY.*_ga*MjY2Mjg0OTExLjE3Mjk4NzI2Nzc.*_ga_F6ERC4HMNZ*MTczMTY1MDg2NS4zLjEuMTczMTY1NDE2Ni4wLjAuMA..
